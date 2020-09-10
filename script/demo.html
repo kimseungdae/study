@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="Referrer" content="origin">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="woongjin thinkbig">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, viewport-fit=cover" />
+	<title>script 실행화면</title>
+</head>
+<body>
+<div id="app"></div>
+<script>
+	let _info = [];
+	let grid = '<br />';
+	let textFn = (t) => {
+        _info.push(t);
+        let rs = '';
+		_info.forEach(function(obj, idx){
+		    rs+= obj + grid;
+
+		});
+	    document.getElementById('app').innerHTML = rs;
+	}
+</script>
+<script src="ex1/lamdba.js"></script>
+</body>
+</html>
