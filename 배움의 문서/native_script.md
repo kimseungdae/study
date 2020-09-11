@@ -25,31 +25,60 @@ console.log( window.atob("SGVsbG8gV29ybGQh") ); // Hello World!
 ```
 
 #3 blur: f blur()
-focus되어있는 상태에 이벤트 핸들러가 해당 focus를 잃게되면 발생
+- focus되어있는 상태에 이벤트 핸들러가 해당 focus를 잃게되면 발생
 
 ```js
 var form = document.getElementById("form");
 form.addEventListener("focus", function( event ) {
-  event.target.style.background = "pink";    
+  event.target.style.background = "pink";
 }, true);
 form.addEventListener("blur", function( event ) {
-  event.target.style.background = "";    
+  event.target.style.background = "";
 }, true);
 ```
 
 
 #4 btoa: f btoa()
-base64로 된 데이터를 인코딩 하는 함수
+- base64로 된 데이터를 인코딩 하는 함수
 ```js
 console.log( window.btoa("Hello World!") ); // SGVsbG8gV29ybGQh
 ```
 
 
 #5 caches: CacheStorage {}
+- Cache 개체의 저장소를 나타냅니다.
+- ServiceWorker가 액세스 할 수있는 모든 명명 된 캐시의 마스터 디렉터리를 제공하고
+해당 캐시 개체에 대한 문자열 이름 매핑을 유지합니다
 
 
 #6 cancelAnimationFrame: f cancelAnimationFrame()
+- 메소드는 이전에 window.requestAnimationFrame() 을 호출하여 스케줄된 애니메이션 프레임 요청을 취소합니다.
+- setTimeout 및 setInterval을 사용하여 그린 애니메이션은, 과도하게 그려지고 시스템의 자원을 낭비할 여자기 있었음
+- 과도한 그리기는 순산 순간 프레임이 손실되기 때문에 애니메이션이 끊어지고
 
+
+###예시
+```js
+var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+                            window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
+var cancelAnimationFrame = window.cancelAnimationFrame || window.mozCancelAnimationFrame;
+
+var start = window.mozAnimationStartTime;  // Firefox 에서만 지원됨. 다른 브라우저에서는 Date.now() 같은 것을 사용할 수 있음.
+
+var myReq;
+
+function step(timestamp) {
+  var progress = timestamp - start;
+  d.style.left = Math.min(progress / 10, 200) + 'px';
+  if (progress < 2000) {
+    myReq = requestAnimationFrame(step);
+  }
+}
+myReq = requestAnimationFrame(step);
+
+cancelAnimationFrame(myReq);
+```
 
 #7 cancelIdleCallback: f cancelIdleCallback()
 

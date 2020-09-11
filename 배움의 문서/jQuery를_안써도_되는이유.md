@@ -18,23 +18,6 @@
 1. [대안방법](#대안방법)
 1. [브라우저 지원](#브라우저-지원)
 
-## 번역
-
-* [한국어](./README.ko-KR.md)
-* [正體中文](./README.zh-TW.md)
-* [简体中文](./README.zh-CN.md)
-* [Bahasa Melayu](./README-my.md)
-* [Bahasa Indonesia](./README-id.md)
-* [Português(PT-BR)](./README.pt-BR.md)
-* [Tiếng Việt Nam](./README-vi.md)
-* [Español](./README-es.md)
-* [Русский](./README-ru.md)
-* [Кыргызча](./README-kg.md)
-* [Türkçe](./README-tr.md)
-* [Italiano](./README-it.md)
-* [Français](./README-fr.md)
-* [日本語](./README-ja.md)
-* [Polski](./README-pl.md)
 
 ## Query Selector
 
