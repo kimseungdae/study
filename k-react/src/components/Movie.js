@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import '../css/Movie.css';
+import Counter from './Counter'
 
 class Movie extends Component {
     render() {
@@ -8,6 +9,7 @@ class Movie extends Component {
             <div>
                 <MoviePoster />
                 <h1>{this.props.title}</h1>
+                <Counter />
             </div>
         );
     }
