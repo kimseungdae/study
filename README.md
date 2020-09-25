@@ -1,9 +1,18 @@
 # study
-프론트 엔드 개발자가 되기위한 작업공간
+Frontend UI Developer KSD 
 
 
-#2020-09-10 1일차
-script => lamda 표현식 es6 스크립트 테스트
+# it뉴스
+최근 it 뉴스 동향을 모아논 문서들
 
-#기술문서
-[1. jQuery를_안써도_되는이유](배움의 문서/jQuery를_안써도_되는이유.md)
+# k-react
+react study directory
+
+# script
+script study directory
+
+# vue
+vue study directory
+
+# 배움의 문서
+그때그때 생각나는거 배운거 적어놓음
