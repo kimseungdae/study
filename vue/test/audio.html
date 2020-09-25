@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>test</title>
+	<link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+
+<div class="controller">
+	<button onclick="sjp.logFn()">오디오 로그 확인</button>
+	<div>
+		<input type="text" id="sec_txt">
+		<button onclick="sjp.moveTime()">타임라인 이동</button>
+	</div>
+</div>
+
+
+<textarea name="a_log" id="a_log" cols="30" rows="10" style="width:100%" readonly></textarea>
+
+<div class="holder">
+	<div class="audio green-audio-player">
+		<div class="loading">
+			<div class="spinner"></div>
+		</div>
+		<div class="play-pause-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+				<path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
+			</svg>
+		</div>
+
+		<div class="controls">
+			<span class="current-time">0:00</span>
+			<div class="slider" data-direction="horizontal">
+				<div class="progress">
+					<div class="pin" id="progress-pin" data-method="rewind"></div>
+				</div>
+			</div>
+			<span class="total-time">0:00</span>
+		</div>
+
+		<div class="volume">
+			<div class="volume-btn">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker"/>
+				</svg>
+			</div>
+			<div class="volume-controls hidden">
+				<div class="slider" data-direction="vertical">
+					<div class="progress">
+						<div class="pin" id="volume-pin" data-method="changeVolume"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<audio crossorigin>
+			<source src="000000000009010973.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+</div>
+
+
+<script>
+    /* ksd Player  ver.1.0*/
+    var sjp = sjp || {
+        data : {}, // init data
+        log : '',
+		audioDom : {},
+        draggableClasses : ['pin'],
+    	currentlyDragged : null,
+        init : function(){
+            var pl = this.audioDom;
+            pl.audioPlayer = document.querySelector('.green-audio-player');
+            pl.playPause = pl.audioPlayer.querySelector('#playPause');
+            pl.playpauseBtn = pl.audioPlayer.querySelector('.play-pause-btn');
+            pl.loading = pl.audioPlayer.querySelector('.loading');
+            pl.progress = pl.audioPlayer.querySelector('.progress');
+            pl.sliders = pl.audioPlayer.querySelectorAll('.slider');
+            pl.volumeBtn = pl.audioPlayer.querySelector('.volume-btn');
+            pl.volumeControls = pl.audioPlayer.querySelector('.volume-controls');
+            pl.volumeProgress = pl.audioPlayer.volumeControls.querySelector('.slider .progress');
+            pl.player = pl.audioPlayer.querySelector('audio');
+            pl.currentTime = pl.audioPlayer.querySelector('.current-time');
+            pl.totalTime = pl.audioPlayer.querySelector('.total-time');
+            pl.speaker = pl.audioPlayer.querySelector('#speaker');
+
+
+            let $ns = this.data.audio;
+            $ns = new Audio();
+            $ns.src = '000000000009010973.mp3';
+            $ns.controls = true;
+            $ns.autoplay = true;
+            $ns.defaultMuted = true;
+            this.data.audio = $ns;
+            document.body.appendChild($ns);
+
+
+            window.addEventListener('mousedown', function(event) {
+
+                if(!isDraggable(event.target)) return false;
+
+                this.currentlyDragged = event.target;
+                let handleMethod = currentlyDragged.dataset.method;
+
+                this.addEventListener('mousemove', window[handleMethod], false);
+
+                window.addEventListener('mouseup', () => {
+                    this.currentlyDragged = false;
+                    window.removeEventListener('mousemove', window[handleMethod], false);
+                }, false);
+            });
+
+            pl.playpauseBtn playpauseBtn.addEventListener('click', this.togglePlay);
+            pl.playpauseBtnplayer.addEventListener('timeupdate', this.updateProgress);
+            pl.playpauseBtnplayer.addEventListener('volumechange', this.updateVolume);
+            pl.playpauseBtnplayer.addEventListener('loadedmetadata', () => {
+                pl.totalTime.textContent = this.formatTime(pl.player.duration);
+            });
+            pl.playpauseBtnplayer.addEventListener('canplay', makePlay);
+            pl.playpauseBtnplayer.addEventListener('ended', function(){
+                pl.playpauseBtnplayPause.attributes.d.value = "M18 12L0 24V0";
+                pl.playpauseBtn player.currentTime = 0;
+            });
+
+            volumeBtn.addEventListener('click', () => {
+                volumeBtn.classList.toggle('open');
+                volumeControls.classList.toggle('hidden');
+            })
+
+            window.addEventListener('resize', directionAware);
+
+
+
+
+            this.directionAware();
+        },
+
+        logFn: function(){
+            let $ns = this.data;
+
+            //buffer 길이 확인
+            this.log += "buffer Start: " + $ns.audio.buffered.start(0) + "buffer End: " + $ns.audio.buffered.end(0)+'\n';
+
+            //audio src
+            this.log += "audio src: " + $ns.audio.src;
+            document.getElementById("a_log").innerHTML = this.log;
+        },
+
+        /* timeLine 이동 */
+        moveTime: function(){
+            let $ns = this.data.audio;
+            const sec = document.getElementById('sec_txt').value;
+            console.log(sec);
+            $ns.currentTime = sec;
+        },
+
+
+
+		isDraggable: function(el) {
+			let canDrag = false;
+			let classes = Array.from(el.classList);
+			draggableClasses.forEach(draggable => {
+				if(classes.indexOf(draggable) !== -1)
+					canDrag = true;
+			})
+			return canDrag;
+		},
+
+        inRange: function(event) {
+			let rangeBox = getRangeBox(event);
+			let rect = rangeBox.getBoundingClientRect();
+			let direction = rangeBox.dataset.direction;
+			if(direction == 'horizontal') {
+				var min = rangeBox.offsetLeft;
+				var max = min + rangeBox.offsetWidth;
+				if(event.clientX < min || event.clientX > max) return false;
+			} else {
+				var min = rect.top;
+				var max = min + rangeBox.offsetHeight;
+				if(event.clientY < min || event.clientY > max) return false;
+			}
+			return true;
+		},
+
+        updateProgress: function() {
+			var current = player.currentTime;
+			var percent = (current / player.duration) * 100;
+			progress.style.width = percent + '%';
+
+			currentTime.textContent = formatTime(current);
+		},
+
+        updateVolume: function() {
+			volumeProgress.style.height = player.volume * 100 + '%';
+			if(player.volume >= 0.5) {
+				speaker.attributes.d.value = 'M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z';
+			} else if(player.volume < 0.5 && player.volume > 0.05) {
+				speaker.attributes.d.value = 'M0 7.667v8h5.333L12 22.333V1L5.333 7.667M17.333 11.373C17.333 9.013 16 6.987 14 6v10.707c2-.947 3.333-2.987 3.333-5.334z';
+			} else if(player.volume <= 0.05) {
+				speaker.attributes.d.value = 'M0 7.667v8h5.333L12 22.333V1L5.333 7.667';
+			}
+		},
+
+        directionAware: function() {
+			if(window.innerHeight < 250) {
+				volumeControls.style.bottom = '-54px';
+				volumeControls.style.left = '54px';
+			} else if(audioPlayer.offsetTop < 154) {
+				volumeControls.style.bottom = '-164px';
+				volumeControls.style.left = '-3px';
+			} else {
+				volumeControls.style.bottom = '52px';
+				volumeControls.style.left = '-3px';
+			}
+    	},
+
+        makePlay: function() {
+			playpauseBtn.style.display = 'block';
+			loading.style.display = 'none';
+    	},
+
+        togglePlay: function() {
+			if(player.paused) {
+				playPause.attributes.d.value = "M0 0h6v24H0zM12 0h6v24h-6z";
+				player.play();
+			} else {
+				playPause.attributes.d.value = "M18 12L0 24V0";
+				player.pause();
+			}
+		},
+        formatTime: function(time) {
+			var min = Math.floor(time / 60);
+			var sec = Math.floor(time % 60);
+			return min + ':' + ((sec<10) ? ('0' + sec) : sec);
+		},
+
+        changeVolume: function(event) {
+			if(inRange(event)) {
+				player.volume = getCoefficient(event);
+			}
+		},
+
+        rewind: function(event) {
+			if(inRange(event)) {
+				player.currentTime = player.duration * getCoefficient(event);
+			}
+		},
+
+        getCoefficient: function(event) {
+			let slider = getRangeBox(event);
+			let rect = slider.getBoundingClientRect();
+			let K = 0;
+			if(slider.dataset.direction == 'horizontal') {
+
+				let offsetX = event.clientX - slider.offsetLeft;
+				let width = slider.clientWidth;
+				K = offsetX / width;
+
+			} else if(slider.dataset.direction == 'vertical') {
+
+				let height = slider.clientHeight;
+				var offsetY = event.clientY - rect.top;
+				K = 1 - offsetY / height;
+
+			}
+			return K;
+		},
+
+        getRangeBox: function(event) {
+			let rangeBox = event.target;
+			let el = currentlyDragged;
+			if(event.type == 'click' && isDraggable(event.target)) {
+				rangeBox = event.target.parentElement.parentElement;
+			}
+			if(event.type == 'mousemove') {
+				rangeBox = el.parentElement.parentElement;
+			}
+			return rangeBox;
+		}
+    };
+
+    window.addEventListener('load', function(e) {
+        sjp.init();
+    }, false);
+
+</script>
+</body>
+</html>

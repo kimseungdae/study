@@ -1,0 +1,501 @@
+/**************************************
+** HEADER
+***************************************/
+.header{position:fixed;top:0;left:0;display: flex;justify-content: center;align-items: center;width: 100%;height: 55px;-webkit-box-shadow:  0 3px 11px 0 rgba(96, 59, 33, 0.15);-moz-box-shadow:  0 3px 11px 0 rgba(96, 59, 33, 0.15);box-shadow: 0 3px 11px 0 rgba(96, 59, 33, 0.15);z-index:100}
+.header{background:#fd945a;-webkit-background-size: 98px;background-size: 98px;}
+
+/* up&down class > 헤더 노출여부 */
+body.up .header{top:0;transition: top 0.3s;}
+.sideMenu{position: absolute;right: 16px;top:17px;width: 23px;height: 24px;margin: auto;}
+
+/**************************************
+** TAB1 - 홈
+***************************************/
+#app.main.tab1 h1{width: 181px;height: 21px;}
+#app.main.tab1 .rowBox{margin:10px 0;position:relative}
+/* container > main_slider */
+.main_slider .swiper-slide{text-align:center}
+.main_slider{display:block;position:relative;}
+.main_slider .slide_control{display:flex;position:absolute;bottom:10px;left: 18px;z-index:10;color:#5d576b;font-size:13px;}
+.main_slider .swiper-pagination-fraction{width:auto}
+.main_slider .nextSlide{position:relative;width:16px;height:16px;margin:auto 7px;padding:0;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/btn_play.png) center no-repeat;background-size:100%}
+.main_slider .nextSlide.off{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/btn_pause.png) center no-repeat;background-size:100%}
+.main_slider .allEvent{display:block;color:#fff;font-size:11px;background:rgba(93,87,107,.5);border-radius: 30px;font-weight:100;height:18px;line-height:18px;padding:0 8px;}
+.main_slider .swiper-slide img{display:inline-block;width:100%;max-width:650px}
+
+#app.main.tab1 .swiper-slide .visual {border: solid 1px #f4f4f4;text-align: center;padding-bottom:1px}
+
+/* container > con_q_menu */
+.con_q_menu{padding: 14px 5px 10px;margin-bottom:5px;background: #f9f9f9;border-bottom:solid 1px #d9d9d9;}
+.con_q_menu ul{width:100%;height:100%;display:flex;align-items: center;-webkit-flex-wrap: wrap;flex-wrap:wrap;padding:0 10px;justify-content: center;}
+.con_q_menu li{padding:0 7px;width: 25%;height: 90px;text-align: center;display: block;overflow: hidden;line-height: 1;}
+.con_q_menu li span{display: inline-block;}
+.con_q_menu li span.visual{width:64px;height: 64px;background: url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/sprite_button_20200514.png) no-repeat;background-size:200px auto;}
+.con_q_menu li span.visual.ico1{background-position: 0 0;}
+.con_q_menu li span.visual.ico2{background-position: 0 -64px;}
+.con_q_menu li span.visual.ico3{background-position: 0 -128px;}
+.con_q_menu li span.visual.ico4{background-position: 0 -192px;}
+.con_q_menu li span.visual.ico5{background-position: 0 -256px;}
+.con_q_menu li span.txt{font-size:12px;letter-spacing: -0.34px;color:#302c2d;text-align:center;width:100%;text-overflow:ellipsis;}
+.con_q_menu li:nth-child(5){margin-top:20px}
+
+/* container > con_mBn-list */
+.con_mBn-list li{background:#fff;margin-top:5px;text-align:center;border-bottom:solid 1px #d9d9d9}
+.con_mBn-list li:first-child{margin-top:0}
+.con_mBn-list li:last-child{border-bottom:0}
+.con_mBn-list li img{display:inline-block;width:100%;max-width:650px;}
+
+/* container > con_bestBook */
+.bestSlide{padding:22px;background:#fff;overflow:hidden;height:254px;width:100%;}
+.slideCon{position:relative;}
+.slideCon .slideInner{position:absolute;left:0;top:0;display:flex;}
+.slideCon .item{width:145px;margin-right:15px;}
+.slideCon .item .visual{width:100%;height:135px;overflow:hidden;object-fit: contain}
+.slideCon .item .info{width:100%;}
+.slideCon .item .info .tit{display:block;padding:6px 0;text-align:left;font-size:15px;letter-spacing: -0.6px;}
+.slideCon .item .info .txt{display:block;font-size:13px;line-height:18px;color:#636c77}
+
+/* container > con_mdBook */
+.con_list{display:block;}
+.con_list .item{display:flex;background:#fff;margin-bottom:6px;overflow:hidden;box-shadow:  0 1px 0 0 rgba(35, 35, 35, 0.2);}
+.con_list .item .visual{min-width:172px;max-width:172px;}
+.con_list .item .info{height:100%;padding:10px;}
+.con_list .item .info .tit{color:#302c2d;font-size:15px;}
+.con_list .item .info .txt{padding:10px 0;font-size:13px;line-height:18px;color:#636c77;word-break: keep-all}
+.con_list .item .info .price{color:#fd945a;font-size:16px}
+.bnWrapper{text-align:center}
+
+.home_footer{padding:17px 17px 0;}
+.home_footer .toggleBtn{position:relative;height:35px;font-size:12px;color:#302c2d;padding-right:20px;}
+.home_footer .toggleBtn:after{content:"";display:block;position:absolute;right:0;top:11px;width:15px;height:12px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_select.png) center no-repeat;background-size:90%;}
+.home_footer.on .toggleBtn:after{transform: rotate(180deg);}
+.home_footer .info_head{display:flex;justify-content: space-between;align-items:center}
+.home_footer .info_head .visual{width:81px;}
+.home_footer .company_info{display:none;}
+.home_footer.on .company_info{display:block}
+.home_footer .company_info .mtit{font-size:13px;padding-top:17px;font-weight:300}
+.home_footer .company_info ul{padding:10px 0}
+.home_footer .company_info li{font-size:11px;line-height:1;padding:5px 0}
+.home_footer .company_info li span{display:inline-block;}
+.home_footer .company_info li .tit{color:#bcbcbc;width:95px;}
+.home_footer .company_info li .txt{color:#828181}
+.home_footer .service_list{display:flex;justify-content: center;align-items: center;padding-top:20px}
+.home_footer .service_list .btn{position:relative;padding:0 7px;margin:0 3px;border-radius: 0;color:#828181;border-color:#c1c1c2}
+.main.tab1 .visual img.lazy {display: inline-block;overflow: hidden;}
+
+/*.swiper-slide .visual {border: solid 1px #f4f4f4;}*/
+.slide_pagenate2{position:absolute;bottom:12px!important;left:0;text-align:left;z-index:5;padding:0 17px}
+.slide_pagenate2 .swiper-pagination-bullet{background:#e5e5e5}
+.slide_pagenate2 .swiper-pagination-bullet.swiper-pagination-bullet-active{background:#fd945a!important}
+.mBnSwiper{padding:0 0 17px}
+
+/* 플레이북 추가 */
+.coverFlowTit{text-align:center;padding-top:12px}
+.coverFlowTit .tit{font-size:17px;display: inline-block;line-height: 1;position: relative;z-index: 10;padding:0 3px 3px;background: url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/dot_yellow.png) bottom repeat-x;background-size:2px}
+.coverFlowSlider1,.coverFlowSlider2, .coverFlowSlider3{padding:17px 0}
+.coverFlowSlider1 .swiper-slide,.coverFlowSlider2 .swiper-slide,.coverFlowSlider3 .swiper-slide{height:48vw;width:145px;background:#f7f7f7;overflow:hidden;border-radius: 5px}
+.coverflowInfo{width:100%;overflow:hidden;line-height:1;padding-bottom:17px}
+.coverflowInfo .tit{text-align:center;font-size:18px;color:#302c2d;white-space: nowrap}
+.coverflowInfo .sTit{display:block;text-align:center;font-size:15px;letter-spacing: -.38px;padding-top:5px}
+
+.newContents{padding:17px}
+.newContents .tit{display:block;padding:10px 0;font-size:15px;line-height:19px;color:#302c2d}
+.layerThumnail{display:inline-block;width:62px;padding:15px 0}
+.c_item .visual{display: flex;display:-webkit-flex;width: 100%;border:solid 1px #f4f4f4;position:relative;max-height: 150px;height:150px;z-index:5;justify-content: center;align-items: center;background: #fff;overflow:hidden;}
+.c_item .visual img{max-width:100%;max-height:100%;}
+.c_item .tit{display:block;padding:10px 0;font-size:15px;line-height:19px;color:#302c2d}
+.c_item .visual:after{content:"";display: block;width: 35px;height: 35px;border-radius: 50px;position: absolute;right: 50%;bottom: 50%;z-index: 10;transform: translate(50%, 50%)}
+.c_item.type1 .visual:after{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/playbook/ico_type_Headphon.png) no-repeat;background-size:100%;}
+.c_item.type2 .visual:after{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/playbook/ico_type_play.png) no-repeat;background-size:100%;}
+.c_item.type3 .visual:after{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/playbook/ico_type_Headphon.png) no-repeat;background-size:100%;}
+.c_item.type4 .visual:after{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/playbook/ico_type_bookVideo.png) no-repeat;background-size:100%;}
+
+.newContents .c_item .visual:after{display:none!important;}
+/**************************************
+** TAB2 - 독서케어
+***************************************/
+
+#app.main.tab2 h1{width: 65px;height: 22px;}
+#app.main.tab2 .rowBox > .tit{font-size:18px;color:#302c2d}
+#app.main.tab2 .rowBox .flex-sw > .tit{font-size:18px;}
+#app.main.tab2 .readHistory{display:flex;justify-content: space-between}
+#app.main.tab2 .readHistory .list-item{width:49%;max-width:146px;}
+#app.main.tab2 .readHistory .list-item .visual{position:relative;width:146px;height:146px;border:solid 1px #f4f4f4}
+#app.main.tab2 .readHistory .list-item .visual em.icon.eBook{display:block;position:absolute;bottom:0;left: 0;width: 35px;height: 20px;background: #fd945a;color:#fff;font-size: 13px;text-align:center;padding-left:3px;white-space: nowrap}
+#app.main.tab2 .readHistory .list-item .visual em.icon.eBook:after{content:"";display:block;position:absolute;right:-25px;bottom:0;border-width:20px 10px 0 15px;border-color:transparent transparent transparent #fd945a;border-style:solid }
+#app.main.tab2 .readHistory .list-item .visual em.icon.paper{display:block;position:absolute;bottom:0;left: 0;width: 50px;height: 20px;background: #343031;color:#fff;font-size: 13px;text-align:center;padding-left:3px;white-space: nowrap}
+#app.main.tab2 .readHistory .list-item .visual em.icon.paper:after{content:"";display:block;position:absolute;right:-25px;bottom:0;border-width:20px 10px 0 15px;border-color:transparent transparent transparent #343031;border-style:solid }
+#app.main.tab2 .readHistory .list-item .visual img{width:100%;height:100%}
+#app.main.tab2 .readHistory .list-item .info{display:block;position:relative;overflow:hidden;padding:3px 0}
+#app.main.tab2 .readHistory .list-item .info .tit{font-size:15px;color:#302c2d;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+#app.main.tab2 .readHistory .list-item .info .read_iconN{float:left}
+#app.main.tab2 .readHistory .list-item .info .date{float:left;font-size:13px;color:#636c77;line-height:22px;padding-left:3px}
+#app.main.tab2 .noReadBook{width:100%;padding-bottom:10px}
+#app.main.tab2 .noReadBook .visual{width:87px;margin:22px auto 17px;position:relative;left:-5px}
+#app.main.tab2 .noReadBook .msg{text-align:center}
+#app.main.tab2 .noReadBook .msg .tit{display:inline-block;font-size:16px;color:#3a3436;}
+#app.main.tab2 .noReadBook .msg a{display:inline-block;position:relative;font-size:14px;color:#ff6a52;padding-top:5px}
+#app.main.tab2 .noReadBook .msg a:before{content:"";display:block;position:absolute;bottom:0;left:0;width:100%;height:1px;background:#ff6a52}
+#app.main.tab2 .aiNoCountBook .visual{width:87px;margin:22px auto 17px;position:relative;left:-5px}
+#app.main.tab2 .aiNoCountBook .msg{text-align:center}
+#app.main.tab2 .aiNoCountBook .msg .tit{display:block;font-size:16px;color:#3a3436;}
+#app.main.tab2 .aiNoCountBook .msg a{display:inline-block;position:relative;font-size:14px;color:#ff6a52;padding-top:5px}
+#app.main.tab2 .aiNoCountBook .msg a:before{content:"";display:block;position:absolute;bottom:0;left:0;width:100%;height:1px;background:#ff6a52}
+
+#app.main.tab2 .bookLibChart .lib-desc{font-size: 15px;line-height: 1.45;letter-spacing: -0.38px;text-align: center;color: #302c2d;padding:18px 0}
+#app.main.tab2 .bookLibChart .chart-info{display:flex;justify-content: space-around;position:relative}
+#app.main.tab2 .bookLibChart .chart-info:after{content:"";display:block;width:1px;height:25px;background:#e1e1e1;position:absolute;top:15px;left:50%;}
+#app.main.tab2 .bookLibChart .chart-info li{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;height:60px;padding-left: 70px;font-size:13px;}
+#app.main.tab2 .bookLibChart .chart-info li:nth-child(1){background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/thinkbig/Readingbooks@2x.png) no-repeat;background-size: 55px}
+#app.main.tab2 .bookLibChart .chart-info li:nth-child(2){background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/thinkbig/Add2dbooks@2x.png) no-repeat;background-size: 55px;}
+#app.main.tab2 .bookLibChart .chart-info li span{display:block;color:#302c2d;font-weight:300}
+#app.main.tab2 .bookLibChart .chart-info li span.name{font-size:13px}
+#app.main.tab2 .bookLibChart .chart-info li span.count{font-size:14px}
+#app.main.tab2 .bookLibChart .lib-descr{background:#f7f7f7;font-size:16px;font-weight:300;padding:15px 0;text-align:center;line-height:1.42;margin:10px 0}
+#app.main.tab2 .bookLibChart .lib-descr em{color:#ff6a52}
+#app.main.tab2 .bookLibChart .bar-box{background:#f2f2f2;width:100%;height:25px;border-radius: 13px;margin-top:18px;position:relative;overflow:hidden}
+#app.main.tab2 .bookLibChart .bar-box .bar{display:block;position:absolute;height:25px;border-radius: 13px;background:#c8c0b8}
+#app.main.tab2 .bookLibChart .tip-bx{color:#636c77;font-size:13px;padding-top:11px;}
+#app.main.tab2 .bookLibChart .tip-bx .btn_tip{width:15px;height:15px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/offline/btn-qmark@2x.png) no-repeat;background-size:100%;position:relative;top:-1px;margin-left:5px}
+#app.main.tab2 .bookLibChart #chartWrap{text-align:center}
+
+#app .aiReadCoaching .list-item{display:flex;padding:22px 0;border-bottom:solid 1px #e5e5e5}
+#app .aiReadCoaching .list-item .visual{min-width:54px;max-width:54px;height:54px;}
+#app .aiReadCoaching .list-item .visual span{display:block;width:100%;height:100%;position:relative;top:-3px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/readType.png) no-repeat;background-size:380px}
+#app .aiReadCoaching .list-item .visual span.icon1{background-position: -54px 0;width:54px;height:54px;}
+#app .aiReadCoaching .list-item .visual span.icon2{background-position: -108px 0;width:54px;height:54px;}
+#app .aiReadCoaching .list-item .visual span.icon3{background-position: -163px 0;width:54px;height:54px;}
+#app .aiReadCoaching .list-item .visual span.icon4{background-position: -218px 0;width:54px;height:54px;}
+#app .aiReadCoaching .list-item .list-info{display:block;padding-left:12px;flex:1 auto;}
+#app .aiReadCoaching .list-item .list-info a{display:block;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_arrow_b.png) right top no-repeat;background-size:7px}
+#app .aiReadCoaching .list-item .list-info a span{display:block;width:100%;word-break: keep-all}
+#app .aiReadCoaching .list-item .list-info a .tit{font-size:16px;color:#3a3436;white-space: nowrap}
+#app .aiReadCoaching .list-item .list-info a .stxt{padding-top:3px;font-size:15px;color:#faab61}
+#app .aiReadCoaching .list-item .list-info ul li{display:flex;justify-content: space-between;align-items: center;line-height:1;padding-bottom:5px;}
+#app .aiReadCoaching .list-item .list-info ul.dotLine li{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/dot_line.png) center repeat-x}
+#app .aiReadCoaching .list-item .list-info ul li .name,.aiReadCoaching .list-item .list-info ul li .result{display:block;font-size:15px;font-weight:100;color:#3a3436;background:#fff}
+#app .aiReadCoaching .list-item .list-info .resultTip{padding-top:23px;font-size:16px;color:#302c2d}
+#app .aiReadCoaching .list-item:last-child{border-bottom:0;padding-bottom:10px}
+#app .noAiCoaching{width:100%;padding-bottom:10px}
+#app .noAiCoaching .visual{width:61px;margin:22px auto 17px;}
+#app .noAiCoaching .msg{text-align:center}
+#app .noAiCoaching .msg .tit{display:inline-block;font-size:16px;color:#3a3436;line-height:20px;width: 100%;}
+#app .noAiCoaching .msg a{display:inline-block;position:relative;font-size:14px;color:#ff6a52;padding-top:5px}
+#app .noAiCoaching .msg a:before{content:"";display:block;position:absolute;bottom:0;left:0;width:100%;height:1px;background:#ff6a52}
+#app .noReadBook .visual{width:86px}
+
+#app.main .noUserSubTit{color:#f17a38;font-size:15px;line-height:1;padding-top:15px;border-top:solid 1px #e5e5e5;margin-top:15px;}
+#app.main .noUserSubTxt{padding:5px 13px 0;font-size:12px;color:#302c2d;word-break: keep-all;font-weight:100;line-height:18px;}
+
+
+
+#app.main.tab2 .bookClubUsing{padding-top:24px}
+#app.main.tab2 .bookClubUsing .list-item{display:flex;align-items: center;padding-bottom:20px}
+#app.main.tab2 .bookClubUsing .list-item .usingTit{display:block;min-width:81px;max-width:81px;font-size:15px}
+#app.main.tab2 .bookClubUsing .list-item .resultTip{display:block;flex:1 auto;padding-left:30px;}
+#app.main.tab2 .bookClubUsing .list-item .visual{min-width:54px;max-width:54px;height:54px;margin-right:15px;word-break: keep-all}
+#app.main.tab2 .bookClubUsing .list-item .visual span{display:block;width:100%;height:100%;position:relative;top:-3px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/readType.png) no-repeat;background-size:380px}
+#app.main.tab2 .bookClubUsing .list-item .visual span.icon1{background-position: -272px 0;width:54px;height:54px;}
+#app.main.tab2 .bookClubUsing .list-item .visual span.icon2{background-position: -325px 0;width:54px;height:54px;}
+#app.main.tab2 .bookClubUsing .list-item .visual span.icon3{background-position: 0 0;width:54px;height:54px;}
+#app.main.tab2 .aiReadCoaching .list-item .list-info .resultTip em,
+#app.main.tab2 .bookClubUsing .list-item .resultTip em{display:inline-block;position:relative;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjdEOTkxNTAwMUUwQjExRTlCOEU4REYwRjE0NTkwNkJBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjdEOTkxNTAxMUUwQjExRTlCOEU4REYwRjE0NTkwNkJBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N0Q5OTE0RkUxRTBCMTFFOUI4RThERjBGMTQ1OTA2QkEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6N0Q5OTE0RkYxRTBCMTFFOUI4RThERjBGMTQ1OTA2QkEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7EYrF4AAAADklEQVR42mL48b8DIMAABXICgLVky8IAAAAASUVORK5CYII=') bottom repeat-x;background-size:10px auto;padding-bottom:2px}
+#app.main.tab2 .bookClubUsing .list-item:last-child{padding-bottom:10px}
+
+/* 2020-05-12 신규/누적 열람수 그래프 변경 */
+#app.main.tab2 .rowReadBk{display:flex;padding: 18px 0 6px;position:relative;}
+#app.main.tab2 .rowReadBk:after{content:"";display:block;width:1px;height:30px;background:#e1e1e1;position:absolute;left:50%;top:50%;transform: translateY(-50%)}
+#app.main.tab2 .rowReadBk .chart-bx{display:flex;align-items:center;justify-content:center;width:50%;height:54px;}
+#app.main.tab2 .rowReadBk .chart-bx .vis{width:54px;height:54px;margin-right:15px}
+#app.main.tab2 .rowReadBk .chart-bx.no1{padding-right: 10px;}
+#app.main.tab2 .rowReadBk .chart-bx.no2{padding-left: 10px;}
+#app.main.tab2 .rowReadBk .chart-bx.no1 .vis{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/newbooknb@2x.png) no-repeat;background-size:100%;}
+#app.main.tab2 .rowReadBk .chart-bx.no2 .vis{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/oldbooknb@2x.png) no-repeat;background-size:100%;}
+#app.main.tab2 .rowReadBk .chart-bx .tit{display:block;font-size:14px;color:#302c2d;line-height:1.2;white-space: nowrap;}
+#app.main.tab2 .rowReadBk .chart-bx .percent{display:block;font-size:15px;line-height:1.2}
+#app.main.tab2 .rowReadBk .chart-bx.no1 .percent{color:#f49f4e}
+#app.main.tab2 .rowReadBk .chart-bx.no2 .percent{color:#302c2d}
+#app.main.tab2 .readBkMsg{display:flex;align-items:center;justify-content:center;height:24px;background:#e5e5e5;color:#636c77;text-align:center;font-size:13px;line-height:1.2;margin-top: 10px;}
+
+/* 독서케어 - 포트폴리오 */
+#app.main.tab2 .tag-container{background: #fff}
+#app.main.tab2 .portfolio-list{position:relative;}
+#app.main.tab2 .portfolio-list:before{content:"";display:block;position:absolute;left:40px;top:15px;width:1px;height:100%;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/dot_culLine.png) repeat-y; background-size:1px;z-index:5}
+#app.main.tab2 .portfolio-list .listHeading{border-bottom:0;padding:0 0 10px}
+#app.main.tab2 .portfolio-list .listHeading .date{padding-left:4px;font-size:12px;color:#636c77;letter-spacing: -0.3px}
+#app.main.tab2 .portfolio-list .rowBox{padding:15px;margin:0}
+#app.main.tab2 .portfolio-list .visual,
+#app.main.tab2 .portfolio-list .audio{border:solid 1px #f4f4f4;border-radius: 3px;overflow:hidden;position:relative;}
+#app.main.tab2 .portfolio-list .visual img,
+#app.main.tab2 .portfolio-list .audio img{display:block;width:100%;height:100%}
+#app.main.tab2 .portfolio-list .item-desc{text-align:center;padding-top:5px;width:100%;overflow: hidden;text-overflow: ellipsis}
+#app.main.tab2 .portfolio-list .list-item{position:relative;display:flex;justify-content: space-between;align-items: flex-start;padding:15px 17px;z-index:10}
+#app.main.tab2 .portfolio-list .item-date{position:sticky;position: -webkit-sticky;top:110px;display:flex;min-width:49px;min-height:49px;background:#c8c0b8;border-radius: 50px;color:#fff;font-size:18px;justify-content: center;align-items: center;margin-right:10px}
+#app.main.tab2 .portfolio-list .list-item:first-child .item-date{background:#fdb46f}
+
+
+.noMemberVisual1{display:inline-block;width:186px;margin:20px auto}
+.noMemberVisual2{display:inline-block;width:209px;margin:20px auto}
+.noMemberVisual3{display:inline-block;width:142px;margin:20px auto}
+.noMemberVisual4{display:inline-block;width:144px;margin:20px auto}
+.noMemberVisual5{display:inline-block;width:162px;margin:16px auto 13px}
+
+/* ai 검사여부 메세지 */
+.nowCheck_msg{display:none;text-align:center;font-size:15px;color:#ff6a52;line-height:1;padding:5px 0 10px}
+
+/**************************************
+** TAB3 - 학습코칭
+***************************************/
+#app.main.tab3 h1{width: 65px;height: 21px;}
+#app.main.tab3 .coachingTit{display:flex;justify-content:space-between;align-items:flex-end;}
+#app.main.tab3 .coachingTit .visual{width:65px;}
+#app.main.tab3 .coachingTit .complete .txt{color:#faab61;font-size:20px;letter-spacing: -.5px;}
+#app.main.tab3 .coachingTit .complete .percent{font-size:40px;font-weight:bold;color:#faab61;line-height:40px}
+#app.main.tab3 .coachingTit .complete .percent em{font-size:22px;line-height:40px}
+#app.main.tab3 .coachingCont{font-size:14px;line-height:20px;color:#302c2d;word-break: keep-all;padding:15px 0}
+
+/* 정답지 음원 */
+.answerTag{border-bottom:solid 1px #e5e5e5}
+.answerTag li{display:block;width:100%;text-align:center}
+.answerTag li a{display:block;padding:10px 0;}
+.answerBox{display:flex;flex-wrap: wrap;border-bottom:solid 1px #e5e5e5;padding: 0 10px 10px;}
+.answer-tit{padding:17px 17px 5px 17px;font-size:16px}
+.answerBox .box-item{width:50%;}
+.answerBox .box-item a{display:block;margin: 5px 3px 5px;border:solid 1px #e5e5e5;height:45px;line-height:43px;text-align:center;font-size:13px;color:#646c77;border-radius: 3px;}
+.answerBox .box-item a:active{border-color:#fdb46f;color:#fdb46f}
+.answerBox .box-item.act a{background:#fdb46f;color:#fff; border:solid 1px #fdb46f;}
+.result-con li{margin-bottom:10px;border-radius: 3px;border:solid 1px #e5e5e5;overflow: hidden}
+.audioList .answerBox{border-bottom:0}
+
+.together-tit{display:flex;padding-top:10px;}
+.together-tit .together-icon{display:block;position:relative;min-width:40px;width:40px;height:35px;margin-right:15px;}
+.together-tit .together-icon.no1{background:#fdbd39}
+.together-tit .together-icon.no2{background:#646c78}
+.together-tit .together-icon.no3{background:#fdbe37}
+.together-tit .together-icon.no4{background:#fd955a}
+.together-tit .together-icon em{display:inline-block;width:100%;padding:10px 0;font-size:12px;color:#fff;text-align:center}
+.together-tit .together-icon:before{content:"";display:block;position:absolute;bottom:-7px;left:0;border-style:solid;border-width:0 0 7px 20px;}
+.together-tit .together-icon:after{content:"";display:block;position:absolute;bottom:-7px;right:0;border-style:solid;border-width:0 20px 7px 0;}
+.together-tit .msg{display:block;flex:1 auto;font-size:12px;color:#636c77;line-height:18px;word-break: keep-all}
+.together-tit .together-icon.no1:before{border-color:transparent transparent transparent #fdbd39}
+.together-tit .together-icon.no1:after{border-color:transparent #fdbd39 transparent transparent}
+.together-tit .together-icon.no2:before{border-color:transparent transparent transparent #646c78}
+.together-tit .together-icon.no2:after{border-color:transparent #646c78 transparent transparent}
+.together-tit .together-icon.no3:before{border-color:transparent transparent transparent #fdbe37}
+.together-tit .together-icon.no3:after{border-color:transparent #fdbe37 transparent transparent}
+.together-tit .together-icon.no4:before{border-color:transparent transparent transparent #fd955a}
+.together-tit .together-icon.no4:after{border-color:transparent #fd955a transparent transparent}
+.together-msg{font-size:12px;line-height:18px;padding:15px 0;word-break: keep-all}
+.noUserMsgArea p{line-height:22px;font-size:14px;padding-top:5px}
+.noUserMsgArea em{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/dot_yellow_line.png) repeat-x;background-size:.2em}
+.noUserMsgArea sub{color:#f17a38}
+.noUserMsgArea .tit{display:inline-block;position:relative;font-size:15px;}
+.noUserMsgArea .tit:after{content:"";display:block;height:1px;width:100%;position:absolute;bottom:0;left:0;background:#ff6a52}
+#app.main.tab3 .msg_time{font-size:12px;}
+#app.main.tab3 .msg_time span{display:block;line-height:1.2}
+#app.main.tab3 .msg_time span.time{color:#f17a38}
+#app.main.tab3 .msg_time span.t_msg{color:#646c77}
+#app.main.tab3 .rowBox.ai .listHeading{padding:6px 0 12px}
+#app.main.tab3 .rowBox.ai .listHeading .tit.aiTit{display: block;padding-left:50px;position: relative;}
+#app.main.tab3 .rowBox.ai .listHeading .tit.aiTit:before{content:"AI";position:absolute;left:0;top: 50%;display: block;text-align: center;width:46px;height:46px;background:#508ccc;border-radius: 50px;font-size:23px;color:#fffefd;line-height:46px;transform: translateY(-50%);}
+#app.main.tab3 .rowBox.ai .listHeading .tit em{display:inline-block;padding-left:5px;line-height:1}
+#app.main.tab3 .rowBox.ai .listHeading .tit em{display:block;position:relative;margin-top:5px}
+#app.main.tab3 .rowBox.ai .listHeading.ai-on .tit em:after{content:"AI";display:block;position:absolute;right:-35px;top:2px;height:15px;line-height:4px;border:solid 1px #fd945a;padding:4px 7px;border-radius: 3px;color:#fd945a;font-size:13px}
+#app.main.tab3 .rowBox.ai .study_cate{display: inline-block;color:#302c2d;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/dot_yellow.png) bottom repeat-x;margin-left:5px}
+#app.main.tab3 .rowBox.ai .complete{display: inline-block;width:100%;line-height: 0;}
+#app.main.tab3 .rowBox.ai .complete .txt,#app.main.tab3 .rowBox.ai .complete .testStep{position:relative;display:inline-block;font-size: 18px;width:100%;color:#302c2d;padding-left: 28px;line-height: 0;}
+#app.main.tab3 .rowBox.ai .complete .txt em,#app.main.tab3 .rowBox.ai .complete .testStep em{font-size: 26px;padding-left: 7px;font-weight: bold;display: inline-block;height: 26px;line-height: 26px;vertical-align: top;position: relative;top: -2px;}
+#app.main.tab3 .rowBox.ai .complete .txt{display: flex;align-items: center;-webkit-align-items: center;}
+#app.main.tab3 .rowBox.ai .complete .txt:before{content:"";display:block;position:absolute;left:0;top:50%;transform:translateY(-50%);width:21px;height:21px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_ai-donut.png) no-repeat;background-size:100%;margin-right:5px}
+#app.main.tab3 .rowBox.ai .complete.off .txt{display: flex;align-items: center;-webkit-align-items: center;color:#b2aaa2;}
+#app.main.tab3 .rowBox.ai .complete.off .txt:before{content:"";display:block;position:absolute;left:0;top:50%;transform:translateY(-50%);width:21px;height:21px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_ai-donut-off.png) no-repeat;background-size:100%;margin-right:5px}
+#app.main.tab3 .rowBox.ai .complete .testStep:before{content:"";display:block;position:absolute;left:0;top:50%;transform:translateY(-50%);width:21px;height:21px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_ai-donut-off.png) no-repeat;background-size:100%;margin-right:5px}
+#app.main.tab3 .rowBox.ai .complete .testStep{color:#b2aaa2;display: flex;align-items: center;-webkit-align-items: center;}
+#app.main.tab3 .rowBox.ai .complete.on .testStep{color:#302c2d}
+#app.main.tab3 .rowBox.ai .complete.on .testStep:before{content:"";display:block;position:absolute;left:0;top:50%;transform:translateY(-50%);width:21px;height:21px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_ai-donut-on.png) no-repeat;background-size:100%;margin-right:5px;}
+#app.main.tab3 .rowBox.ai .btWrap .sl1{color:#508ccc;padding-bottom:5px}
+
+.ai_notiBn{display:block;position:sticky;top:99px;left:0;background:#bfb6b6;z-index:100}
+.notiTopLine{display:flex;justify-content:flex-end;height:37px;background:#cec5c5;}
+.notiTopLine .bnCloseBt{color:#fff;padding-right:20px;margin-right:17px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_closeBtnSm.png) right center no-repeat;background-size:12px}
+.ai_notiBn p{display:flex;justify-content:center;align-items:center;padding:15px 0;color:#fff;font-size:14px;}
+.ai_notiBn p:before{content:"";display:block;width:49px;height:50px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/img_aiBot.png) left center no-repeat;background-size:100%;margin-right:10px}
+.ai_notiBn p em{display:inline-block;position:relative;margin:0 4px}
+.ai_notiBn p em:after{content:"";display:block;position:absolute;bottom:1px;left:0;width:100%;height:1px;background:#fff;}
+
+/**************************************
+** TAB4 - 북클럽톡
+***************************************/
+#app.main.tab4{padding-top:86px}
+#app.main.tab4 h1{width: 87px;height: 20px;}
+.talkFriend{position:fixed;top:55px;left:0;width:100%;background:#cdc4c4;z-index:40}
+.talkFriend .btChildrenToggle{color:#fff;height: 30px;}
+.talkFriend .friendTopBx .btChildrenToggle{position:relative;z-index:60;font-size: 14px;padding-left: 15px;background: url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_dw.png) left 15px no-repeat;background-size:11px;height: 35px;float: left;}
+.talkFriend .friendTopBx .btChildrenToggle.on{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_up.png) left center no-repeat;background-size:11px;}
+.talkFriend .btFriendToggle{color:#fff;height:28px;}
+.talkFriend .friendTopBx{display: block;padding:0 17px;position:relative;z-index:50;background:#cdc4c4;height: 35px;overflow:hidden}
+.talkFriend .friendTopBx .btFriendToggle{position:relative;z-index:60;font-size: 13px;padding-right:15px;background: url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_dw.png) right 15px no-repeat;background-size:11px;height: 35px;float: right;}
+.talkFriend .friendTopBx .btFriendToggle.on{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_up.png) right center no-repeat;background-size:11px;}
+.friendToggleBx,.childListToggleBx{position:fixed;top:-100%;border-top:solid 1px #b4a9a9;transition: top 0.5s;z-index:40;background:#bfb6b6;width:100%}
+.friendToggleBx.on,.childListToggleBx.on{top: 87px;width:100%;background:#bfb6b6;z-index:40;transition: top 0.5s;}
+.friendToggleBx ul,.childListToggleBx ul{display:flex;flex-wrap: wrap;padding: 0 24px 15px;}
+.friendToggleBx ul li,.childListToggleBx ul li{width:25%;padding:3px 0;margin-top: 15px;}
+.friendToggleBx ul li span,.childListToggleBx ul li span{display:block}
+.friendToggleBx ul li .visual,.childListToggleBx ul li .visual{display:block;width: 49px;margin:0 auto;}
+.friendToggleBx ul li .name,.childListToggleBx ul li .name{color:#fff;font-size:11px;white-space: nowrap;text-align:center;padding-top:3px;overflow:hidden;text-overflow: ellipsis}
+
+body.up .talkFriend{top:55px;transition: top 0.3s;}
+body.down .talkFriend{top:-60px;transition: top 0.3s;}
+.talkWrap{}
+.talkWrap .timeline{position:relative;line-height:1;text-align:center;margin:20px 0}
+.talkWrap .timeline:before{content:"";display:block;position:absolute;top:50%;width:100%;height:1px;background:#a9b0bb;z-index:20;margin-top:1px}
+.talkWrap .timeline .date{display:inline-block;height:100%;background:#eee;position:relative;z-index:30;padding:0 5px;color:#a9b0bb;font-size:12px;}
+.msg-box{display:flex;padding:17px;width:100%}
+.msg-box .msg-fp{padding-right:5px;min-width:50px;max-width:50px;}
+.msg-box.client{display:flex;justify-content: flex-end;}
+.msg-box.client .msg-cont{background:#fd945a;}
+.msg-box.client .msg-cont .msg-txt{color:#fff;font-size:13px;}
+.msg-box.client .msg-close{text-align:right;color:#fd945a;font-size:13px;}
+.msg-box .timeStamp{text-align:right;font-size:13px;color:#a9b0bb;padding-top:5px}
+.msg-box .msg-close a{display:inline-block;padding-top:3px;color:#fd945a;}
+
+.msg-wrap{flex:1 auto}
+.msg-wrap .fp-name{display:block;font-size:13px;line-height:1;white-space: nowrap;padding-bottom:7px}
+.msg-wrap .msg-cont{position:relative;flex:1 auto;padding: 3px 10px 10px;box-shadow:  0 1px 0 0 rgba(35, 35, 35, 0.2);background:#fff;border-radius:3px;overflow:hidden;}
+.msg-wrap .msg-cont .msg-header{padding:10px 0;color:#ff6a52;text-decoration: underline;font-size:17px;}
+.msg-wrap .msg-cont .msg-txt{font-size:13px;word-break: keep-all;line-height:18px;color:#636c77;padding:10px 0}
+.msg-wrap .msg-cont .msg-txt p{padding:3px 0}
+.msg-wrap .msg-price{color:#7d63ba;font-size:20px;font-weight:300;padding-top:13px}
+
+.msg-img{position:relative;margin:10px 0;border:solid 1px #f4f4f4}
+.msg-btn button{display:block;width:100%;height:42px;border-radius: 42px;font-size:15px;margin:5px 0;}
+.msg-btn .talkBtnStyle1{border:solid 1px #a9b0bb;color:#508ccc}
+.msg-btn .talkBtnStyle2{display:flex;justify-content:center;align-items:center;height:42px;width:100%;background:#fdb46f;border:solid 1px #fdb46f;color:#fff;border-radius: 42px;font-size:15px;}
+.msg-btn .talkBtnStyle3{display:flex;justify-content:center;align-items:center;height:42px;width:100%;background:#fff;border:solid 1px #a9b0bb;color:#a9b0bb;border-radius: 42px;font-size:15px;}
+.msg-btn .talkBtnStyle3.active{color:#ff6a52}
+
+.msg-btList{padding-bottom:15px}
+.msg-wrap .msg-cont .msg-txt button.talkList-bt{display:block;width:100%;height:35px;border-bottom:solid 1px #e5e5e5;text-align:left;padding-left:35px;}
+.msg-wrap .msg-cont .msg-txt button.talkList-bt.type-movie{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_video.png) left center no-repeat;background-size:23px;}
+.msg-wrap .msg-cont .msg-txt button.talkList-bt.type-audio{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_headphon-talk.png) left center no-repeat;background-size:23px;}
+
+.msg-like{display:flex;justify-content:flex-end;}
+.msg-like .talk-like{height:30px;padding-right:35px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_like-off.png) right center no-repeat;background-size:29px;font-size:14px;color:#302c2d}
+.msg-like .talk-like.on{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_like-on.png) right center no-repeat;background-size:29px;}
+.msg-like .talk-like.on em{color:#ff6a52}
+
+.childList{position:fixed;right:17px;top:70%;width:48px;background:rgba(255,255,255,.7);padding:8px;border-radius: 3px;z-index:30;-webkit-transform: translateY(-50%);transform: translateY(-50%);box-shadow:  0 1px 0 0 rgba(35, 35, 35, 0.2);}
+.childList li{position:relative;padding-bottom:10px}
+.childList li:last-child{padding-bottom:0}
+.childList span{display:block}
+.childList .name{font-size:11px;text-align:center;}
+
+.msg-del{display:flex;justify-content: flex-end;padding-top:5px}
+.new_msg{position:absolute;left:-7px;top:-7px;width:17px;height:16px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/child_new-msg.png) center no-repeat;background-size:100%;}
+
+.bt.talkBt{display:inline-block;border-radius: 40px;font-size: 1em;margin: 3px 1px;height: 40px;line-height: 40px;padding: 0 12px;}
+.bt.talkBt.st-a{border:solid 1px #333;color:#333}
+.bt.talkBt.st-a:active{background:#333;color:#fff}
+.bt.talkBt.st-b{border:solid 1px #f14b60;color:#f14b60}
+.bt.talkBt.st-b:active{background:#e8e8e8;color:#fff}
+.bt.talkBt.st-c{border:solid 1px transparent;background:#bfbfbf;color:#fff;}
+.bt.talkBt.st-d{border:solid 1px transparent;background:#333;color:#fff;}
+.bt.talkBt.full{width:100%!important;text-align:center!important;margin:3px 0!important;}
+
+
+#app.main.tab4 .msg-txt span.color_red{color:red}
+#app.main.tab4 .msg-txt span.color_blue{color:blue}
+#app.main.tab4 .msg-txt span.color_green{color:green}
+#app.main.tab4 .msg-txt span.color_gray{color: #7a7a7a}
+#app.main.tab4 .msg-txt span.big{font-size:1.2rem}
+#app.main.tab4 .msg-txt span.cancel{text-decoration:line-through}
+#app.main.tab4 .msg-txt span.italic{font-style:italic}
+#app.main.tab4 .msg-txt span.underline{text-decoration:underline}
+#app.main.tab4 p.align_center{text-align:center}
+#app.main.tab4 .bt.comm{display:inline-block;padding:.7rem .1rem;margin:1rem;border:solid 1px #333;color:#333;border-radius:2rem;font-size:1rem}
+#app.main.tab4 .noMsg-wrap{text-align: center;  font-size: 13px;  padding: 15px 0;  background: rgba(255,255,255,.3);}
+.talkVideo-bx{width:100%}
+.talkVideo-bx .my-player{width:100%}
+.talkAudioPlayer button.talkAudioBtn1 {width: 40px;height: 40px;text-indent: -9999rem;background: url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_audio-play.png) no-repeat;background-size: 100%;}
+.talkAudioPlayer button.talkAudioBtn1.on{background: url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_audio-pause.png) no-repeat;background-size: 100%;}
+.talkAudioPlayer {display: flex;align-items: center;}
+.talkAudioPlayer .barWrap{flex: 1 auto;margin-left: 10px;}
+.talkAudioPlayer em.bar {display: block;width: 0;height: 5px;background: #fd945a;}
+
+.tabTalkList{padding-bottom:56px!important;}
+.tabTalkList h1{width: 83px;height: 20px;}
+.talkFrdList{background:#fff;}
+
+.category .boxTxt:before{content:"";display:inline-block;float:left;width:20px;height:20px;position:relative;top:4px;margin-right:7px}
+.category .boxTxt.icon1:before{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/playbook/icon_cate_st1.png) center no-repeat;background-size:100%}
+.category .boxTxt.icon2:before{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/playbook/icon_cate_st3.png) center no-repeat;background-size:100%}
+.category .boxTxt.icon3:before{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/playbook/icon_cate_st2.png) center no-repeat;background-size:100%}
+.category .cate-list{padding-top:10px}
+.category .list-item{padding:5px 18px}
+.category .list-item:nth-child(odd){padding-right:9px}
+.category .list-item:nth-child(even){padding-left:9px}
+.category .list-item .visual{position:relative;width:100%;border:solid 1px #f4f4f4;background:#f7f7f7}
+
+.category .boxTxt{padding:12px 17px;border-bottom:solid 1px #ededed;font-size:18px}
+.category .list-item .visual:after{content:"";display: block;width: 25%;height: 25%;border-radius: 50px;position: absolute;left: 50%;top: 50%;z-index: 10;transform: translateX(-50%) translateY(-50%);}
+.category .list-item .visual.audio:after{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/playbook/ico_type_Headphon.png) no-repeat;background-size:100%;}
+.category .list-item .visual.video:after{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/playbook/ico_type_play.png) no-repeat;background-size:100%;}
+
+
+.category .list-item .info{width:100%;padding:8px 0 5px}
+.category .list-item .info span{display:block;padding-bottom:3px;word-break: keep-all}
+.category .list-item .info .tit{font-size:15px;line-height:1.2; height: 2.4em; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;overflow: hidden; text-overflow: ellipsis;}
+.category .list-item .info .s_info{font-size:13px;}
+.category .list-item .info .price{font-size:15px}
+.category .list-item .info .price em{font-weight:bold}
+
+
+
+/**************************************
+** TAB5 - 북클럽TV
+***************************************/
+.tab5{display:block}
+#app.main.tab5 h1{width: 95px;height: 20px;}
+.movieWrap{margin:17px 17px 10px;}
+.topLine{border-bottom:solid 1px #e5e5e5}
+
+/**************************************
+** FOOTER
+***************************************/
+footer.foot{position:fixed;bottom:0;left:0;width:100%;height: 56px;background:#fff;z-index:100;border-top:solid 1px #ececec;}
+footer.foot ul{display:flex;justify-content: center;align-items: center;height:100%;padding-top:1px}
+footer.foot ul li{position:relative;width:20%;height:100%;}
+footer.foot ul li a{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding: 3px 0;margin-top: 2px;}
+footer.foot ul li .cate,footer.foot ul li .f_icon{display:block;text-align:center;width:100%;}
+footer.foot ul li .f_icon{display: block;width:50px;height: 50px;position:relative;top:1px}
+footer.foot ul li .f_icon.ico1{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/menu01_new.svg) center no-repeat;background-size:28px}
+footer.foot ul li .f_icon.ico2{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/book.svg) center no-repeat;background-size:30px}
+footer.foot ul li .f_icon.ico3{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/thinkbig.svg) center no-repeat;background-size:33px}
+footer.foot ul li .f_icon.ico4{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/menu04_new.svg) center no-repeat;background-size:28px}
+footer.foot ul li .f_icon.ico5{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/menu05_new.svg) center no-repeat;background-size:28px}
+footer.foot ul li .f_icon.ico6{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/smartall.svg) center no-repeat;background-size:28px}
+
+footer.foot ul li.on .f_icon.ico1{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/menu01_ov.svg) center no-repeat;background-size:28px}
+footer.foot ul li.on .f_icon.ico2{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/book_ov.svg) center no-repeat;background-size:30px}
+footer.foot ul li.on .f_icon.ico3{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/thinkbig_ov.svg) center no-repeat;background-size:33px}
+footer.foot ul li.on .f_icon.ico4{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/menu04_ov.svg) center no-repeat;background-size:28px}
+footer.foot ul li.on .f_icon.ico5{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/menu05_ov.svg) center no-repeat;background-size:28px}
+footer.foot ul li.on .f_icon.ico6{background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/smartall_ov.svg) center no-repeat;background-size:28px}
+
+footer.foot ul li .cate{font-size: 10px;color:#302c2d;padding-bottom:5px}
+footer.foot ul li.on .cate{color:#fd945a}
+footer.foot ul li.on:before{content:"";display:block;position:absolute;top:-2px;left:0;width:100%;height:2px;background:#fd945a}
+footer.foot ul li:last-child:after{display:none}
+footer.foot ul li .new{display:block;position:absolute;left: 50%;top: 50%;width:16px;height:16px;margin: -8px 0 0 -8px;background:url(http://down.wjthinkbig.com/bookclub/lounge2/img/v3/common/ico_new2.png) no-repeat;background-size:100%;z-index:10;transform: translateX(-15px) translateY(-15px);}
+
+
+@media only screen and (max-width:320px) {
+	.con_q_menu li span.txt{font-size:11px}
+	.main_slider .allEvent{font-size:10px}
+
+	#app.main.tab2 .readHistory .list-item .visual{width:100%;height:auto}
+	.read_icon{font-size:11px}
+	#app.main.tab2 .readHistory .list-item .info .tit{font-size:1em}
+	.movieWrap{margin:.5em .5em 10px }
+	.movieList{padding:0 .5em .5em}
+}

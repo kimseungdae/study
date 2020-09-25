@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>test</title>
+</head>
+<body>
+
+
+<div class="controller">
+	<button onclick="sjp.logFn()">오디오 로그 확인</button>
+	<div>
+		<input type="text" id="sec_txt">
+		<button onclick="sjp.moveTime()">타임라인 이동</button>
+	</div>
+</div>
+
+
+<textarea name="a_log" id="a_log" cols="30" rows="10" style="width:100%" readonly></textarea>
+
+<script>
+	/* ksd Player  ver.1.0*/
+/*    var audio = new Audio();
+    audio.src = '000000000009010973.mp3';
+    audio.controls = true;
+    audio.autoplay = true;
+    document.body.appendChild(audio);
+	var context = new webkitAudioContext();
+
+
+    var analyser = context.createAnalyser();
+    var source = context.createMediaElementSource(audio);
+    source.connect(analyser);
+    analyser.connect(context.destination);*/
+
+ rkxd
+
+
+    var sjp = sjp || {
+        data : {}, // init data
+		log : '',
+		init : function(){
+            let $ns = this.data.audio;
+            $ns = new Audio();
+            $ns.src = 'http://10.145.162.90:8080/test.wjthb';
+            $ns.controls = true;
+            $ns.autoplay = true;
+            $ns.defaultMuted = true;
+            this.data.audio = $ns;
+            document.body.appendChild($ns);
+		},
+
+		logFn: function(){
+            let $ns = this.data;
+
+            //buffer 길이 확인
+            this.log += "buffer Start: " + $ns.audio.buffered.start(0) + "buffer End: " + $ns.audio.buffered.end(0)+'\n';
+
+            //audio src
+            this.log += "audio src: " + $ns.audio.src;
+            document.getElementById("a_log").innerHTML = this.log;
+		},
+
+		/* timeLine 이동 */
+        moveTime: function(){
+            let $ns = this.data.audio;
+            const sec = document.getElementById('sec_txt').value;
+            console.log(sec);
+            $ns.currentTime = sec;
+		}
+	};
+
+    window.addEventListener('load', function(e) {
+        sjp.init();
+    }, false);
+
+</script>
+</body>
+</html>

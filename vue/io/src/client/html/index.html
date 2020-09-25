@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>io socket test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/assets/icon64.png">
+  <meta property="description" content="A complete example multiplayer .io web game implemented from scratch. Built with Javascript and Node.js. Open source on Github.">
+  <meta property="og:title" content="An example .io game">
+  <meta property="og:description" content="A complete example multiplayer .io web game implemented from scratch. Built with Javascript and Node.js. Open source on Github.">
+  <meta property="og:image" content="/assets/icon1200.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58664433-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-58664433-3');
+  </script>
+</head>
+<body>
+  <canvas id="game-canvas"></canvas>
+  <div id="play-menu" class="hidden">
+    <h1>io socket 스터디</h1>
+    <p>
+      자동으로 쏘는 미사일로 상대방을 맞추면 점수가 올라가고
+      <br />
+      이동은 마우스로 하삼!
+    </p>
+    <hr />
+    <input type="text" id="username-input" placeholder="닉네임" />
+    <button id="play-button">시작</button>
+  </div>
+  <div id="leaderboard" class="hidden">
+    <table>
+      <tr>
+        <th>이름</th>
+        <th>점수</th>
+      </tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+    </table>
+  </div>
+  <div id="disconnect-modal" class="hidden">
+    <div>
+      <h2>서버가 끈어졌 부렀당~ </h2>
+      <hr />
+      <button id="reconnect-button">다시 접속</button>
+    </div>
+  </div>
+</body>
+</html>

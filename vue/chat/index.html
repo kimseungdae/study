@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="Referrer" content="origin">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="woongjin thinkbig">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, viewport-fit=cover" />
+	<title>chat</title>
+	<style>
+		@charset "utf-8";
+		/**************************************
+		** CSS Reset
+		***************************************/
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+		big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+		dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+		canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time,
+		mark, audio, video {margin: 0;padding: 0;border: 0;vertical-align: baseline;-webkit-tap-highlight-color: rgba(0,0,0,0);background:transparent;line-height:1.2;font:inherit}
+		input, button, textarea, select {font-family:'NotoSans', 'Apple SD Gothic Neo', arial, sans-serif;vertical-align:middle;-webkit-appearance: none;-webkit-border-radius: 0;}
+
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+		body {position:relative;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;font-family:'NotoSans', 'Apple SD Gothic Neo', arial, sans-serif;font-weight:400;letter-spacing: -0.7px;word-wrap:break-word;color:#302c2d;}
+		ol, ul {list-style: none;}
+		blockquote, q {quotes: none;}
+		blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+		table {border-collapse: collapse;border-spacing: 0;}
+		img{max-width:100%;vertical-align:top;border:0px none}
+		select, input {vertical-align:middle}
+		textarea,
+		input[type=text],
+		input[type=tel],
+		input[type=password] {-webkit-appearance:none}
+		textarea:focus, input:focus{outline:0}
+		hr {display:none;border:0 none}
+		ol, ul, ul li{list-style:none}
+		em {font-style:normal}
+		menu li {list-style:none}
+		table {border-collapse:collapse;border-spacing:0}
+		a{cursor:pointer;margin:0;padding:0;background:transparent;color:#3e3a3a}
+		a:link, a:hover, a:visited, a:active, a:focus {text-decoration:none}
+		button {cursor:pointer;border:0px none;background-color:transparent;line-height:1}
+		*:focus {outline: none;}
+		*, *:before, *:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+		audio{position:fixed;left:-9999rem;visibility: hidden;height:1px;width:1px}
+		strong{font-weight:bold}
+		::placeholder {color: #cccccc;font-size:14px;font-weight:100;line-height:1}
+		input:disabled{background:#f1f1f1}
+
+
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body { font: 13px Helvetica, Arial; }
+		form { background: #fd945a; padding: 3px; position: fixed; bottom: 0; width: 100%;display:flex;}
+		form input{line-height:1.2;}
+		form input#m{ border: 0; flex:1 auto; margin-right: 0.5%; }
+		form input#u{ border: 0; width:80px; margin-right: 0.5%; }
+		form button { width: 90px; background: #fd563d; border: none; padding: 10px; font-weight:bold;color:#fff}
+		#messages { list-style-type: none; margin: 0; padding: 0; }
+		#messages li { padding: 5px 10px; }
+		#messages li:nth-child(odd) { background: #eee; }
+		#messages{padding-bottom:50px}
+	</style>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+        $(function () {
+            var socket = io();
+            $('form').submit(function(e){
+                e.preventDefault(); // prevents page reloading
+                socket.emit('chat message', $('#m').val(), $('#u').val());
+                $('#m').val('');
+                return false;
+            });
+
+            socket.on('init', function(obj, nms){
+                console.log(obj.msgList);
+                $('#messages').empty();
+                for(let idx in obj.msgList){
+                    $('#messages').append($('<li>').text(nms.names[idx]+' : ' +obj.msgList[idx]));
+                }
+                $(window).scrollTop($('#messages').height()+1000)
+            });
+
+            socket.on('chat message', function(msg, obj, nms){
+                console.log(obj.msgList);
+                $('#messages').empty();
+                for(let idx in obj.msgList){
+                    $('#messages').append($('<li>').text(nms.names[idx]+' : ' +obj.msgList[idx]));
+				}
+                $(window).scrollTop($('#messages').height()+1000)
+            });
+        });
+	</script>
+</head>
+<body>
+<ul id="messages"></ul>
+<form action="">
+	<input id="u" autocomplete="off" placeholder="ID입력"/>
+	<input id="m" autocomplete="off" placeholder="메세지 입력"/><button>입력</button>
+</form>
+</body>
+</html>
