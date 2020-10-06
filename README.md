@@ -16,4 +16,3 @@ vue study directory
 
 # 배움의 문서
 그때그때 생각나는거 배운거 적어놓음
-ttt
