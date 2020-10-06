@@ -1,1 +1,4 @@
 /.idea/
+/vf/node_modules/
+/vf/package-lock.json
+/vf/settings.json
