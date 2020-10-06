@@ -18,11 +18,6 @@ const routes = [
     path: '/keyword',
     name: 'keyword',
     component: () => import('../views/keyword.vue')
-  },
-  {
-    path: '/file',
-    name: 'file',
-    component: () => import('../views/file.vue')
   }
 ]
 
