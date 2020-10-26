@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" >
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/mypage.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div class="skip-navi">
+			<a href="#gnb">왼쪽 메뉴</a>
+			<a href="#contents">컨텐츠</a>
+			<a href="#rightSide">상품 주문 영역</a>
+		</div>
+		<!-- //skip navi -->
+		<div id="wrap"><!-- 2018-05-23 -->
+			<header id="gnb">
+				<aside id="rightSide">
+					<img src="../../images/common/@right_side.png" alt="">
+				</aside>
+				<nav class="gnb-style01">
+					<img src="../../images/common/@gnb.png" alt="">
+				</nav>
+				<nav class="gnb-style02">
+					<img src="../../images/common/@gnb02.png" alt="">
+				</nav>
+			</header>
+			<!-- 2018-05-23 -->
+			<div class="location-container">
+				<div class="location-contents">
+					<h2 class="title01">마이페이지</h2>
+					<p class="location">
+						<span>Home</span><span>마이페이지</span><span>주문정보</span><strong title="현재 위치">주문/배송조회</strong>
+					</p>
+				</div>
+			</div>
+			<!-- //2018-05-23 -->
+			<acrticle id="container">
+				<section id="contents">
+					<!-- 2018-05-23 삭제
+					<h2 class="title01">마이페이지</h2>
+					<p class="location">
+						<span>Home</span><span>마이페이지</span><span>주문정보</span><strong title="현재 위치">주문/배송조회</strong>
+					</p> //2018-05-23 삭제 -->
+					<h3 class="title02">주문/배송조회</h3>
+					<!-- 2018-05-24 -->
+					<ul class="text-list02">
+						<li>최근 3개월간 회원님이 주문하신 내역입니다. 이전 주문내역을 확인하시려면 '이전 주문보기' 버튼을 클릭해주세요.</li>
+						<li>최근 1년까지의 주문 현황만 조회가 가능합니다.</li>
+						<li>상품별 결제금액은 주문 시 총 결제금액과 다를 수 있으며, 주문번호를 클릭 하시면 주문/배송 내역의 상세정보를 보실 수 있습니다.</li>
+						<li>배송완료 후 구매확정 하시면 마일리지가 적립되며 반품 및 교환이 불가합니다.</li>
+						<li>배송완료 7일 이후에 자동으로 구매확정, 마일리지가 적립되며 반품 및 교환이 불가합니다.</li>
+						<li>주문 취소/교환/반품 신청 및 내역확인은 [취소/교환/반품 조회] 메뉴를 이용해주세요.</li>
+						<li class="text-color01">매장 배송상품은 일반배송상품과 다른 송장번호로 발송됩니다. 사은품은 주문 상품과 별도로 배송될 수 있습니다.</li>
+						<li class="text-color01">매장배송/매장주문 상품인 경우 주말에 취소/반품/교환에 대한 클레임 처리가 불가능합니다. <br> CS 영업시간(월~금 : am 9 ~ pm6)에 클레임 처리가 가능합니다.</li><!-- 2018-07-31 -->
+					</ul>
+					<!-- //2018-05-24 -->
+					<dl class="period-wrap period-type02">
+						<!-- 기간달력 -->
+						<dt>조회기간</dt>
+						<dd>
+							<a href="#" class="btn-style01 d_radio_select on"><span>3개월</span></a>
+							<a href="#" class="btn-style01 d_radio_select"><span>6개월</span></a>
+							<input type="text" class="calendar" id="calendarFrom"><input type="text" class="calendar" id="calendarTo">
+							<a href="#" class="btn-style05">검색</a>
+							<p class="calendar-info-txt">시작일로부터 최대 1년단위로 조회가 가능합니다.</p><!-- 2018-08-13 -->
+						</dd>
+					</dl>
+					<!-- 2018-05-24 -->
+					<div class="previous-order-box">
+						<em>2018년 8월 20일 이전 주문은</em> ‘이전 주문보기’ 버튼 클릭 시 바로 확인 가능합니다. <a href="#" class="btn-style09"><span>이전 주문보기</span></a>
+					</div>
+					<!-- //2018-05-24 -->
+					<!-- 2018-05-16 -->
+					<div class="justify-wrap justify-type04">
+						<h3 class="title05 left">주문내역 <span class="list-num">전체(<em class="num">99</em>건)</span></h3>
+						<a href="#" class="btn-style07 right"><span>1:1 고객상담</span></a><!-- 2018-05-24 -->
+					</div>
+					<!-- //2018-05-16 -->
+					<div class="order-history-wrap">
+						<div class="board-list02">
+							<table>
+								<caption>주문/배송조회 리스트</caption>
+								<colgroup>
+									<col>
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<td colspan="5" class="no-result">주문내역이 없습니다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="board-list02">
+							<table>
+								<caption>주문/배송조회 리스트</caption>
+								<colgroup>
+									<col>
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="5" class="order-info-header">
+											<ul>
+												<li>매장주문</li>
+												<li><span>주문일</span>2018-03-19 09:53</li>
+												<li><span>주문번호</span><a href="#">OD1521191087718</a></li>
+											</ul>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tleft02">
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="http://img.fnf.co.kr/PARTS/X/18S/thumbnail/DWRT6N831-MG-l-16623200-m.png" alt="상품이미지"></a></div>
+												<div class="product-info-text">
+													<div class="product-info-box">
+														<div class="product-more-info">
+															<span class="text-color01">[예약주문]</span>
+														</div>
+														<p class="product-name"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션  반팔 티셔츠</a></p>
+														<div class="product-price">
+															<span>199,000원</span>
+														</div>
+													</div>
+													<div class="product-option">
+														<span>BL / 90</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td><span class="text-quantity">수량</span><span class="text-quantity">1</span></td>
+										<td>9,999,000원</td>
+										<td><p class="text-status">입금대기</p><a href="#" class="btn-style01"><span>결제수단변경</span></a></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="board-list02">
+							<table>
+								<caption>주문/배송조회 리스트</caption>
+								<colgroup>
+									<col>
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="5" class="order-info-header">
+											<ul>
+												<li>일반주문</li>
+												<li><span>주문일</span>2018-03-19 09:53</li>
+												<li><span>주문번호</span><a href="#">OD1521191087718</a></li>
+											</ul>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tleft02">
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="../../images/thumb/@order_product01.png" alt="상품이미지"></a></div>
+												<div class="product-info-text">
+													<div class="product-info-box">
+														<!-- 2018-05-24 -->
+														<div class="product-more-info">
+															<span class="text-color01">[매장배송]</span>
+														</div>
+														<!-- //2018-05-24 -->
+														<p class="product-name"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션  반팔 티셔츠</a></p>
+														<div class="product-price">
+															<span>199,000원</span>
+														</div>
+													</div>
+													<div class="product-option">
+														<span>백팩 : BL / 90 , 신주머니 : NY /  7L</span><!-- 2018-05-28 -->
+													</div>
+												</div>
+											</div>
+											<p class="product-info-text02"><span>매장배송/매장주문 상품인 경우 주말에 취소/반품/교환에 대한 클레임 처리가 불가능합니다.<br>CS 영업시간(월~금 : am 9 ~ pm6)에 클레임 처리가 가능합니다.</span></p><!-- 2018-07-31 -->
+										</td>
+										<td><span class="text-quantity">수량</span><span class="text-quantity">1</span></td>
+										<td>9,999,000원</td>
+										<td><p class="text-status">결제완료</p></td>
+										<td><a href="#" class="btn-style01"><span>주문취소</span></a></td>
+									</tr>
+									<!-- 2018-05-28 -->
+									<tr>
+										<td class="tleft02">
+											<div class="product-info set">
+												<div class="product-set">세트상품</div>
+												<div class="product-info-img"><a href="#"><img src="http://img.fnf.co.kr/PARTS/X/18S/thumbnail/DWRT6N831-MG-l-16623200-m.png" alt="상품이미지"></a></div>
+												<div class="product-info-text">
+													<div class="product-info-box">
+														<div class="product-more-info">
+															<span class="text-color01">[추가구성]</span>
+														</div>
+														<p class="product-name"><a href="#">키즈팡팡신주머니</a></p>
+														<div class="product-price">
+															<span>199,000원</span>
+														</div>
+													</div>
+													<div class="product-option">
+														<span>BL / 90</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td><span class="text-quantity">수량</span><span class="text-quantity">1</span></td>
+										<td>9,999,000원</td>
+										<td><p class="text-status">결제완료</p></td>
+										<td><a href="#" class="btn-style01"><span>주문취소</span></a></td>
+									</tr>
+									<!-- //2018-05-28 -->
+								</tbody>
+							</table>
+						</div>
+						<div class="board-list02">
+							<table>
+								<caption>주문/배송조회 리스트</caption>
+								<colgroup>
+									<col>
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="5" class="order-info-header">
+											<ul>
+												<li>일반주문</li>
+												<li><span>주문일</span>2018-03-19 09:53</li>
+												<li><span>주문번호</span><a href="#">OD1521191087718</a></li>
+											</ul>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tleft02">
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="../../images/thumb/@order_product01.png" alt="상품이미지"></a></div>
+												<div class="product-info-text">
+													<div class="product-info-box">
+														<p class="product-name"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션  반팔 티셔츠</a></p>
+														<div class="product-price">
+															<span>199,000원</span>
+														</div>
+													</div>
+													<div class="product-option">
+														<span>BL / 90</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td><span class="text-quantity">수량</span><span class="text-quantity">1</span></td>
+										<td>9,999,000원</td>
+										<td><p class="text-status">주문취소</p></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="board-list02">
+							<table>
+								<caption>주문/배송조회 리스트</caption>
+								<colgroup>
+									<col>
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="5" class="order-info-header">
+											<ul>
+												<li>일반주문</li>
+												<li><span>주문일</span>2018-03-19 09:53</li>
+												<li><span>주문번호</span><a href="#">OD1521191087718</a></li>
+											</ul>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tleft02">
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="../../images/thumb/@order_product01.png" alt="상품이미지"></a></div>
+												<div class="product-info-text">
+													<div class="product-info-box">
+														<p class="product-name"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션  반팔 티셔츠</a></p>
+														<div class="product-price">
+															<span>199,000원</span>
+														</div>
+													</div>
+													<div class="product-option">
+														<span>BL / 90</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td><span class="text-quantity">수량</span><span class="text-quantity">1</span></td>
+										<td>9,999,000원</td>
+										<td><p class="text-status">배송준비</p></td>
+										<td><a href="#" class="btn-style01"><span>주문취소</span></a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="board-list02">
+							<table>
+								<caption>주문/배송조회 리스트</caption>
+								<colgroup>
+									<col>
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="5" class="order-info-header">
+											<ul>
+												<li>일반주문</li>
+												<li><span>주문일</span>2018-03-19 09:53</li>
+												<li><span>주문번호</span><a href="#">OD1521191087718</a></li>
+											</ul>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tleft02">
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="../../images/thumb/@order_product01.png" alt="상품이미지"></a></div>
+												<div class="product-info-text">
+													<div class="product-info-box">
+														<p class="product-name"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션  반팔 티셔츠</a></p>
+														<div class="product-price">
+															<span>199,000원</span>
+														</div>
+													</div>
+													<div class="product-option">
+														<span>BL / 90</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td><span class="text-quantity">수량</span><span class="text-quantity">1</span></td>
+										<td>9,999,000원</td>
+										<td><p class="text-status">배송완료</p></td>
+										<td><a href="#" class="btn-style01"><span>배송추적</span></a><a href="#" class="btn-style01"><span>상품수령완료</span></a><a href="#" class="btn-style01"><span>리뷰작성</span></a></td><!-- 2018-05-16 -->
+									</tr>
+									<tr>
+										<td class="tleft02">
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="../../images/thumb/@order_product01.png" alt="상품이미지"></a></div>
+												<div class="product-info-text">
+													<div class="product-info-box">
+														<p class="product-name"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션  반팔 티셔츠</a></p>
+														<div class="product-price">
+															<span>199,000원</span>
+														</div>
+													</div>
+													<div class="product-option">
+														<span>BL / 90</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td><span class="text-quantity">수량</span><span class="text-quantity">1</span></td>
+										<td>9,999,000원</td>
+										<td><p class="text-status">배송완료</p></td>
+										<td><a href="#" class="btn-style01"><span>배송추적</span></a><a href="#" class="btn-style01"><span>상품수령완료</span></a><a href="#" class="btn-style01"><span>리뷰작성</span></a></td><!-- 2018-05-16 -->
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="board-list02">
+							<table>
+								<caption>주문/배송조회 리스트</caption>
+								<colgroup>
+									<col>
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="5" class="order-info-header">
+											<ul>
+												<li>일반주문</li>
+												<li><span>주문일</span>2018-03-19 09:53</li>
+												<li><span>주문번호</span><a href="#">OD1521191087718</a></li>
+											</ul>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tleft02">
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="../../images/thumb/@order_product01.png" alt="상품이미지"></a></div>
+												<div class="product-info-text">
+													<div class="product-info-box">
+														<p class="product-name"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션  반팔 티셔츠</a></p>
+														<div class="product-price">
+															<span>199,000원</span>
+														</div>
+													</div>
+													<div class="product-option">
+														<span>BL / 90</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td><span class="text-quantity">수량</span><span class="text-quantity">99</span></td>
+										<td>9,999,000원</td>
+										<td><p class="text-status">배송완료</p></td>
+										<td><a href="#" class="btn-style01"><span>배송추적</span></a><a href="#" class="btn-style01"><span>교환신청</span></a><a href="#" class="btn-style01"><span>반품신청</span></a><a href="#" class="btn-style01"><span>구매확정</span></a><a href="#" class="btn-style01"><span>리뷰작성</span></a></td><!-- 2018-05-16 -->
+									</tr>
+									<!-- 2018-07-25 -->
+									<tr>
+										<td colspan="5" class="tleft02">
+											<div class="product-info set gift">
+												<div class="product-info-img"><img src="../../images/thumb/@gift01.png" alt="주문사은품이미지"></div>
+												<div class="product-info-text">
+													<div class="product-info-box">
+														<div class="product-more-info">
+															<span class="text-color01">[주문사은품]</span>
+														</div>
+														<p class="product-name"><a href="#">주문 10만원 이상 사은품</a></p>
+														<div class="product-price">
+															<span>0원</span>
+														</div>
+													</div>
+													<div class="product-option">
+														<span>BL / 90</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<!-- //2018-07-25 -->
+								</tbody>
+							</table>
+						</div>
+						<div class="board-list02">
+							<table>
+								<caption>주문/배송조회 리스트</caption>
+								<colgroup>
+									<col>
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+									<col style="width:150px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th colspan="5" class="order-info-header">
+											<ul>
+												<li>일반주문</li>
+												<li><span>주문일</span>2018-03-19 09:53</li>
+												<li><span>주문번호</span><a href="#">OD1521191087718</a></li>
+											</ul>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="tleft02">
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="../../images/thumb/@order_product01.png" alt="상품이미지"></a></div>
+												<div class="product-info-text">
+													<div class="product-info-box">
+														<p class="product-name"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션  반팔 티셔츠</a></p>
+														<div class="product-price">
+															<span>199,000원</span>
+														</div>
+													</div>
+													<div class="product-option">
+														<span>BL / 90</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td><span class="text-quantity">수량</span><span class="text-quantity">99</span></td>
+										<td>90,000원</td>
+										<td><p class="text-status">배송완료</p></td>
+										<td><a href="#" class="btn-style01"><span>리뷰작성</span></a></td>
+									</tr>
+									<tr>
+										<!-- 주문 사은품 -->
+										<td colspan="5" class="tleft02">
+											<div class="order-gift-box">
+												<div class="order-gift-info">
+													<img src="../../images/order/@img_order_gift.png" alt="">
+													<div class="order-gift-text">
+														<span>10만원 구입 사은품<br>2018.03.23 ~ 2018.04.23</span>
+													</div>
+												</div>
+												<div class="product-info">
+													<div class="product-info-img"><img src="http://img.fnf.co.kr/PARTS/X/18S/thumbnail/DWRT6N831-MG-l-16623200-m.png" alt="사은품이미지"></div>
+													<div class="product-info-text">
+														<p class="product-name">하이넥 베스트다운 사은품 Best Seller 1st </p>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="page">
+						<a href="#" class="first" title="첫 페이지">첫 페이지</a><a href="#" class="prev" title="이전 페이지">이전 페이지</a><span>
+							<strong title="현재 페이지">1</strong><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a>
+						</span><a href="#" class="next" title="다음 페이지">다음 페이지</a><a href="#" class="last" title="마지막 페이지">마지막 페이지</a>
+					</div>
+					<h3 class="title06">주문배송 절차 안내</h3><!-- 2018-05-24 -->
+					<!-- 2018-05-24 삭제
+					<div class="justify-wrap justify-type03">
+						<h3 class="title06 left">주문배송 절차 안내</h3>
+						<a href="#" class="btn-style07 right"><span>1:1 고객상담</span></a>
+					</div> //2018-05-24 삭제-->
+					<div class="order-status-step">
+						<ul>
+							<li>
+								<img src="../../images/mypage/order_status_step01.png" alt="입금대기" />
+								<strong>입금대기</strong>
+								<p>가상계좌 결제 후 입금확인이 완료되지<br /> 않은 상태입니다.<br />주문 후 1일 이내 입금하셔야 합니다.</p><!-- 2018-06-19 text -->
+							</li>
+							<li>
+								<img src="../../images/mypage/order_status_step02.png" alt="결제완료" />
+								<strong>결제완료</strong>
+								<p>디스커버리에서 주문정보를<br />확인하기 전 단계입니다.</p>
+							</li>
+							<li>
+								<img src="../../images/mypage/order_status_step03.png" alt="배송준비" />
+								<strong>배송준비</strong>
+								<p>디스커버리에서 주문정보를 확인하고<br />배송을 준비중입니다.</p>
+							</li>
+							<li>
+								<img src="../../images/mypage/order_status_step04.png" alt="배송중" />
+								<strong>배송중</strong>
+								<p>디스커버리에서 주문상품이 발송되어<br />고객님께 배송중입니다.</p>
+							</li>
+							<li>
+								<img src="../../images/mypage/order_status_step05.png" alt="배송완료" />
+								<strong>배송완료</strong>
+								<p>상품수령하신 후 구매확정을<br />선택하시면 거래가 종료됩니다.</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</acrticle>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/member.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/iscroll.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<article class="webview-pop-wrap">
+			<section class="webview-pop-cont">
+				<h1 class="webview-title01 d_fixed"><span>아이디/비밀번호 찾기</span></h1>
+				<div class="cont-box-wrap">
+					<div class="certification-wrap d_tab02">
+						<ul class="tab01">
+							<li class="d_tab02_select on"><a href="#">아이디 찾기</a></li>
+							<li class="d_tab02_select"><a href="#">비밀번호 찾기</a></li>
+						</ul>
+						<!-- 아이디 찾기 -->
+						<div class="certification-cont d_tab02_cont" style="display:block;">
+							<ul class="certification-list">
+								<li><a href="#layerId" class="certification01 d_layer_open">휴대폰 인증</a></li>
+								<li><a href="#layerIdPassword" class="certification02 d_layer_open">아이핀 인증</a></li>
+							</ul>
+						</div>
+						<!-- //아이디 찾기 -->
+						<!-- 비밀번호 찾기 -->
+						<div class="certification-cont d_tab02_cont">
+							<ul class="certification-list">
+								<li><a href="#layerIdPassword02" class="certification01 d_layer_open">휴대폰 인증</a></li>
+								<li><a href="#" class="certification02">아이핀 인증</a></li>
+							</ul>
+						</div>
+						<!-- //비밀번호 찾기 -->
+						<p class="text-cs-info"><strong>고객센터</strong><strong><a href="tel:080-820-8802">080.820.8802</a></strong><span>평일 오전 9시 ~ 오후 6시 (토/일/공휴일 휴무)</span></p>
+						<ul class="text-list01">
+							<li>휴대폰 인증:<br />고객님 명의의 휴대폰 인증을 통해 본인임을 확인합니다.</li>
+							<li>아이핀(i-PIN) 인증:<br />아이핀으로 회원가입 하신 경우, 아이핀 인증을 통해 본인임을 확인합니다.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<div class="webview-pop-close d_fixed">
+				<button type="button">닫기</button>
+			</div>
+		</article>
+
+		<!-- 아이디 찾기 팝업 -->
+		<div id="layerId" class="layer-popup">
+			<div class="layer-popup-cont"  tabindex="0">
+				<div class="layer-popup-title"><span>아이디 찾기</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt02">
+							<p class="layer-txt">고객님께서 등록하신 아이디입니다.</p>
+							<div class="my-info-box">
+								<span>아이디 : <strong>abcd**</strong></span>
+								<span>가입일 : <strong>2018-03-15</strong></span>
+							</div>
+							<div class="btn-wrap01 btn-wrap-type02">
+								<span><a href="#" class="btn-style09"><span>로그인</span></a><a href="#" class="btn-style01"><span>비밀번호 찾기</span></a></span>
+							</div>
+							<div class="layer-popup-footer">
+								<p><strong>080-820–8802</strong> 평일 오전 9시 ~ 오후 6시 (토/일/공휴일 휴무)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!-- //아이디 찾기 팝업 -->
+
+		<!-- 아이디/비밀번호 찾기 -->
+		<div id="layerIdPassword" class="layer-popup">
+			<div class="layer-popup-cont"  tabindex="0">
+				<div class="layer-popup-title"><span>아이디/비밀번호 찾기</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt02">
+							<p class="layer-txt col-type02">일치하는 회원 정보가 없습니다.<br />회원 가입하시겠습니까?</p>
+							<div class="btn-wrap01 btn-wrap-type02">
+								<span><a href="#" class="btn-style09"><span>취소</span></a><a href="#" class="btn-style01"><span>확인</span></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!-- //아이디/비밀번호 찾기 -->
+		<div id="layerIdPassword02" class="layer-popup">
+			<div class="layer-popup-cont"  tabindex="0">
+				<div class="layer-popup-title"><span>비밀번호 변경</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt02">
+
+								<div class="login-wrap">
+									<div class="login-cont">
+										<div class="complete-msg-wrap">
+											<p class="txt-complete-msg"><em>새로운 비밀번호를 입력해 주세요.</em></p>
+											<p>영문, 숫자, 특수문자(!,@#$%^&amp;*)를<br />두가지 이상 혼용하여 8~12자 이내로 입력해야 합니다.</p>
+										</div>
+										<input type="password" title="비밀번호 입력창" placeholder="비밀번호">
+										<input type="password" title="비밀번호 입력창" placeholder="비밀번호 확인">
+										<p class="error-msg" style="display:block;">비밀번호가 일치하지 않습니다.</p>
+									</div>
+								</div>
+								<div class="btn-wrap01">
+									<a href="#layerPassword" class="btn-style07 d_layer_open"><span>확인</span></a>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+		<div id="layerPassword" class="layer-popup">
+			<div class="layer-popup-cont"  tabindex="0">
+				<div class="layer-popup-title"><span>비밀번호 변경</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt02">
+							<p class="layer-txt col-type02">새로운 비밀번호로 변경되었습니다.<br />확인 버튼을 누르시면 로그인 페이지로 이동합니다.</p>
+							<div class="btn-wrap01 btn-wrap-type02">
+								<a href="#" class="btn-style01"><span>확인</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

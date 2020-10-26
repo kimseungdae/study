@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/iscroll.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div id="skipNavi" class="skip-navi">
+			<a href="#contents">본문 바로가기</a>
+		</div>
+		<!-- //skip navi -->
+		<header>
+			<div id="gnb" class="d_fixed">
+				<h1 class="logo"><a href="#">Discovery EXPEDITION</a></h1>
+				<div class="all-menu">
+					<button type="button" class="all-menu-open">전체메뉴 열기</button>
+				</div>
+				<div class="prev-link">
+					<a href="#">이전 페이지 이동</a>
+				</div>
+				<div class="search-link">
+					<a href="#layerSearch" class="d_layer_open">검색</a>
+				</div>
+				<div class="cart-link">
+					<a href="#">장바구니<span>99</span>개로 이동</a>
+				</div>
+			</div>
+		</header>
+		<acrticle id="container">
+			<section id="contents">
+				<!-- 2018-06-29 -->
+				<div class="input-btn-box-wrap">
+					<input type="text" placeholder="검색어를 입력하세요.">
+					<button type="button" class="btn-style01"><span>검색</span></button>
+				</div>
+				<span class="error-msg" style="display:block;">검색어를 입력하신 후 검색 버튼을 눌러주세요.</span>
+				<!-- //2018-06-29 -->
+				<div class="search-none">
+					<p><strong>‘바람막이’</strong>에 대한 검색결과가 없습니다.<br>다른 검색어를 입력하시거나 철자, 띄어쓰기를<br>확인해보세요.</p>
+				</div>
+				<h3 class="title02">추천상품<span class="sub-title01">이 상품 을 구매하신 분들이 많이 본 상품입니다!</span></h3>
+				<div class="item-list06">
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="item-img"><a href="http://www.naver.com"><img src="../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+								<div class="item-info">
+									<p class="txt01"><del>99,000원</del><strong>99,000원</strong></p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="item-img"><a href="#"><img src="../../images/thumb/../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+								<div class="item-info">
+									<p class="txt01"><strong>99,000원</strong></p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="item-img"><a href="#"><img src="../../images/thumb/../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+								<div class="item-info">
+									<p class="txt01"><strong>99,000원</strong></p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="item-img"><a href="#"><img src="../../images/thumb/../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+								<div class="item-info">
+									<p class="txt01"><strong>99,000원</strong></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<script>
+
+					$('.item-list06').each(function(){
+						var $this = $(this).find('.swiper-container');
+						var mainItemList02 = new Swiper($this, {
+							slidesPerView: 'auto',
+							freeMode: true,
+							spaceBetween: 5
+						});
+					});
+				</script>
+			</section>
+		</acrticle>
+
+		<!-- 사이즈 팝업 -->
+		<div id="layerPop01" class="layer-popup layer-type02">
+			<div class="layer-popup-cont"  tabindex="0">
+				<div class="layer-popup-title"><span>SIZE</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt01">
+							<ul class="size-select-list">
+								<li><del>XS (품절)</del></li>
+								<li>S</li>
+								<li>M</li>
+								<li><del>L (품절)</del></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!-- //사이즈 팝업 -->
+
+		<!-- filter 팝업 -->
+		<div id="layerFilter" class="layer-popup layer-type02">
+			<div class="layer-popup-cont layer-popup-cont-btn d_dropdown_cont">
+				<div class="layer-popup-title"><span>상세검색</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt01">
+							<div class="filter-search">
+								<table>
+									<caption>FILTER - 사이즈, 색상, 가격</caption>
+									<colgroup>
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>사이즈</th>
+										</tr>
+										<tr>
+											<td>
+												<ul class="filter-list01">
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>S</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>M</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>L</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>XL</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>XXL</span></button>
+													</li>
+												</ul>
+												<ul class="filter-list01">
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>95</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>100</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>105</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>110</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>115</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>120</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>125</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>130</span></button>
+													</li>
+													<li>
+														<button type="button" class="filter-size d_icon_toggle"><span>135</span></button>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th>색상</th>
+										</tr>
+										<tr>
+											<td>
+												<ul class="filter-list02">
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRWH.png" alt="WHITE"></button>
+														<span>WHITE</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle on"><img src="../../images/common/CRBG.png" alt="BEIGE"></button>
+														<span>BEIGE</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRBK.png" alt="BLACK"></button>
+														<span>BLACK</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRGR.png" alt="GRAY"></button>
+														<span>GRAY</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRNY.png" alt="NAVY"></button>
+														<span>NAVY</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle on"><img src="../../images/common/CRBL.png" alt="BLUE"></button>
+														<span>BLUE</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRGO.png" alt="GOLD"></button>
+														<span>GOLD</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRSI.png" alt="SILVER"></button>
+														<span>SILVER</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRMU.png" alt="MULTI"></button>
+														<span>MULTI</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRGN.png" alt="GREEN"></button>
+														<span>GREEN</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRYE.png" alt="YELLOW"></button>
+														<span>YELLOW</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRBR.png" alt="BROWN"></button>
+														<span>BROWN</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRRD.png" alt="RED"></button>
+														<span>RED</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CROR.png" alt="ORANGE"></button>
+														<span>ORANGE</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRPK.png" alt="PINK"></button>
+														<span>PINK</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CRVO.png" alt="VIOLET"></button>
+														<span>VIOLET</span>
+													</li>
+													<li>
+														<button type="button" class="filter-color d_icon_toggle"><img src="../../images/common/CROH.png" alt="O.HEATHER"></button>
+														<span>O.HEATHER</span>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th>가격</th>
+										</tr>
+										<tr>
+											<td>
+												<div class="filter-price">
+													<div class="filter-price-range">
+														<div id="slider-range"></div>
+													</div>
+													<div class="filter-price-view">
+														<input type="number" class="input-style01" id="amountStart" readonly="readonly"> 만원 ~
+														<input type="number" class="input-style01" id="amountEnd" readonly="readonly"> 만원
+													</div>
+													<script>
+														$( function() {
+															$( "#slider-range" ).slider({
+																range: true,
+																min: 0,
+																max: 300,
+																step: 5,
+																values: [ 0, 300 ],
+																slide: function( event, ui ) {
+																	$('#amountStart').val(+ ui.values[ 0 ]);
+																	$('#amountEnd').val(+ ui.values[ 1 ]);
+																}
+															});
+															$('#amountStart').val($('#slider-range').slider('values', 0 ));
+															$('#amountEnd').val($('#slider-range').slider('values', 1 ));
+														} );
+													</script>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-fixed-wrap01">
+					<div class="btn-fixed-cnt">
+						<span>
+							<a href="#" class="btn-style06"><span>초기화</span></a><a href="#" class="btn-style05"><span>검색</span></a>
+						</span>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!-- // filter 팝업 -->
+
+		<!-- 검색 팝업 -->
+		<div id="layerSearch" class="layer-popup layer-type03">
+			<div class="layer-popup-cont layer-popup-search" tabindex="0">
+				<div class="layer-popup-box">
+					<div class="layer-search-input">
+						<div>
+							<input type="text"><button type="button">검색</button>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close layer-popup-close02">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!-- //검색 팝업 -->
+	</body>
+</html>

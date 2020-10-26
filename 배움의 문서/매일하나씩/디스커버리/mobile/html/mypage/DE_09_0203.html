@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/mypage.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div id="skipNavi" class="skip-navi">
+			<a href="#contents">본문 바로가기</a>
+		</div>
+		<!-- //skip navi -->
+		<header>
+			<div id="gnb" class="d_fixed">
+				<h1 class="logo"><a href="#">Discovery EXPEDITION</a></h1>
+				<div class="all-menu">
+					<button type="button" class="all-menu-open">전체메뉴 열기</button>
+				</div>
+				<div class="prev-link">
+					<a href="#">이전 페이지 이동</a>
+				</div>
+				<div class="search-link">
+					<a href="#">검색 페이지 이동</a>
+				</div>
+				<div class="cart-link">
+					<a href="#">장바구니<span>99</span>개로 이동</a>
+				</div>
+			</div>
+		</header>
+		<acrticle id="container">
+			<section id="contents">
+				<h2 class="title01 d_fixed"><span>상품리뷰</span></h2>
+				<div class="cont-box-wrap">
+					<p class="txt-sub-info01 txt-sub-type01">최근 7일간 본 상품을 확인하실 수 있습니다.</p><!-- 2018-07-02 -->
+					<!-- 2018-07-02 삭제<ul class="text-list01">
+						<li>리뷰 작성 시 온라인몰에서 사용 가능한 포인트를 적립해 드립니다. (텍스트 리뷰 100포인트, 포토리뷰 500 포인트)</li>
+						<li>구매확정 하신 상품에 대해서만 리뷰를 작성하실 수 있으며, 구매확정 후 90일 지난 상품에 대해서는 리뷰를 작성하실 수 없습니다.</li>
+						<li>'작성한 상품 리뷰'페이지에서 구매확정 후 작성하신 상품 리뷰를 확인 할 수 있습니다.</li>
+					</ul> -->
+
+					<!-- 2018-07-02 -->
+					<ul class="expedition-point-wrap">
+						<li>
+							<p>텍스트리뷰</p>
+							<strong>100P</strong>
+						</li>
+						<li>
+							<p>포토리뷰</p>
+							<strong>500P</strong>
+						</li>
+					</ul>
+					<!-- //2018-07-02 -->
+					<div class="d_tab02 product-review-page-wrap"><!-- //2018-07-02 -->
+						<ul class="tab01 tab-type01">
+							<li class="d_tab02_select on"><a href="#">상품리뷰 작성(99건)</a></li>
+							<li class="d_tab02_select"><a href="#">작성한 상품 리뷰(99건)</a></li>
+						</ul>
+						<!-- 상품리뷰 -->
+						<div class="d_tab02_cont" style="display:block;">
+							<div class="item-list-wrap02">
+								<ul class="item-list01">
+									<li class="no-result">리뷰 작성이 가능한 상품이 없습니다.</li>
+									<li>
+										<div class="product-info">
+											<div class="product-info-img"><a href="#"><img src="../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+											<div class="product-info-text">
+												<p class="txt02"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션 반팔 티셔츠</a></p>
+												<div class="item-info-option">
+													<p class="txt03">NY / 240</p>
+													<p class="txt03">1개</p>
+												</div>
+											</div>
+										</div>
+										<div class="btn-wrap01 btn-wrap-type01">
+											<span>
+												<button type="button" class="btn-style02"><span>텍스트 리뷰</span></button><button type="button" class="btn-style02"><span>포토 리뷰</span></button><!-- 2018-07-02 -->
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="product-info">
+											<div class="product-info-img"><a href="#"><img src="" alt=""></a></div>
+											<div class="product-info-text">
+												<p class="txt02"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션 반팔 티셔츠</a></p>
+												<div class="item-info-option">
+													<p class="txt03">NY / 240</p>
+													<p class="txt03">0개</p>
+												</div>
+											</div>
+										</div>
+										<div class="btn-wrap01 btn-wrap-type01">
+											<span>
+												<button type="button" class="btn-style02"><span>텍스트 리뷰</span></button><button type="button" class="btn-style02" disabled><span>포토 리뷰 완료</span></button><!-- 2018-07-02 -->
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="product-info">
+											<div class="product-info-img"><a href="#"><img src="" alt=""></a></div>
+											<div class="product-info-text">
+												<p class="txt02"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션 반팔 티셔츠</a></p>
+												<div class="item-info-option">
+													<p class="txt03">NY / 240</p>
+													<p class="txt03">1개</p>
+												</div>
+											</div>
+										</div>
+										<div class="btn-wrap01 btn-wrap-type01">
+											<span>
+												<button type="button" class="btn-style02" disabled><span>텍스트 리뷰 완료</span></button><button type="button" class="btn-style02"><span>포토 리뷰</span></button><!-- 2018-07-02 -->
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="product-info">
+											<div class="product-info-img"><a href="#"><img src="" alt=""></a></div>
+											<div class="product-info-text">
+												<p class="txt02"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션 반팔 티셔츠</a></p>
+												<div class="item-info-option">
+													<p class="txt03">NY / 240</p>
+													<p class="txt03">1개</p>
+												</div>
+											</div>
+										</div>
+										<div class="btn-wrap01 btn-wrap-type01">
+											<button type="button" class="btn-style01"><span>구매확정하기</span></button>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- //상품리뷰 -->
+						<!-- 작성한 상품 -->
+						<div class="pd-box-type01 d_tab02_cont">
+							<ul class="tab02 tab-type01 d_tab">
+								<li class="on"><a href="#">3개월</a></li>
+								<li><a href="#">6개월</a></li>
+							</ul>
+							<div class="date-calendar-wrap">
+								<!-- 2018-06-28 -->
+								<div class="date-calendar-cnt">
+									<div class="calendar-input"><input type="text" class="calendar" id="calendarFrom" disabled="disabled"></div><div class="calendar-input"><input type="text" class="calendar" id="calendarTo" disabled="disabled"></div>
+								</div>
+								<script>
+									$(document).ready(function() {
+										var dateFormat = "yy-mm-dd",
+										from = $( "#calendarFrom" ).datepicker().on( "change", function() {
+											to.datepicker( "option", "minDate", getDate( this ) );
+										}),
+										to = $( "#calendarTo" ).datepicker().on( "change", function() {
+											from.datepicker( "option", "maxDate", getDate( this ) );
+										});
+
+										function getDate( element ) {
+											var date;
+											try {
+												date = $.datepicker.parseDate( dateFormat, element.value );
+											} catch( error ) {
+												date = null;
+											}
+
+											return date;
+										}
+									});
+								</script>
+								<!-- //2018-06-28 -->
+								<!-- 2018-07-02 -->
+								<p class="date-calendar-txt01">2018년 8월 20일 이전 상품리뷰는 제공하지 않습니다.</p>
+								<div class="btn-wrap01 btn-wrap-type01">
+									<button type="button" class="btn-style01"><span>조회</span></button>
+								</div>
+								<!-- //2018-07-02 -->
+								<!-- 2018-07-02 삭제<ul class="date-calendar-text-list">
+									<li><strong>2018년 8월 20일 이전 주문</strong>은<br>PC에서 보다 정확하게 확인 가능합니다. <a href="#" class="btn-style04"><span>이전주문보기</span></a></li>
+									<li>고객센터로 문의해 주시면 답변해<br>드리겠습니다.<a href="#" class="btn-style04"><span>080-820-8802</span></a></li>
+								</ul> -->
+							</div>
+							<ul class="product-review-list d_accordion">
+								<li class="no-result">작성하신 리뷰가 없습니다.</li>
+								<li>
+									<div class="product-review-wrap">
+										<p class="product-review-title"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠</a></p>
+										<div class="product-review-sub product-review-sub-type02"><img src="../../images/common/img_photo_review.png" alt="포토리뷰"><span class="product-review-sub-date">2018.02.22</span></div>
+										<div class="product-review-grade"><img src="../../images/common/bg_star_00.png" alt="평점 4점"></div>
+										<div class="product-review-cnt">
+											<button type="button" class="btn-open d_accordion_select"><span>Open</span></button>
+											<p class="product-review-object">보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하</p>
+											<div class="product-review-detail">
+												<p class="review-detail-option"><span>사이즈</span><strong>딱 맞아요</strong> <span>컬러</span><strong>화면과 같아요</strong></p>
+												<p class="review-detail-option02">(구매옵션) ssh************</p>
+												<div class="review-detail-img"><img src="../../images/thumb/thumb_940x600.jpg" alt="상품 이미지 01"></div>
+												<!-- 2018-07-02 -->
+												<div class="btn-wrap01 btn-wrap-type01">
+													<span>
+														<a href="#" class="btn-style02"><span>수정</span></a><a href="#" class="btn-style02"><span>삭제</span></a>
+													</span>
+												</div>
+												<!-- //2018-07-02 -->
+											</div>
+											<button type="button" class="btn-close d_accordion_select"><span>Close</span></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-review-wrap">
+										<p class="product-review-title"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠</a></p>
+										<div class="product-review-sub product-review-sub-type02"><span class="product-review-sub-date">2018.02.22</span></div>
+										<div class="product-review-grade"><img src="../../images/common/bg_star_05.png" alt="평점 5점"></div>
+										<div class="product-review-cnt">
+											<button type="button" class="btn-open d_accordion_select"><span>Open</span></button>
+											<p class="product-review-object">보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하</p>
+											<div class="product-review-detail">
+												<p class="review-detail-option"><span>사이즈</span><strong>딱 맞아요</strong> <span>컬러</span><strong>화면과 같아요</strong></p>
+												<p class="review-detail-option02">(구매옵션) ssh************</p>
+												<!-- 2018-07-02 -->
+												<div class="btn-wrap01 btn-wrap-type01">
+													<span>
+														<a href="#" class="btn-style02"><span>수정</span></a><a href="#" class="btn-style02"><span>삭제</span></a>
+													</span>
+												</div>
+												<!-- //2018-07-02 -->
+											</div>
+											<button type="button" class="btn-close d_accordion_select"><span>Close</span></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-review-wrap">
+										<p class="product-review-title"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠</a></p>
+										<div class="product-review-sub product-review-sub-type02"><img src="../../images/common/img_photo_review.png" alt="포토리뷰"><span class="product-review-sub-date">2018.02.22</span></div>
+										<div class="product-review-grade"><img src="../../images/common/bg_star_04.png" alt="평점 4점"></div>
+										<div class="product-review-cnt">
+											<button type="button" class="btn-open d_accordion_select"><span>Open</span></button>
+											<p class="product-review-object">보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하</p>
+											<div class="product-review-detail">
+												<p class="review-detail-option"><span>사이즈</span><strong>딱 맞아요</strong> <span>컬러</span><strong>화면과 같아요</strong></p>
+												<p class="review-detail-option02">(구매옵션) ssh************</p>
+												<div class="review-detail-img"><img src="../../images/thumb/thumb_940x600.jpg" alt="상품 이미지 01"></div>
+												<!-- 2018-07-02 -->
+												<div class="btn-wrap01 btn-wrap-type01">
+													<span>
+														<a href="#" class="btn-style02"><span>수정</span></a><a href="#" class="btn-style02"><span>삭제</span></a>
+													</span>
+												</div>
+												<!-- //2018-07-02 -->
+											</div>
+											<button type="button" class="btn-close d_accordion_select"><span>Close</span></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-review-wrap">
+										<p class="product-review-title"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠</a></p>
+										<div class="product-review-sub product-review-sub-type02"><span class="product-review-sub-date">2018.02.22</span></div>
+										<div class="product-review-grade"><img src="../../images/common/bg_star_03.png" alt="평점 3점"></div>
+										<div class="product-review-cnt">
+											<button type="button" class="btn-open d_accordion_select"><span>Open</span></button>
+											<p class="product-review-object">보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하</p>
+											<div class="product-review-detail">
+												<p class="review-detail-option"><span>사이즈</span><strong>딱 맞아요</strong> <span>컬러</span><strong>화면과 같아요</strong></p>
+												<p class="review-detail-option02">(구매옵션) ssh************</p>
+												<!-- 2018-07-02 -->
+												<div class="btn-wrap01 btn-wrap-type01">
+													<span>
+														<a href="#" class="btn-style02"><span>수정</span></a><a href="#" class="btn-style02"><span>삭제</span></a>
+													</span>
+												</div>
+												<!-- //2018-07-02 -->
+											</div>
+											<button type="button" class="btn-close d_accordion_select"><span>Close</span></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-review-wrap">
+										<p class="product-review-title"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠</a></p>
+										<div class="product-review-sub product-review-sub-type02"><img src="../../images/common/img_photo_review.png" alt="포토리뷰"><span class="product-review-sub-date">2018.02.22</span></div>
+										<div class="product-review-grade"><img src="../../images/common/bg_star_02.png" alt="평점 2점"></div>
+										<div class="product-review-cnt">
+											<button type="button" class="btn-open d_accordion_select"><span>Open</span></button>
+											<p class="product-review-object">보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하</p>
+											<div class="product-review-detail">
+												<p class="review-detail-option"><span>사이즈</span><strong>딱 맞아요</strong> <span>컬러</span><strong>화면과 같아요</strong></p>
+												<p class="review-detail-option02">(구매옵션) ssh************</p>
+												<div class="review-detail-img"><img src="../../images/thumb/thumb_940x600.jpg" alt="상품 이미지 01"></div>
+												<!-- 2018-07-02 -->
+												<div class="btn-wrap01 btn-wrap-type01">
+													<span>
+														<a href="#" class="btn-style02"><span>수정</span></a><a href="#" class="btn-style02"><span>삭제</span></a>
+													</span>
+												</div>
+												<!-- //2018-07-02 -->
+											</div>
+											<button type="button" class="btn-close d_accordion_select"><span>Close</span></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-review-wrap">
+										<p class="product-review-title"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠</a></p>
+										<div class="product-review-sub product-review-sub-type02"><span class="product-review-sub-date">2018.02.22</span></div>
+										<div class="product-review-grade"><img src="../../images/common/bg_star_01.png" alt="평점 1점"></div>
+										<div class="product-review-cnt">
+											<button type="button" class="btn-open d_accordion_select"><span>Open</span></button>
+											<p class="product-review-object">보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하</p>
+											<div class="product-review-detail">
+												<p class="review-detail-option"><span>사이즈</span><strong>딱 맞아요</strong> <span>컬러</span><strong>화면과 같아요</strong></p>
+												<p class="review-detail-option02">(구매옵션) ssh************</p>
+												<!-- 2018-07-02 -->
+												<div class="btn-wrap01 btn-wrap-type01">
+													<span>
+														<a href="#" class="btn-style02"><span>수정</span></a><a href="#" class="btn-style02"><span>삭제</span></a>
+													</span>
+												</div>
+												<!-- //2018-07-02 -->
+											</div>
+											<button type="button" class="btn-close d_accordion_select"><span>Close</span></button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="product-review-wrap">
+										<p class="product-review-title"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠</a></p>
+										<div class="product-review-sub product-review-sub-type02"><span class="product-review-sub-date">2018.02.22</span></div>
+										<div class="product-review-grade"><img src="../../images/common/bg_star_00.png" alt="평점 0점"></div>
+										<div class="product-review-cnt">
+											<button type="button" class="btn-open d_accordion_select"><span>Open</span></button>
+											<p class="product-review-object">보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하보자마자 너무 이뻐서 바로 구매했네요~! 화이트에 베이지가 포인트로 신으면 푹신푹신 엄마 구매해드렸는데..너무 좋아하</p>
+											<div class="product-review-detail">
+												<p class="review-detail-option"><span>사이즈</span><strong>딱 맞아요</strong> <span>컬러</span><strong>화면과 같아요</strong></p>
+												<p class="review-detail-option02">(구매옵션) ssh************</p>
+												<!-- 2018-07-02 -->
+												<div class="btn-wrap01 btn-wrap-type01">
+													<span>
+														<a href="#" class="btn-style02"><span>수정</span></a><a href="#" class="btn-style02"><span>삭제</span></a>
+													</span>
+												</div>
+												<!-- //2018-07-02 -->
+											</div>
+											<button type="button" class="btn-close d_accordion_select"><span>Close</span></button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //작성한 상품 -->
+					</div>
+					<div class="toggle-box-wrap d_toggle">
+						<h2 class="title03">상품리뷰 안내</h2>
+						<button type="button" class="btn-open d_toggle_select"><span>Open</span></button>
+						<div class="toggle-box-cnt">
+							<ul class="text-list02">
+								<li>구매확정 하신 상품에 대해서만 리뷰를 작성하실 수 있으며, 구매확정 후 90일 지난 상품에 대해서는 리뷰를 작성하실 수 없습니다.</li>
+								<li>상품과 직접적으로 관계가 없는 내용이나, 약관 및 법률 등에 위배되는 글 등은 고객님께 사전 동의 없이 미노출될 수 있습니다.</li>
+								<li>다음과 같은 경우 리뷰가 제한되거나 관리자의 권한으로 삭제될 수 있습니다.
+									<ul class="text-list01">
+										<li>상품과 적합하지 않은 콘텐츠나 무관한 사진 업로드</li>
+										<li>사이트내 게시된 상품 및 전시 이미지 그대로 사용</li>
+										<li>타 회원의 리뷰 도용</li>
+										<li>내용이 부적합하거나 비속어 사용</li>
+									</ul>
+								</li>
+								<li>리뷰 삭제 시 동일 상품에 대한 리뷰 재등록은 불가하며, 상품 및 서비스 품질 향상을 위해 삭제된 리뷰 중 일부 컨텐츠는 보존될 수 있습니다.</li>
+								<li>리뷰 작성 후 적립된 포인트는 온라인 쇼핑몰에서만 사용 가능하며, 2년 간 유효합니다. <br>2년이 경과된 포인트는 익월 1일에 소멸됩니다.</li>
+							</ul>
+						</div>
+						<button type="button" class="btn-close d_toggle_select"><span>Close</span></button>
+					</div>
+				</div>
+			</section>
+		</acrticle>
+	</body>
+</html>

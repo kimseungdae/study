@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/member.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery.ui.touch-punch.min.js"></script><!-- 2018-06-07 -->
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/iscroll.js"></script><!-- 2018-06-07 -->
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div id="skipNavi" class="skip-navi">
+			<a href="#contents">본문 바로가기</a>
+		</div>
+		<!-- //skip navi -->
+		<header>
+			<div id="gnb" class="d_fixed">
+				<h1 class="logo"><a href="#">Discovery EXPEDITION</a></h1>
+				<div class="all-menu">
+					<button type="button" class="all-menu-open">전체메뉴 열기</button>
+				</div>
+				<div class="prev-link">
+					<a href="#">이전 페이지 이동</a>
+				</div>
+				<div class="search-link">
+					<a href="#">검색 페이지 이동</a>
+				</div>
+				<div class="cart-link">
+					<a href="#">장바구니<span>99</span>개로 이동</a>
+				</div>
+			</div>
+		</header>
+		<article id="container">
+			<section id="contents">
+				<h2 class="title01 d_fixed"><span>로그인</span></h2>
+				<div class="cont-box-wrap">
+					<div class="login-wrap d_tab02">
+						<ul class="tab01">
+							<li class="d_tab02_select on"><a href="#">회원</a></li>
+							<li class="d_tab02_select"><a href="#">비회원</a></li>
+						</ul>
+						<!-- 회원 -->
+						<div class="login-cont d_tab02_cont" style="display:block;">
+							<input type="text" title="아이디 입력창" placeholder="아이디">
+							<input type="password" title="비밀번호 입력창" placeholder="비밀번호">
+							<ul class="login-check-id">
+								<li>
+									<span class="check-skin">
+										<input type="checkbox" id="autoLogin" checked="checked">
+										<span>선택</span>
+									</span>
+									<label for="autoLogin">자동 로그인</label>
+								</li>
+								<li>
+									<span class="check-skin">
+										<input type="checkbox" id="idSave">
+										<span>선택</span>
+									</span>
+									<label for="idSave">아이디 저장</label>
+								</li>
+							</ul>
+							<p class="error-msg" style="display:block;">5회 이상 로그인에 실패했습니다.<br />비밀번호 찾기에서 새로운 비밀번호를 설정해주세요.</p>
+							<div class="btn-wrap01">
+								<a href="#layerInactiveAccount" class="btn-style07 d_layer_open"><span>로그인</span></a>
+								<a href="#" class="btn-naver"><span>네이버로 로그인</span></a>
+							</div>
+							<div class="login-btn-lnk">
+								<a href="#">아이디 찾기</a><a href="#">비밀번호 찾기</a><a href="#">회원가입</a>
+							</div>
+						</div>
+						<!-- //회원 -->
+						<!-- 비회원 -->
+						<div class="login-cont d_tab02_cont">
+							<input type="text" title="주문번호 입력창" placeholder="주문번호">
+							<input type="text" title="이름 입력창" placeholder="이름">
+							<div class="phone-wrap">
+								<input type="text" id="memberContact" value="010" style="width:30%;"><span class="hyphen">-</span><input type="text" value="" style="width:30%;"><span class="hyphen">-</span><input type="text" value="" style="width:30%;">
+							</div>
+							<p class="error-msg" style="display:block;">주문번호를 입력해 주세요.</p>
+							<div class="btn-wrap01">
+								<a href="#" class="btn-style07"><span>주문조회</span></a>
+							</div>
+							<div class="login-btn-lnk">
+								<a href="#">비회원 1:1 고객상담</a><a href="#">비회원 단체구매 문의</a><a href="#">비회원 제휴문의</a><!-- 2018-06-28 -->
+							</div>
+							<div class="cs-info-box">
+								<p class="text-cs-info"><strong>고객센터</strong><strong><a href="tel:080-820-8802">080.820.8802</a></strong><span>평일 오전 9시 ~ 오후 6시 (토/일/공휴일 휴무)</span></p>
+							</div>
+						</div>
+						<!-- //비회원 -->
+					</div>
+				</div>
+			</section>
+		</article>
+
+		<div id="layerInactiveAccount" class="layer-popup">
+			<div class="layer-popup-cont"  tabindex="0">
+				<div class="layer-popup-title"><span>휴면 계정 해제</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt02">
+							<p class="layer-txt col-type02">회원님 반갑습니다.<br />휴면 계정이 해제되었습니다.</p><!-- 2018-06-22 -->
+							<p class="layer-txt">1년간 온라인 로그인 이력이 없거나,<br> 오프라인 매장 결제 이력이 없을 경우 휴면계정으로 전환됩니다.</p><!-- 2018-06-22 -->
+							<div class="btn-wrap01 btn-wrap-type02"><!-- 2018-06-22 -->
+								<a href="#" class="btn-style01"><span>확인</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/mypage.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div id="skipNavi" class="skip-navi">
+			<a href="#contents">본문 바로가기</a>
+		</div>
+		<!-- //skip navi -->
+		<header>
+			<div id="gnb" class="d_fixed">
+				<h1 class="logo"><a href="#">Discovery EXPEDITION</a></h1>
+				<div class="all-menu">
+					<button type="button" class="all-menu-open">전체메뉴 열기</button>
+				</div>
+				<div class="prev-link">
+					<a href="#">이전 페이지 이동</a>
+				</div>
+				<div class="search-link">
+					<a href="#">검색 페이지 이동</a>
+				</div>
+				<div class="cart-link">
+					<a href="#">장바구니<span>99</span>개로 이동</a>
+				</div>
+			</div>
+		</header>
+		<acrticle id="container">
+			<section id="contents">
+				<h2 class="title01 d_fixed"><span>마이페이지</span></h2>
+				<div class="cont-box-wrap">
+					<div class="my-page-user-info">
+						<!-- 2018-06-28 -->
+						<div class="my-page-user-box">
+							<strong class="my-page-user-title"><span class="text-greeting">안녕하세요!</span><em>홍길동</em> 님</strong>
+							<a href="#" class="btn-barcode d_layer_open">바코드 확인</a>
+						</div>
+						<!-- 2018-07-26 -->
+						<dl class="level-benefit-wrap level-benefit-type01">
+							<dt>
+								Level <strong>ADVENTURER</strong>
+							</dt>
+							<dd>
+								<ul class="level-benefit-list">
+									<li>
+										<p>MILEAGE <span><a href="#"><strong>999,000</strong></a> M</span></p>
+									</li>
+									<li>
+										<p>POINT <span><a href="#"><strong>99,000</strong></a> P</span></p>
+									</li>
+									<li>
+										<p>COUPON <span><a href="#"><strong>9,000</strong></a> C</span></p>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- 2018-07-26 -->
+						<div class="order-info-list-wrap">
+							<dl class="order-info-list">
+								<dt>주문/배송</dt>
+								<dd><a href="#">45</a></dd>
+							</dl>
+							<dl class="order-info-list">
+								<dt>장바구니</dt>
+								<dd><a href="#">32</a></dd>
+							</dl>
+							<dl class="order-info-list">
+								<dt>최근본상품</dt>
+								<dd><a href="#">32</a></dd>
+							</dl>
+						</div>
+						<!-- //2018-06-28 -->
+
+						<!-- 2018-06-28 삭제
+						<dl class="my-page-user-list">
+							<dt>
+								Level
+								<em class="roboto-italic">ADVENTURER</em>
+							</dt>
+							<dd>
+								<p><strong>Mileage</strong><a href="#">25,000M</a></p>
+							</dd>
+							<dd>
+								<p><strong>Coupon</strong><a href="#">1장</a></p>
+							</dd>
+							<dd>
+								<p><strong>Point</strong><a href="#">3,000P</a></p>
+							</dd>
+						</dl>
+						<button type="button" class="btn-barcode">바코드 확인</button>
+						<ul class="my-page-user-list02">
+							<li>
+								<strong>주문/배송</strong>
+								<p><a href="#">9</a></p>
+							</li>
+							<li>
+								<strong>장바구니</strong>
+								<p><a href="#">9999</a></p>
+							</li>
+							<li>
+								<strong>최근본상품</strong>
+								<p><a href="#">9</a></p>
+							</li>
+						</ul> //2018-06-28 삭제 -->
+
+						<ul class="my-page-menu-list d_accordion">
+							<li>
+								<strong class="my-page-menu-list-tit">주문정보</strong>
+								<button type="button" class="btn-open d_accordion_select">열기</button>
+								<ul class="my-page-menu-list-info">
+									<li><a href="#">주문/배송조회</a></li>
+									<li><a href="#">취소/교환/반품조회</a></li>
+									<li><a href="#">매장구매내역</a></li>
+									<li><a href="#">증빙서류 발급</a></li>
+								</ul>
+								<button type="button" class="btn-close d_accordion_select">닫기</button>
+							</li>
+							<li>
+								<strong class="my-page-menu-list-tit">활동정보</strong>
+								<button type="button" class="btn-open d_accordion_select">열기</button>
+								<ul class="my-page-menu-list-info">
+									<li><a href="#">위시리스트</a></li>
+									<li><a href="#">최근 본 상품</a></li>
+									<li><a href="#">이벤트 참여내역</a></li>
+									<li><a href="#">상품리뷰</a></li>
+									<li><a href="#">1:1 문의</a></li>
+								</ul>
+								<button type="button" class="btn-close d_accordion_select">닫기</button>
+							</li>
+							<li>
+								<strong class="my-page-menu-list-tit">혜택정보</strong>
+								<button type="button" class="btn-open d_accordion_select">열기</button>
+								<ul class="my-page-menu-list-info">
+									<li><a href="#">마일리지</a></li>
+									<li><a href="#">포인트</a></li>
+									<li><a href="#">쿠폰함</a></li>
+									<li><a href="#">회원등급소개</a></li>
+								</ul>
+								<button type="button" class="btn-close d_accordion_select">닫기</button>
+							</li>
+							<li>
+								<strong class="my-page-menu-list-tit">회원정보</strong>
+								<button type="button" class="btn-open d_accordion_select">열기</button>
+								<ul class="my-page-menu-list-info">
+									<li><a href="#">배송지 관리</a></li>
+									<li><a href="#">개인정보수정</a></li>
+									<li><a href="#">멤버십 카드 인증</a></li>
+									<li><a href="#">네이버 아이디 연결/해제</a></li>
+									<li><a href="#">회원탈퇴</a></li>
+								</ul>
+								<button type="button" class="btn-close d_accordion_select">닫기</button>
+							</li>
+						</ul>
+					</div>
+					<h3 class="title02">간편 로그인 계정 연결</h3>
+					<div class="n-login-wrap">
+						<dl class="n-login-info">
+							<dt><span>네이버로 로그인</span></dt>
+							<dd>
+								<div class="d_toggle_btn">
+									<button type="button" class="toggle-on d_toggle_on"><span>ON</span></button>
+									<button type="button" class="toggle-off toggle-off-type01 d_toggle_off" style="display: none;"><span>OFF</span></button><!-- 2018-07-26 -->
+								</div>
+							</dd>
+						</dl>
+						<p class="n-login-txt">네이버 아이디 간편로그인 계정 연결 시 아이디와 비밀번호 입력 없이<br>discovery-expedition에서 제공하는 다양한 서비스를 안전하고 편리하게 이용하실 수 있습니다.</p><!-- 2018-06-22 -->
+					</div>
+					<!-- 2018-06-22 -->
+					<ul class="text-list01 text-list-type03">
+						<li>계정연결을 하시면 해당 SNS계정과 연동하여 간편하게 로그인 하실 수 있습니다.</li>
+						<li>연결해제는 단순히 SNS계정 로그인 기능만을 해제 하는 것이며 회원탈퇴가 되는 것은 아닙니다.</li>
+						<li>연결해제 후에도 기존의 이메일 아이디, 비밀번호로 로그인하실 수 있습니다.</li>
+						<li>회원탈퇴를 원하시는 경우 정보관리의 회원탈퇴 메뉴를 이용해주세요.</li>
+					</ul>
+					<!-- //2018-06-22 -->
+					<!-- 2018-06-28 -->
+					<div class="btn-wrap01">
+						<a href="#" class="btn-style08"><span>로그아웃</span></a>
+					</div>
+					<div class="btn-lnk-wrap">
+						<a href="#">단체구매문의</a><a href="#">제휴문의</a>
+					</div>
+					<div class="cs-info-box">
+						<p class="text-cs-info"><strong>고객센터</strong><strong><a href="tel:080-820-8802">080-820-8802</a></strong><span>평일 오전 9시 ~ 오후 6시 (토/일/공휴일 휴무)</span></p>
+					</div>
+					<!-- //2018-06-28 -->
+				</div>
+			</section>
+		</acrticle>
+	</body>
+</html>

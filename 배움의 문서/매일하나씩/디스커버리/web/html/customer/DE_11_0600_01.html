@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" >
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/customer.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+		<!-- 기간달력 -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var dateFormat = "yy - mm - dd",
+				from = $( "#calendarFrom" ).datepicker().on( "change", function() {
+					to.datepicker( "option", "minDate", getDate( this ) );
+				}),
+				to = $( "#calendarTo" ).datepicker().on( "change", function() {
+					from.datepicker( "option", "maxDate", getDate( this ) );
+				});
+
+				function getDate( element ) {
+					var date;
+					try {
+						date = $.datepicker.parseDate( dateFormat, element.value );
+					} catch( error ) {
+						date = null;
+					}
+
+					return date;
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div class="skip-navi">
+			<a href="#gnb">왼쪽 메뉴</a>
+			<a href="#contents">컨텐츠</a>
+			<a href="#rightSide">상품 주문 영역</a>
+		</div>
+		<!-- //skip navi -->
+		<div id="wrap"><!-- 2018-05-23 -->
+			<header id="gnb">
+				<aside id="rightSide">
+					<img src="../../images/common/@right_side.png" alt="">
+				</aside>
+				<nav class="gnb-style01">
+					<img src="../../images/common/@gnb.png" alt="">
+				</nav>
+				<nav class="gnb-style02">
+					<img src="../../images/common/@gnb02.png" alt="">
+				</nav>
+			</header>
+			<!-- 2018-05-23 -->
+			<div class="location-container">
+				<div class="location-contents">
+					<h2 class="title01">고객센터</h2>
+					<p class="location">
+						<span>Home</span><span>고객센터</span><strong title="현재 위치">1:1고객상담</strong>
+					</p>
+				</div>
+			</div>
+			<!-- //2018-05-23 -->
+			<acrticle id="container">
+				<section id="contents">
+					<!-- 2018-05-23 삭제
+					<h2 class="title01">고객센터</h2>
+					<p class="location">
+						<span>Home</span><span>고객센터</span><strong title="현재 위치">1:1고객상담</strong>
+					</p> //2018-05-23 삭제 -->
+					<h3 class="title02">제휴문의</h3>
+					<p class="txt-sub-info02">고객에게 늘 새롭고 Trendy한 제안을 하는 F&amp;F와 함께 할 파트너를 찾습니다. <br>궁금한 점이 있으실 경우 문의하여 주시면 최대한 빠른 답변 드리도록 하겠습니다.</p>
+					<p class="text-required"><span class="required">*</span> 필수입력 항목</p><!-- 2018-05-25 text -->
+					<div class="board-write">
+						<table summary="1:1고객상담 입력">
+							<caption>1:1고객상담 입력</caption>
+							<colgroup>
+								<col style="width:200px;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">제휴구분 <span class="required">*</span></th>
+									<td>
+										<!-- select -->
+										<div class="select-style01 d_select">
+											<button type="button" class="d_select_sel" style="width:152px;"><span>직접입력</span></button>
+											<ul>
+												<li><a href="#">사이트제휴</a></li>
+												<li><a href="#">마케팅제휴</a></li>
+												<li><a href="#">대리점개설</a></li>
+												<li><a href="#">브랜드입점</a></li>
+											</ul>
+										</div>
+										<!-- //select -->
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="boardCompany">회사명</label> <span class="required">*</span></th>
+									<td>
+										<input type="text" id="boardCompany" class="input-style01" style="width:443px;">
+										<span class="error-msg" style="display:block;">회사명은 최대 20자 까지 가능합니다.</span>
+										<span class="error-msg">회사명은 필수 입력 입니다.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="boardCompany01">부서명</label> <span class="required">*</span></th>
+									<td>
+										<input type="text" id="boardCompany01" class="input-style01" style="width:443px;">
+										<span class="error-msg" style="display:block;">부서명은 최대 20자 까지 가능합니다.</span>
+										<span class="error-msg">부서명은 필수 입력 입니다.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="boardCompanyName">담당자명</label> <span class="required">*</span></th>
+									<td>
+										<input type="text" id="boardCompanyName" class="input-style01" style="width:443px;">
+										<span class="error-msg" style="display:block;">담당자명은 최대 10개까지 입력가능합니다.</span>
+										<span class="error-msg">담당자명은 필수 입력 입니다.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="boardWriteContact">휴대전화</label> <span class="required">*</span></th><!-- 2018-05-24 -->
+									<td>
+										<input type="text" id="boardWriteContact" class="input-style01" style="width:65px;" />
+										<span class="hyphen">-</span>
+										<input type="text" class="input-style01" style="width:75px;" />
+										<span class="hyphen">-</span>
+										<input type="text" class="input-style01" style="width:75px;" />
+
+										<span class="check-skin">
+											<input type="checkbox" id="chkReply" checked="checked">
+											<span>선택</span>
+										</span>
+										<label for="chkReply">답변등록여부 수신</label>
+
+										<span class="error-msg" style="display:block;">잘못된 형식의 휴대전화 입니다. <br> 확인 후 다시 입력해주세요.</span><!-- 2018-05-24 -->
+										<span class="error-msg">휴대전화는 필수 입력 입니다.</span><!-- 2018-05-24 -->
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="boardWriteEmail">답변 이메일</label> <span class="required">*</span></th>
+									<td>
+										<input type="text" id="boardWriteEmail" class="input-style01" value="abcd" style="width:152px;">
+										<span class="at">@</span>
+										<input type="text" class="input-style01" style="width:152px;">
+										<!-- select -->
+										<div class="select-style01 d_select">
+											<button type="button" class="d_select_sel" style="width:152px;"><span>직접입력</span></button>
+											<ul>
+												<li><a href="#">직접입력</a></li>
+												<li><a href="#">naver.com</a></li>
+												<li><a href="#">daum.net</a></li>
+												<li><a href="#">nate.com</a></li>
+												<li><a href="#">gmail.com</a></li>
+												<li><a href="#">Hotmail.com</a></li>
+											</ul>
+										</div>
+										<!-- //select -->
+										<span class="error-msg" style="display:block;">잘못된 이메일 형식입니다.</span>
+										<span class="error-msg">이메일은 필수 입력 입니다.</span>
+									</td>
+								</tr>
+								<!-- 2018-05-28 삭제
+								<tr>
+									<th scope="row"><label for="boardWriteTitle">제목</label> <span class="required">*</span></th>
+									<td>
+										<input type="text" id="boardWriteTitle" class="input-style01" placeholder="제목입력은 30자 미만입니다." style="width:587px;">
+										<span class="error-msg" style="display:block;">제목은 30자까지 입력가능합니다.</span>
+										<span class="error-msg">제목은 필수 입력 입니다.</span>
+									</td>
+								</tr> //2018-05-28 삭제 -->
+								<tr>
+									<th scope="row"><label for="boardWriteContent">내용</label> <span class="required">*</span></th>
+									<td>
+										<div>
+											<textarea cols="30" rows="10" id="boardWriteContent" placeholder="내용입력은 1000자 미만입니다. (특수문자 \ / : &lt; &gt; 는 사용할 수 없습니다.)" style="width:587px; height:190px;"></textarea>
+											<span class="error-msg" style="display:block;">더 이상 입력하실 수 없습니다.</span>
+											<span class="error-msg">특수문자 \ / : &lt; &gt; 는 사용할 수 없습니다</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="fileSearch">첨부파일</label></th>
+									<td>
+										<span class="file-search">
+											<input type="text" class="input-style01" style="width:443px;">
+											<span>
+												<input type="file" id="fileSearch">
+												<label for="fileSearch">파일찾기</label>
+											</span>
+										</span>
+										<div class="file-name">test.png<a href="#" class="btn-file-delete">삭제</a></div><!-- 2018-05-31 -->
+										<ul class="text-list02 col-type02"><!-- 2018-07-16 -->
+											<li>첨부 파일은 1개만 가능하며, 10Mb 이하의 파일만 업로드 가능합니다.</li>
+											<li>업로드 가능한 파일형식은 [hwp, doc/docx, xls/xlsx, ppt/pptx, jpg, gif, png, pdf] 입니다.</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<ul class="text-list02 col-type01"><!-- 2018-07-16 -->
+						<li>문의하신 내용에 대한 답변은 입력하신 이메일을 통해 답변 드리겠습니다.</li><!-- 2018-05-24 -->
+					</ul>
+
+					<!-- 2018-05-28 -->
+					<h3 class="title03">개인정보 수집 이용에 대한 동의</h3>
+					<!-- 2018-07-11 -->
+					<div class="agree-section">
+						<section class="agree-section-content">
+							<h1 class="blind">개인정보처리방침개인정보 수집∙이용에 대한 안내</h1>
+							<h2>1. 개인정보 수집 항목</h2>
+							<p>이름, 이메일 주소, 전화번호, 회사/단체/부서명, 상담 문의 내용 및 그 외 개인이 직접 입력한 내용</p>
+							<h2>2. 개인정보 수집이용 목적</h2>
+							<p>고객문의 및 상담요청에 대한 회신, 상담을 위한 서비스 이용기록 조회</p>
+							<h2>3. 개인정보 보유기간</h2>
+							<p>원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체없이 파기합니다. </p>
+							<p>다만 상법, 국세기본법, 전자상거래 등에서의 소비자 보호에 관한 법률 등 관련 법령의 규정에 의하여 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 일정기간 보유합니다. 이 경우 회사는 보관하는 개인정보를 그 보관의 목적으로만 이용하며 보존 기간 및 보존 항목은 아래와 같습니다.</p>
+							<ul>
+								<li>- 계약 또는 청약철회 등에 관한 기록: 5년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+								<li>- 대금 결제 및 재화 등의 공급에 관한 기록: 5년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+								<li>- 소비자 불만 또는 분쟁 처리에 관한 기록: 3년(전자상거래 등에서의 소비자보호에 관한 법률)</li>
+								<li>- 납세 증거에 관한 기록: 5년(국세 기본법)</li>
+								<li>- 전표 또는 이와 유사한 서류에 포함된 개인정보: 5년(상법)</li>
+								<li>- 통신사실확인자료 제공 시 “이용자” 확인에 필요한 성명, 전화번호 등: 12개월(통신비밀보호법)</li>
+								<li>- “회사”와 고객 간에 민원, 소송 등 분쟁이 발생한 경우에 그 보유기간 내에 분쟁이 해결되지 않을 경우: 그 분쟁이 해결될 때까지</li>
+							</ul>
+							<h2>4. 비회원 문의 시 제공하신 모든 정보는 상기 목적에 필요한 용도 이외로는 사용되지 않습니다. 기타 자세한 사항은 ‘개인정보처리방침’을 참고하시기 바랍니다. (동의 후 문의가 가능합니다.)</h2>
+						</section>
+						<ul class="agree-right">
+							<li>
+								<span class="rdo-skin">
+									<input type="radio" id="rdoAgree1" name="rdoAgree">
+									<span>선택</span>
+								</span>
+								<label for="rdoAgree1">동의합니다.</label>
+							</li>
+							<li>
+								<span class="rdo-skin">
+									<input type="radio" id="rdoAgree2" name="rdoAgree" checked="checked">
+									<span>선택</span>
+								</span>
+								<label for="rdoAgree2">동의하지 않습니다.</label>
+							</li>
+						</ul>
+					</div>
+					<!-- //2018-07-11 -->
+					<!-- //2018-05-28 -->
+					<div class="btn-wrap">
+						<a href="#" class="btn-style03">취소</a><a href="#" class="btn-style02">등록</a>
+					</div>
+				</section>
+			</acrticle>
+		</div>
+	</body>
+</html>

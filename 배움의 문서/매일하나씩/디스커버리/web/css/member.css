@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* 회원가입 */
+.member-detail-wrap{
+	width:750px;
+	margin:0 auto;
+	padding:36px 0 0 0;
+}
+.member-detail-wrap .title02:first-child{
+	margin-top:0;
+}
+.certification-check-wrap{
+	overflow:hidden;
+	margin-top:18px;
+	border:1px solid #000;
+}
+.certification-check-wrap > div{
+	position:relative;
+	float:left;
+	width:50%;
+	height:376px;
+	padding:36px 29px 40px;
+}
+.certification-check-wrap > div + div{
+	border-left:1px solid #000;
+}
+.certification-check-wrap > div h4{
+	font-size:24px;
+	text-align:center;
+}
+.certification-check-wrap > div .text-list01{
+	margin-top:35px;
+}
+.certification-check-wrap > div > strong{
+	display:block;
+	margin-top:35px;
+	padding-left:14px;
+	font-size:13px;
+	font-weight:700;
+	line-height:18px;
+}
+.certification-check-wrap > div > strong + .text-list01{
+	margin-top:10px;
+}
+.certification-check-wrap > div .btn-wrap{
+	position:absolute;
+	left:50%;
+	bottom:40px;
+	transform:translatex(-50%);
+}
+
+.member-complete-wrap{
+	width:445px;
+	margin:0 auto;
+}
+.member-complete-wrap .txt-sub-info02 {
+	margin-top: 25px;
+}
+.member-complete-wrap .txt-sub-info02+.text-list02 {
+	margin-top: 7px;
+}
+.member-complete-wrap .btn-wrap{
+	margin-top:58px;
+}
+.member-complete-wrap .btn-wrap .btn-style02{
+	width:100%;
+}
+.member-complete-wrap .btn-wrap .btn-npay02{
+	float:left;
+	width:220px;
+	margin:5px 0 0;
+}
+.member-complete-wrap .btn-wrap .btn-style06{
+	margin-top:5px;
+}
+/* 로그인 페이지 */
+.login-wrap{
+	width:750px;
+	margin:0 auto;
+}
+
+
+/* 완료페이지 */
+.complete-box{
+	padding-top:51px;
+	text-align:center;
+}
+.complete-box .complete-title{
+	font-size:20px;
+	line-height:34px;
+}
+.complete-box .complete-info{
+	margin-top:15px;
+}
+.complete-box .complete-info strong{
+	font-weight:700;
+}
+
+/* 인증 */
+.member-certification-wrap{
+	width:750px;
+	margin:78px auto 0;
+}
+.member-certification-cnt{
+	padding-bottom:18px;
+	border-bottom:1px solid #ddd;
+}
+.certification-list{
+	overflow:hidden;
+	margin-top:20px;
+	margin-left: -5px;
+}
+.certification-list li{
+	float:left;
+	width:50%;
+	height:215px;
+	padding-left: 5px;
+}
+.certification-list li a{
+	display:block;
+	height:100%;
+	padding-top:128px;
+	background:#f8f8f8 url(../images/member/bg_certification_01.png) no-repeat 50% 71px;
+	text-align:center;
+}
+.certification-list li + li a{
+	background-image:url(../images/member/bg_certification_02.png);
+}
+.cs-number {
+}
+.cs-number:after {
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	margin: 0 10px;
+	background-color: #ddd;
+	vertical-align: middle;
+}
+
+/* 가입 혜택 안내  */
+.member-benefit-list{
+	margin-top:100px;
+	padding-top:26px;
+	border-top:1px solid #ddd;
+}
+.member-benefit-list h3{
+	margin-top:0;
+}
+.member-detail-wrap .member-benefit-list{
+	margin-top:57px;
+	padding-top:0;
+	border-top:none;
+}
+.member-detail-wrap .txt-sub-info02+.txt-sub-info01 {
+	margin-top: 6px;
+}
+.member-benefit-list > ul{
+	display: flex;
+	overflow:hidden;
+	margin-top:17px;
+}
+.member-benefit-list > ul li{
+	width:calc(33.3% - 5px);
+	margin-left:5px;
+	padding:77px 30px 37px 30px;
+	background:#f8f8f8;
+	background-position:30px 40px;
+	background-repeat:no-repeat;
+}
+.member-benefit-list > ul li:first-child{
+	width:33.4%;
+	margin-left:0;
+}
+.member-benefit-list > ul li strong{
+	display: block;
+	margin-top: 14px;
+	font-size:13px;
+}
+.member-benefit-list > ul li p{
+	margin-top:8px;
+	color:#999;
+	font-size:13px;
+	line-height:18px;
+}
+.member-benefit-list > ul li.deps01{
+	background-image:url(../images/member/bg_member_benefit_01.png);
+}
+.member-benefit-list > ul li.deps02{
+	background-image:url(../images/member/bg_member_benefit_03.png);
+}
+.member-benefit-list > ul li.deps03{
+	background-image:url(../images/member/bg_member_benefit_03.png);
+}
+
+/* etc */
+
+.member-agree-right{
+	margin-top:19px;
+	padding:20px 0 22px;
+	border-top:1px solid #000;
+	border-bottom:1px solid #ddd;
+	text-align:right;
+}
+.member-detail-wrap .agree-section{
+	margin-top:19px;
+	border-top:none;
+	padding-top:0;
+}
+.member-detail-wrap .agree-section .agree-section-content{
+	margin-top:0;
+}
+
+.member-info-box{
+	margin-top:16px;
+	padding:20px 30px;
+	background:#f8f8f8;
+}
+.member-info-box strong{
+	color:#000;
+	font-size:12px;
+}
+.member-info-box p{
+	margin-top:7px;
+	color:#999;
+	font-size:12px;
+	line-height:18px;
+}

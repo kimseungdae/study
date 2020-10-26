@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/product_detail.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/iscroll.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div id="skipNavi" class="skip-navi">
+			<a href="#contents">본문 바로가기</a>
+		</div>
+		<!-- //skip navi -->
+		<header>
+			<div id="gnb" class="d_fixed">
+				<h1 class="logo"><a href="#">Discovery EXPEDITION</a></h1>
+				<div class="all-menu">
+					<button type="button" class="all-menu-open">전체메뉴 열기</button>
+				</div>
+				<div class="prev-link">
+					<a href="#">이전 페이지 이동</a>
+				</div>
+				<div class="search-link">
+					<a href="#">검색 페이지 이동</a>
+				</div>
+				<div class="cart-link">
+					<a href="#">장바구니<span>99</span>개로 이동</a>
+				</div>
+			</div>
+		</header>
+		<acrticle id="container">
+			<section id="contents">
+				<p class="txt-complete-info03">
+					<strong>현재 판매중인 상품이 아닙니다.</strong>
+					<span>DISCOVERY 몰을 이용해주셔서 감사합니다.</span>
+				</p>
+				<div class="btn-wrap01">
+					<a href="#" class="btn-style07"><span>메인으로 이동</span></a>
+				</div>
+				<h3 class="title02">추천상품<span class="sub-title01">이 상품을 본 고객이 함께 본 상품입니다.</span></h3>
+				<div class="item-list06">
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="item-img"><a href="#"><img src="../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+								<div class="item-info">
+									<p class="txt01"><del>99,000원</del><strong>99,000원</strong></p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="item-img"><a href="#"><img src="../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+								<div class="item-info">
+									<p class="txt01"><strong>99,000원</strong></p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="item-img"><a href="#"><img src="../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+								<div class="item-info">
+									<p class="txt01"><strong>99,000원</strong></p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="item-img"><a href="#"><img src="../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+								<div class="item-info">
+									<p class="txt01"><strong>99,000원</strong></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<script>
+
+					$('.item-list06').each(function(){
+						var $this = $(this).find('.swiper-container');
+						var mainItemList02 = new Swiper($this, {
+							slidesPerView: 'auto',
+							freeMode: true,
+							spaceBetween: 5
+						});
+					});
+				</script>
+			</section>
+		</acrticle>
+	</body>
+</html>

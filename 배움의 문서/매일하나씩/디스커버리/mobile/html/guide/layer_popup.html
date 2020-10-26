@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/iscroll.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div id="skipNavi" class="skip-navi">
+			<a href="#contents">본문 바로가기</a>
+		</div>
+		<!-- //skip navi -->
+		<header>
+			<div id="gnb" class="d_fixed">
+				<h1 class="logo"><a href="#">Discovery EXPEDITION</a></h1>
+				<div class="all-menu">
+					<button type="button" class="all-menu-open">전체메뉴 열기</button>
+				</div>
+				<div class="prev-link">
+					<a href="#">이전 페이지 이동</a>
+				</div>
+				<div class="search-link">
+					<a href="#">검색 페이지 이동</a>
+				</div>
+				<div class="cart-link">
+					<a href="#">장바구니<span>99</span>개로 이동</a>
+				</div>
+			</div>
+		</header>
+		<article id="container">
+			<section id="contents">
+
+				<h3 class="title03">등록 확인(L)<span style="margin-left:15px;color:red;">DE-01-0802</span></h3>
+				<!-- layerpopup -->
+				<div class="btn-wrap01">
+					<a href="#layerPop01" class="btn-style04 d_layer_open"><span>등록 확인(L)</span></a>
+				</div>
+
+				<h3 class="title03">취소 확인(L)<span style="margin-left:15px;color:red;">DE-01-0803</span></h3>
+				<!-- layerpopup -->
+				<div class="btn-wrap01">
+					<a href="#layerPop02" class="btn-style04 d_layer_open"><span>취소 확인(L)</span></a>
+				</div>
+				<h3 class="title03">우편번호<span style="margin-left:15px;color:red;">DE_01_0805</span></h3>
+				<!-- layerpopup -->
+				<div class="btn-wrap01">
+					<a href="#webviewLayer01" class="btn-style04 d_webview_open"><span>우편번호 팝업</span></a>
+				</div>
+				<h3 class="title03">우편번호<span style="margin-left:15px;color:red;">검색 결과가 없을대</span></h3>
+				<!-- layerpopup -->
+				<div class="btn-wrap01">
+					<a href="#webviewLayer02" class="btn-style04 d_webview_open"><span>우편번호 팝업</span></a>
+				</div>
+				<h3 class="title03">우편번호<span style="margin-left:15px;color:red;">검색 결과</span></h3>
+				<!-- layerpopup -->
+				<div class="btn-wrap01">
+					<a href="#webviewLayer03" class="btn-style04 d_webview_open"><span>우편번호 팝업</span></a>
+				</div>
+				<h3 class="title03">바코드<span style="margin-left:15px;color:red;">MO_DE-09-0101</span></h3>
+				<!-- layerpopup -->
+				<div class="btn-wrap01">
+					<a href="#layerBarcode" class="btn-style04 d_layer_open"><span>바코드 팝업</span></a>
+				</div>
+				<h3 class="title03">로그인<span style="margin-left:15px;color:red;">MO_DE-04-0104</span></h3>
+				<!-- layerpopup -->
+				<div class="btn-wrap01">
+					<a href="#webviewLayerLogin" class="btn-style04 d_webview_open"><span>로그인 팝업</span></a>
+				</div>
+
+			</section>
+		</article>
+
+		<footer>
+		</footer>
+
+		<div id="layerPop01" class="layer-popup layer-type02">
+			<div class="layer-popup-cont"  tabindex="0">
+				<div class="layer-popup-title"><span>등록 확인</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt02">
+							<p class="layer-txt col-type02">작성 내용을 등록 하시겠습니까?</p>
+							<div class="btn-wrap01">
+								<span>
+									<a href="#" class="btn-style09 d_layer_close"><span>취소</span></a><!-- 2018-06-27 -->
+									<a href="#" class="btn-style01"><span>확인</span></a><!-- 2018-06-27 -->
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="layerPop02" class="layer-popup layer-type02">
+			<div class="layer-popup-cont"  tabindex="0">
+				<div class="layer-popup-title"><span>등록 확인</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt02">
+							<p class="layer-txt col-type02">작성 내용을 취소 하시겠습니까?</p>
+							<div class="btn-wrap01">
+								<span>
+									<a href="#" class="btn-style09"><span>취소</span></a><!-- 2018-06-27 -->
+									<a href="#" class="btn-style01"><span>확인</span></a><!-- 2018-06-27 -->
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!-- 2018-06-27 -->
+		<div id="webviewLayer01" class="webview-layer-wrap">
+			<div class="webview-layer-cont" tabindex="0">
+				<h1 class="webview-layer-title01"><span>우편번호 찾기</span></h1>
+				<div class="webview-layer-scroll-box d_layer_scroll">
+					<div class="webview-layer-scroll-box-cnt">
+						<div class="cont-box-wrap">
+							<div class="zipcode-wrap">
+								<div class="search-input02">
+									<input type="search"><a href="#" class="btn-style01"><span>검색</span></a>
+								</div>
+								<p class="error-msg" style="display:block;">검색어를 입력하신 후 검색 버튼을 눌러주세요.</p><!-- 2018-07-02 -->
+								<p class="txt-sub-info01">도로명, 건물명, 지번, 사서함에 대해 통합검색이 가능합니다.</p>
+								<ul class="text-list01">
+									<li>도로명 + 건물번호 예)옥신타워</li>
+									<li>읍/면/동/리 + 지번 예) 도곡로 117</li>
+									<li>건물명 예) 서오구 00아파트</li>
+									<li>사서함+사서함번호 예) 광화문 우체국 사서함 45</li>
+								</ul>
+								<div class="btn-fixed-wrap02">
+									<div class="btn-fixed-cnt">
+										<a href="#" class="btn-style01"><span>확인</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="webview-layer-close">
+				<button type="button" class="d_webview_close">닫기</button>
+			</div>
+		</div>
+		<div id="webviewLayer02" class="webview-layer-wrap">
+			<div class="webview-layer-cont" tabindex="0">
+				<h1 class="webview-layer-title01"><span>우편번호 찾기</span></h1>
+				<div class="webview-layer-scroll-box d_layer_scroll">
+					<div class="webview-layer-scroll-box-cnt">
+						<div class="cont-box-wrap">
+							<div class="zipcode-wrap">
+								<div class="search-input02">
+									<input type="search"><button type="button" class="btn-style01"><span>검색</span></button>
+								</div>
+								<p class="error-msg" style="display:block;">검색어를 입력하신 후 검색 버튼을 눌러주세요.</p><!-- 2018-07-02 -->
+								<p class="txt-sub-info01">도로명, 건물명, 지번, 사서함에 대해 통합검색이 가능합니다.</p>
+								<ul class="text-list01">
+									<li>도로명 + 건물번호 예)옥신타워</li>
+									<li>읍/면/동/리 + 지번 예) 도곡로 117</li>
+									<li>건물명 예) 서오구 00아파트</li>
+									<li>사서함+사서함번호 예) 광화문 우체국 사서함 45</li>
+								</ul>
+								<ul class="item-list01">
+									<li class="no-result">검색결과가 없습니다.</li><!-- 결과 없음 -->
+								</ul>
+								<div class="btn-fixed-wrap02">
+									<div class="btn-fixed-cnt">
+										<a href="#" class="btn-style01"><span>확인</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="webview-layer-close">
+				<button type="button" class="d_webview_close">닫기</button>
+			</div>
+		</div>
+		<div id="webviewLayer03" class="webview-layer-wrap">
+			<div class="webview-layer-cont" tabindex="0">
+				<h1 class="webview-layer-title01"><span>우편번호 찾기</span></h1>
+				<div class="webview-layer-scroll-box d_layer_scroll">
+					<div class="webview-layer-scroll-box-cnt">
+						<div class="cont-box-wrap">
+							<div class="zipcode-wrap">
+								<div class="search-input02">
+									<input type="search"><button type="button" class="btn-style01"><span>검색</span></button>
+								</div>
+								<p class="error-msg" style="display:block;">검색어를 입력하신 후 검색 버튼을 눌러주세요.</p><!-- 2018-07-02 -->
+								<ul class="item-list01">
+									<li>
+										<div class="item-list-zip">
+											<div class="zipcode">08846</div>
+											<ul class="address-result">
+												<li><span>도로명</span><a href="#">: 서울시 종로구 양산2길 10</a></li>
+												<li><span>지번</span><a href="#">: 서울시 종로구 123-45</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="item-list-zip">
+											<div class="zipcode">08846</div>
+											<ul class="address-result">
+												<li><span>도로명</span><a href="#">: 서울시 종로구 양산2길 10</a></li>
+												<li><span>지번</span><a href="#">: 서울시 종로구 123-45</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="item-list-zip">
+											<div class="zipcode">08846</div>
+											<ul class="address-result">
+												<li><span>도로명</span><a href="#">: 서울시 종로구 양산2길 10</a></li>
+												<li><span>지번</span><a href="#">: 서울시 종로구 123-45</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="item-list-zip">
+											<div class="zipcode">08846</div>
+											<ul class="address-result">
+												<li><span>도로명</span><a href="#">: 서울시 종로구 양산2길 10</a></li>
+												<li><span>지번</span><a href="#">: 서울시 종로구 123-45</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="item-list-zip">
+											<div class="zipcode">08846</div>
+											<ul class="address-result">
+												<li><span>도로명</span><a href="#">: 서울시 종로구 양산2길 10</a></li>
+												<li><span>지번</span><a href="#">: 서울시 종로구 123-45</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="item-list-zip">
+											<div class="zipcode">08846</div>
+											<ul class="address-result">
+												<li><span>도로명</span><a href="#">: 서울시 종로구 양산2길 10</a></li>
+												<li><span>지번</span><a href="#">: 서울시 종로구 123-45</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-wrap01">
+									<a href="#" class="btn-style01"><span>확인</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="webview-layer-close">
+				<button type="button" class="d_webview_close">닫기</button>
+			</div>
+		</div>
+		<!-- //2018-06-27 -->
+
+		<!-- 2018-06-28 -->
+		<div id="layerBarcode" class="layer-popup">
+			<div class="layer-popup-cont">
+				<div class="layer-popup-title"><span>회원 바코드</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt02">
+							<div class="barcode-img-wrap">
+								<img src="../../images/common/img_barcode.png" alt="회원 바코드">
+							</div>
+							<div class="btn-wrap01">
+								<a href="#" class="btn-style01"><span>확인</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!-- //2018-06-28 -->
+		<!-- 2018-07-04  -->
+
+		<div id="webviewLayerLogin" class="webview-layer-wrap">
+			<div class="webview-layer-cont" tabindex="0">
+				<h1 class="webview-layer-title01"><span>로그인</span></h1>
+				<div class="webview-layer-scroll-box d_layer_scroll">
+					<div class="webview-layer-scroll-box-cnt">
+						<div class="cont-box-wrap"><!-- 2018-06-07 -->
+							<div class="login-wrap login-type02">
+								<div class="login-cont">
+									<p class="txt-login-info">회원으로 로그인하시면<br> 구매 시 다양한 혜택을 이용하실 수 있습니다.</p><!-- 2018-06-28 -->
+									<input type="text" title="아이디 입력창" placeholder="아이디">
+									<input type="password" title="비밀번호 입력창" placeholder="비밀번호">
+									<ul class="login-check-id">
+										<li>
+											<span class="check-skin">
+												<input type="checkbox" id="autoLogin" checked="checked">
+												<span>선택</span>
+											</span>
+											<label for="autoLogin">자동 로그인</label>
+										</li>
+										<li>
+											<span class="check-skin">
+												<input type="checkbox" id="idSave">
+												<span>선택</span>
+											</span>
+											<label for="idSave">아이디 저장</label>
+										</li>
+									</ul>
+									<p class="error-msg" style="display:block;">5회 이상 로그인에 실패했습니다.<br />비밀번호 찾기에서 새로운 비밀번호를 설정해주세요.</p>
+									<div class="btn-wrap01">
+										<a href="#" class="btn-style07"><span>로그인</span></a><!-- 2018-06-22 -->
+										<a href="#" class="btn-naver"><span>네이버로 로그인</span></a>
+										<a href="#" class="btn-style08"><span>비회원 주문하기</span></a><!-- 2018-06-22 -->
+									</div>
+									<div class="login-btn-lnk">
+										<a href="#">아이디 찾기</a><a href="#">비밀번호 찾기</a><a href="#">회원가입</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="webview-layer-close">
+				<button type="button" class="d_webview_close">닫기</button>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				layerPopup.webviewOpenNow('#webviewLayerLogin');
+				//layerPopup.webviewCloseNow('#webviewLayerLogin');
+			});
+		</script>
+		<!-- //2018-07-04  -->
+	</body>
+</html>

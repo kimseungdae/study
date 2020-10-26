@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+ <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <v-app-bar-nav-icon @click="drawer = !drawer"/>
+      <v-toolbar-title>Page title</v-toolbar-title>
+      <v-spacer/>
+      <v-btn icon to="/about">
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+      <v-btn icon to="/">
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+    </v-app-bar>
+    <!-- router -->
+    <v-navigation-drawer v-model="drawer">
+          sdfsdf
+    </v-navigation-drawer>
+    <v-content>
+      <router-view/>
+    </v-content>
+    <!-- footer -->
+    <v-footer app color="primary" dark absolute>
+      <v-spacer></v-spacer>
+      <div>&copy; {{ new Date().getFullYear() }}</div>
+    </v-footer>
+  </v-app>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+export default {
+  name: 'App',
+  drawer: false
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>

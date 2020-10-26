@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" >
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/showing.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div id="skipNavi" class="skip-navi">
+			<a href="#gnb">왼쪽 메뉴</a>
+			<a href="#contents">컨텐츠</a>
+			<a href="#rightSide">상품 주문 영역</a>
+		</div>
+		<!-- //skip navi -->
+		<div id="wrap"><!-- 2018-05-23 -->
+			<header id="gnb">
+				<h1><a href="#"><img src="../../images/common/logo.png" alt="Discovery EXPEDITION"></a></h1>
+				<aside id="rightSide">
+					<ul class="d_accordion">
+						<li class="quick-menu">
+							<button type="button" class="quick-menu-open quick-menu-bg01 d_accordion_select" title="개인화 영역">개인화 영역 열기</button>
+							<div class="quick-menu-layer">
+								<div class="quick-menu-cont01">
+									<p class="quick-menu-txt01"><a href="#">LOG-IN</a></p>
+									<p class="quick-menu-txt01"><a href="#">회원가입</a></p>
+									<p class="quick-menu-txt01"><a href="#">마이페이지</a></p>
+								</div>
+							</div>
+							<div class="quick-menu-layer">
+								<div class="quick-menu-cont01">
+									<p class="quick-menu-txt02">안녕하세요<br>김민희 님!</p>
+									<p class="quick-menu-txt01"><a href="#">LOG-OUT</a></p>
+									<p class="quick-menu-txt01"><a href="#">마이페이지</a></p>
+								</div>
+							</div>
+						</li>
+						<li class="quick-menu">
+							<button type="button" class="quick-menu-open quick-menu-bg02 d_accordion_select" title="장바구니"><span>99</span>장바구니 열기</button>
+							<div class="quick-menu-layer">
+								<div class="quick-menu-cont01">
+									<p class="quick-menu-txt01">장바구니에<br>담은 상품이<br>없습니다.</p>
+								</div>
+								<div class="quick-menu-cont02">
+									<p class="quick-menu-txt03"><a href="#">장바구니<br>바로가기</a></p>
+								</div>
+							</div>
+							<div class="quick-menu-layer">
+								<div class="quick-menu-cont03">
+									<div class="quick-menu-list" id="quickMenuList01">
+										<div class="swiper-container">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide"><a href="#"><img src="../../images/thumb/@product01.png" alt="상품이미지1"></a></li>
+												<li class="swiper-slide"><a href="#"><img src="../../images/thumb/@product02.png" alt="상품이미지2"></a></li>
+												<li class="swiper-slide"><a href="#"><img src="../../images/thumb/@product02.png" alt="상품이미지3"></a></li>
+												<li class="swiper-slide"><a href="#"><img src="../../images/thumb/@product02.png" alt="상품이미지4"></a></li>
+												<li class="swiper-slide"><a href="#"><img src="../../images/thumb/@product02.png" alt="상품이미지5"></a></li>
+											</ul>
+										</div>
+										<div class="quick-menu-list-prev-next">
+											<button type="button" class="quick-menu-list-prev">이전</button>
+											<button type="button" class="quick-menu-list-next">다음</button>
+										</div>
+									</div>
+								</div>
+								<script>
+								var quickMenuList01 = new Swiper('#quickMenuList01 .swiper-container', {
+									direction: 'vertical',
+									spaceBetween: 5,
+									slidesPerView: 2,
+									slidesPerGroup: 2,
+									observer: true,
+									observeParents: true,
+									navigation: {
+										nextEl: '#quickMenuList01 .quick-menu-list-next',
+										prevEl: '#quickMenuList01 .quick-menu-list-prev'
+									}
+								});
+								</script>
+								<div class="quick-menu-cont02">
+									<p class="quick-menu-txt03"><a href="#">장바구니<br>바로가기</a></p>
+								</div>
+							</div>
+						</li>
+						<li class="quick-menu">
+							<button type="button" class="quick-menu-open quick-menu-bg03 d_accordion_select" title="최근 본 상품">최근 본 상품 열기</button>
+							<div class="quick-menu-layer">
+								<div class="quick-menu-cont01">
+									<p class="quick-menu-txt01">최근 본<br>상품이<br>없습니다</p>
+								</div>
+								<div class="quick-menu-cont02">
+									<p class="quick-menu-txt03"><a href="#">최근 본 상품</a></p>
+								</div>
+							</div>
+							<div class="quick-menu-layer">
+								<div class="quick-menu-cont03">
+									<div class="quick-menu-list" id="quickMenuList02">
+										<div class="swiper-container">
+											<ul class="swiper-wrapper">
+												<li class="swiper-slide"><a href="#"><img src="../../images/thumb/@product01.png" alt="상품이미지1"></a></li>
+												<li class="swiper-slide"><a href="#"><img src="../../images/thumb/@product02.png" alt="상품이미지2"></a></li>
+												<li class="swiper-slide"><a href="#"><img src="../../images/thumb/@product02.png" alt="상품이미지3"></a></li>
+												<li class="swiper-slide"><a href="#"><img src="../../images/thumb/@product02.png" alt="상품이미지4"></a></li>
+												<li class="swiper-slide"><a href="#"><img src="../../images/thumb/@product02.png" alt="상품이미지5"></a></li>
+											</ul>
+										</div>
+										<div class="quick-menu-list-prev-next">
+											<button type="button" class="quick-menu-list-prev">이전</button>
+											<button type="button" class="quick-menu-list-next">다음</button>
+										</div>
+									</div>
+								</div>
+								<script>
+								var quickMenuList02 = new Swiper('#quickMenuList02 .swiper-container', {
+									direction: 'vertical',
+									spaceBetween: 5,
+									slidesPerView: 2,
+									slidesPerGroup: 2,
+									observer: true,
+									observeParents: true,
+									navigation: {
+										nextEl: '#quickMenuList02 .quick-menu-list-next',
+										prevEl: '#quickMenuList02 .quick-menu-list-prev'
+									}
+								});
+								</script>
+								<div class="quick-menu-cont02">
+									<p class="quick-menu-txt03"><a href="#">최근 본 상품</a></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="lang">
+						<a href="#" title="영문 사이트로 이동">EN</a>
+					</div>
+				</aside>
+				<nav class="gnb-style01">
+					<div class="gnb-style01-nav">
+						<ul class="depth1">
+							<li>
+								<a href="#">MEN</a>
+								<ul class="depth2">
+									<li>
+										<a href="#">18SS 신상품</a>
+										<ul class="depth3">
+											<li><a href="#">자켓</a></li>
+											<li><a href="#">티셔츠/셔츠</a></li>
+											<li><a href="#">팬츠</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">자켓</a>
+										<ul class="depth3">
+											<li><a href="#">방풍 자켓</a></li>
+											<li><a href="#">방수 자켓</a></li>
+											<li><a href="#">패딩 자켓</a></li>
+											<li><a href="#">소프트쉘 자켓</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">티셔츠/셔츠</a>
+										<ul class="depth3">
+											<li><a href="#">라운드 긴팔티셔츠</a></li>
+											<li><a href="#">맨투맨 티셔츠</a></li>
+											<li><a href="#">후드 티셔츠</a></li>
+											<li><a href="#">집업 티셔츠</a></li>
+											<li><a href="#">셔츠</a></li>
+											<li><a href="#">폴로 티셔츠</a></li>
+											<li><a href="#">라운드 반팔티셔츠</a></li>
+											<li><a href="#">슬리브리스</a></li>
+											<li><a href="#">스웨터</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">베스트</a>
+										<ul class="depth3">
+											<li><a href="#">베스트</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">팬츠</a>
+										<ul class="depth3">
+											<li><a href="#">팬츠</a></li>
+											<li><a href="#">트레이닝 팬츠</a></li>
+											<li><a href="#">숏팬츠</a></li>
+											<li><a href="#">레깅스</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">트레이닝웨어</a>
+										<ul class="depth3">
+											<li><a href="#">트레이닝 집업</a></li>
+											<li><a href="#">트레이닝 팬츠</a></li>
+											<li><a href="#">트레이닝 이너</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">비치웨어</a>
+										<ul class="depth3">
+											<li><a href="#">래쉬가드</a></li>
+											<li><a href="#">비치 팬츠</a></li>
+											<li><a href="#">워터레깅스</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">다운</a>
+										<ul class="depth3">
+											<li><a href="#">다운자켓</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">세일</a>
+										<ul class="depth3">
+											<li><a href="#">다운</a></li>
+											<li><a href="#">자켓/베스트</a></li>
+											<li><a href="#">티셔츠/셔츠</a></li>
+											<li><a href="#">팬츠</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="on">
+								<a href="#">WOMEN</a>
+								<ul class="depth2">
+									<li>
+										<a href="#">18SS 신상품</a>
+										<ul class="depth3">
+											<li><a href="#">자켓</a></li>
+											<li><a href="#">티셔츠/셔츠</a></li>
+											<li><a href="#">팬츠</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">자켓</a>
+										<ul class="depth3">
+											<li><a href="#">방풍 자켓</a></li>
+											<li><a href="#">방수 자켓</a></li>
+											<li><a href="#">패딩 자켓</a></li>
+											<li><a href="#">소프트쉘 자켓</a></li>
+										</ul>
+									</li>
+									<li class="on">
+										<a href="#">티셔츠/셔츠</a>
+										<ul class="depth3">
+											<li><a href="#">라운드 긴팔티셔츠</a></li>
+											<li><a href="#">맨투맨 티셔츠</a></li>
+											<li><a href="#">후드 티셔츠</a></li>
+											<li><a href="#">집업 티셔츠</a></li>
+											<li><a href="#">폴로 티셔츠</a></li>
+											<li><a href="#">라운드 반팔티셔츠</a></li>
+											<li><a href="#">슬리브리스</a></li>
+											<li><a href="#">스웨터</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">베스트</a>
+										<ul class="depth3">
+											<li><a href="#">베스트</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">팬츠</a>
+										<ul class="depth3">
+											<li><a href="#">팬츠</a></li>
+											<li><a href="#">트레이닝 팬츠</a></li>
+											<li><a href="#">숏팬츠</a></li>
+											<li><a href="#">레깅스</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">트레이닝웨어</a>
+										<ul class="depth3">
+											<li><a href="#">트레이닝 집업</a></li>
+											<li><a href="#">트레이닝 팬츠</a></li>
+											<li><a href="#">트레이닝 이너</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">비치웨어</a>
+										<ul class="depth3">
+											<li><a href="#">래쉬가드</a></li>
+											<li><a href="#">비치 팬츠</a></li>
+											<li><a href="#">워터레깅스</a></li>
+											<li><a href="#">원피스</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">다운</a>
+										<ul class="depth3">
+											<li><a href="#">다운자켓</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">세일</a>
+										<ul class="depth3">
+											<li><a href="#">다운</a></li>
+											<li><a href="#">자켓</a></li>
+											<li><a href="#">티셔츠/셔츠</a></li>
+											<li><a href="#">팬츠</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">KIDS</a>
+								<ul class="depth2">
+									<li>
+										<a href="#">aaaaa</a>
+										<ul class="depth3">
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">SHOES</a>
+								<ul class="depth2">
+									<li>
+										<a href="#">aaaaa</a>
+										<ul class="depth3">
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">ACC</a>
+								<ul class="depth2">
+									<li>
+										<a href="#">aaaaa</a>
+										<ul class="depth3">
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">OUTLET</a>
+								<ul class="depth2">
+									<li>
+										<a href="#">aaaaa</a>
+										<ul class="depth3">
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">PROMOTION</a>
+								<ul class="depth2">
+									<li>
+										<a href="#">aaaaa</a>
+										<ul class="depth3">
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">DISCOVERER</a>
+								<ul class="depth2">
+									<li>
+										<a href="#">aaaaa</a>
+										<ul class="depth3">
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">MY PAGE</a>
+								<ul class="depth2">
+									<li>
+										<a href="#">aaaaa</a>
+										<ul class="depth3">
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">CS CENTER</a>
+								<ul class="depth2">
+									<li>
+										<a href="#">aaaaa</a>
+										<ul class="depth3">
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+											<li><a href="#">aaaaaa</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- 2018-06-07 -->
+					<div class="gnb-total-search d_search">
+						<button type="button" class="gnb-search-open d_search_sel"><span>Search</span></button>
+						<div class="gnb-search-input">
+							<input type="text"><button type="button"><span>검색</span></button>
+						</div>
+					</div>
+					<!-- //2018-06-07 -->
+				</nav>
+				<nav class="gnb-style02">
+					<button type="button" class="nav-open">전체메뉴 열기</button>
+					<div class="gnb-style02-layer">
+						<div class="gnb-style02-nav">
+							<ul class="depth1">
+								<li>
+									<a href="#">MEN</a>
+									<ul class="depth2">
+										<li>
+											<a href="#">18SS 신상품</a>
+											<ul class="depth3">
+												<li><a href="#">자켓</a></li>
+												<li><a href="#">티셔츠/셔츠</a></li>
+												<li><a href="#">팬츠</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">자켓</a>
+											<ul class="depth3">
+												<li><a href="#">방풍 자켓</a></li>
+												<li><a href="#">방수 자켓</a></li>
+												<li><a href="#">패딩 자켓</a></li>
+												<li><a href="#">소프트쉘 자켓</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">티셔츠/셔츠</a>
+											<ul class="depth3">
+												<li><a href="#">라운드 긴팔티셔츠</a></li>
+												<li><a href="#">맨투맨 티셔츠</a></li>
+												<li><a href="#">후드 티셔츠</a></li>
+												<li><a href="#">집업 티셔츠</a></li>
+												<li><a href="#">셔츠</a></li>
+												<li><a href="#">폴로 티셔츠</a></li>
+												<li><a href="#">라운드 반팔티셔츠</a></li>
+												<li><a href="#">슬리브리스</a></li>
+												<li><a href="#">스웨터</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">베스트</a>
+											<ul class="depth3">
+												<li><a href="#">베스트</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">팬츠</a>
+											<ul class="depth3">
+												<li><a href="#">팬츠</a></li>
+												<li><a href="#">트레이닝 팬츠</a></li>
+												<li><a href="#">숏팬츠</a></li>
+												<li><a href="#">레깅스</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">트레이닝웨어</a>
+											<ul class="depth3">
+												<li><a href="#">트레이닝 집업</a></li>
+												<li><a href="#">트레이닝 팬츠</a></li>
+												<li><a href="#">트레이닝 이너</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">비치웨어</a>
+											<ul class="depth3">
+												<li><a href="#">래쉬가드</a></li>
+												<li><a href="#">비치 팬츠</a></li>
+												<li><a href="#">워터레깅스</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">다운</a>
+											<ul class="depth3">
+												<li><a href="#">다운자켓</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">세일</a>
+											<ul class="depth3">
+												<li><a href="#">다운</a></li>
+												<li><a href="#">자켓/베스트</a></li>
+												<li><a href="#">티셔츠/셔츠</a></li>
+												<li><a href="#">팬츠</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="on">
+									<a href="#">WOMEN</a>
+									<ul class="depth2">
+										<li>
+											<a href="#">18SS 신상품</a>
+											<ul class="depth3">
+												<li><a href="#">자켓</a></li>
+												<li><a href="#">티셔츠/셔츠</a></li>
+												<li><a href="#">팬츠</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">자켓</a>
+											<ul class="depth3">
+												<li><a href="#">방풍 자켓</a></li>
+												<li><a href="#">방수 자켓</a></li>
+												<li><a href="#">패딩 자켓</a></li>
+												<li><a href="#">소프트쉘 자켓</a></li>
+											</ul>
+										</li>
+										<li class="on">
+											<a href="#">티셔츠/셔츠</a>
+											<ul class="depth3">
+												<li><a href="#">라운드 긴팔티셔츠</a></li>
+												<li><a href="#">맨투맨 티셔츠</a></li>
+												<li><a href="#">후드 티셔츠</a></li>
+												<li><a href="#">집업 티셔츠</a></li>
+												<li><a href="#">폴로 티셔츠</a></li>
+												<li><a href="#">라운드 반팔티셔츠</a></li>
+												<li><a href="#">슬리브리스</a></li>
+												<li><a href="#">스웨터</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">베스트</a>
+											<ul class="depth3">
+												<li><a href="#">베스트</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">팬츠</a>
+											<ul class="depth3">
+												<li><a href="#">팬츠</a></li>
+												<li><a href="#">트레이닝 팬츠</a></li>
+												<li><a href="#">숏팬츠</a></li>
+												<li><a href="#">레깅스</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">트레이닝웨어</a>
+											<ul class="depth3">
+												<li><a href="#">트레이닝 집업</a></li>
+												<li><a href="#">트레이닝 팬츠</a></li>
+												<li><a href="#">트레이닝 이너</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">비치웨어</a>
+											<ul class="depth3">
+												<li><a href="#">래쉬가드</a></li>
+												<li><a href="#">비치 팬츠</a></li>
+												<li><a href="#">워터레깅스</a></li>
+												<li><a href="#">원피스</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">다운</a>
+											<ul class="depth3">
+												<li><a href="#">다운자켓</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">세일</a>
+											<ul class="depth3">
+												<li><a href="#">다운</a></li>
+												<li><a href="#">자켓</a></li>
+												<li><a href="#">티셔츠/셔츠</a></li>
+												<li><a href="#">팬츠</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">KIDS</a>
+									<ul class="depth2">
+										<li>
+											<a href="#">aaaaa</a>
+											<ul class="depth3">
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">SHOES</a>
+									<ul class="depth2">
+										<li>
+											<a href="#">aaaaa</a>
+											<ul class="depth3">
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">ACC</a>
+									<ul class="depth2">
+										<li>
+											<a href="#">aaaaa</a>
+											<ul class="depth3">
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">OUTLET</a>
+									<ul class="depth2">
+										<li>
+											<a href="#">aaaaa</a>
+											<ul class="depth3">
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">PROMOTION</a>
+									<ul class="depth2">
+										<li>
+											<a href="#">aaaaa</a>
+											<ul class="depth3">
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">DISCOVERER</a>
+									<ul class="depth2">
+										<li>
+											<a href="#">aaaaa</a>
+											<ul class="depth3">
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">MY PAGE</a>
+									<ul class="depth2">
+										<li>
+											<a href="#">aaaaa</a>
+											<ul class="depth3">
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">CS CENTER</a>
+									<ul class="depth2">
+										<li>
+											<a href="#">aaaaa</a>
+											<ul class="depth3">
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+												<li><a href="#">aaaaaa</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- 2018-05-28 -->
+						<div class="gnb-total-search">
+							<input type="text" placeholder="Search">
+						</div>
+						<!-- //2018-05-28 -->
+						<button type="button" class="nav-close">전체메뉴 닫기</button>
+					</div>
+				</nav>
+			</header>
+			<acrticle id="container" class="contents-type01">
+				<section id="contents">
+					<div class="contents-type01-box01">
+						<div class="temp-box01">
+							<div class="temp-box01-img01">
+								<a href="#"><img src="../../images/thumb/@thumb08.png" alt="이미지1"></a>
+							</div>
+							<div class="temp-box01-txt01">
+								<p>WETOURIST라는 테마를 통해서, 여행에 대해 무한한 욕구를 가지고 있지만 “여행중” 이라는 특별한 상태를 지속할수 없는 현재 우리의 모습을 반영했습니다. 우리가 현재 지내고 있는 일상과 관계속에서 만들어가는 “우리여행가” WETOURIST 입니다. “DAILY”라는 키워드를 잊지 않고, 10명의 모델 그리고 8곳의 각각의 장소에서 이루어진 룩북의 형태는 우리가 그리는 일상에서의 여행입니다.각각의 장소에서 이루어진 룩북의 형태는 우리가 그리는 일상에서의 여행입니다.</p>
+							</div>
+						</div>
+					</div>
+					<div class="contents-type01-box03">
+						<div class="temp-box02">
+							<div class="temp-box02-img01">
+								<img src="../../images/thumb/@thumb09.png" alt="이미지1">
+							</div>
+							<p class="temp-box02-txt01">
+								About The Collection
+							</p>
+							<p class="temp-box02-txt02">
+								WETOURIST라는 테마를 통해서, 여행에 대해 무한한 욕구를 가지고 있지만 “여행중” 이라는 특별한 상태를 지속할수 없는 현재 우리의 모습을 반영했습니다. 우리가 현재 지내고 있는 일상과 관계속에서 만들어가는 “우리여행가” WETOURIST 입니다. “DAILY”라는 키워드를 잊지 않고, 10명의 모델 그리고 8곳의 각각의 장소에서 이루어진 룩북의 형태는 우리가 그리는 일상에서의 여행입니다.
+							</p>
+						</div>
+					</div>
+					<div class="contents-type01-box03">
+						<div class="temp-box03">
+							<div class="temp-box03-img01">
+								<img src="../../images/thumb/@thumb07.png" alt="이미지1">
+							</div>
+							<p class="temp-box03-txt01">
+								Manuelle Et Guillaume
+							</p>
+							<p class="temp-box03-txt02">
+								자신의 취향을 잘 알고, 유행을 쫓지 않으며 강한 내면을 가진 여성을 위한옷을 만드는 디자이너레이블.마누엘에기욤의 2018 스프링 컬렉션은 깨끗한 실루엣이 보다 정돈된 느낌을 주는 디자인과 톤온톤의 컬러링으로 봄의 화사함을 다채롭게 풀어냈습니다. 특히 플라워 부케 자수는 기존의 절제된 디자인에 좀더 사랑스러운 연출법을 더해 전개합니다.  
+							</p>
+						</div>
+					</div>
+					<div class="contents-type01-box01">
+						<div class="temp-box04">
+							<div class="temp-box04-img01">
+								<img src="../../images/thumb/@thumb11.png" alt="이미지1">
+							</div>
+							<div class="temp-box04-txt">
+								<p class="temp-box04-txt02">컬렉션이 준비되는 일련의 과정들. 보여주는 것과 소통하는 것이 중요한 시대에 쉽게 볼 수 없었던 쇼 이면의 다양한 과정들을 컬렉션에 담아냈다. 긴박했던 백스테이지 현장, 쇼를 준비하는 디자이너의 고뇌, 최종 모델 캐스팅의 순간 등 과정들 속에 풀어낸 런웨이는 그 어떤 때보다 생동감 있고 박진감 넘치는 이야기가 담겼다.이번 18S/S 노앙 컬렉션은 봄과 여름을 상징하는 컬러에서 받은 영감을 곳곳에 녹여내 흥미롭고 세련된 컬러 플레이로 전체적으로 완성도 있는 컬렉션을 선보였다. 메인에서 탈락한 몇 가지 패브릭을 뒤섞어 옷을 만들기도 하고, '이건 노앙스럽지 않아'라고 배제했던 컬러에 도전하며 기존의 노앙의 모던한 실루엣에 다양한 컬러감 더해 유니크하고 세련미를 더해 컬렉션을 구성했다.  또한 안감을 밖으로 꺼내서 디자인한 셔츠, 톤온톤의 컬러 배치와 셔츠 안에 숨겨진 이너를 보여준 위트 있는 스타일링은 이번 컬렉션을 대표하는 룩으로 Behind The Show, PROCES/S가 추구하는 바를 가장 잘 보여준다.</p>
+								<p class="temp-box04-txt01">"다섯 가지 스트리트 스타일" time 2018 봄/여름 컬렉션 Have a good time</p>
+							</div>
+						</div>
+					</div>
+					<div class="contents-type01-box03">
+						<div class="temp-box05">
+							<img src="../../images/thumb/@thumb12.png" alt="이미지1">
+						</div>
+					</div>
+					<div class="contents-type01-box03">
+						<div class="temp-box06">
+							<div class="temp-box06-video">
+								<embed width="420" height="315" src="https://www.youtube.com/v/V2hlQkVJZhE">
+							</div>
+							<p class="temp-box06-txt01">
+								컬렉션이 준비되는 일련의 과정들. 보여주는 것과 소통하는 것이 중요한 시대에 쉽게 볼 수 없었던 쇼 이면의 다양한 과정들을 컬렉션에 담아냈다. 긴박했던 백스테이지 현장, 쇼를 준비하는 디자이너의 고뇌, 최종 모델 캐스팅의 순간 등 과정들 속에 풀어낸 런웨이는 그 어떤 때보다 생동감 있고 박진감 넘치는 이야기가 담겼다.이번 18S/S 노앙 컬렉션은 봄과 여름을 상징하는 컬러에서 받은 영감을 곳곳에 녹여내 흥미롭고 세련된 컬러 플레이로 전체적으로 완성도 있는 컬렉션을 선보였다. 메인에서 탈락한 몇 가지 패브릭을 뒤섞어 옷을 만들기도 하고, '이건 노앙스럽지 않아'라고 배제했던 컬러에 도전하며 기존의 노앙의 모던한 실루엣에 다양한 컬러감 더해 유니크하고 세련미를 더해 컬렉션을 구성했다.  
+							</p>
+						</div>
+					</div>
+					<div class="contents-type01-box03">
+						<div class="temp-box07">
+							<div class="item-list06 d_style_slide">
+								<div class="swiper-container">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+											<div class="item-info">
+												<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+											<div class="item-info">
+												<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+											<div class="item-info">
+												<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+											<div class="item-info">
+												<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+											<div class="item-info">
+												<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+											<div class="item-info">
+												<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+											<div class="item-info">
+												<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+											<div class="item-info">
+												<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+											<div class="item-info">
+												<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+											</div>
+										</li>
+										<li class="swiper-slide">
+											<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+											<div class="item-info">
+												<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="item-list-pagination"></div>
+								<button type="button" class="item-list-prev">이전</button>
+								<button type="button" class="item-list-next">다음</button>
+							</div>
+						</div>
+					</div>
+					<div class="contents-type01-box03">
+						<div class="temp-box07">
+							<div class="item-list07">
+								<ul>
+									<li>
+										<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+										<div class="item-info">
+											<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+										<div class="item-info">
+											<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+										<div class="item-info">
+											<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+										<div class="item-info">
+											<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+										<div class="item-info">
+											<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="contents-type01-box03">
+						<div class="temp-box07">
+							<div class="item-list07">
+								<ul>
+									<li>
+										<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+										<div class="item-info">
+											<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+										<div class="item-info">
+											<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="item-img"><a href="#"><img src="../../images/thumb/thumb_234x313_01.jpg" alt=""></a></div>
+										<div class="item-info">
+											<p class="txt01"><a href="#">[여성]에리포인트 린넨피케티셔츠린넨피케티셔츠</a></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="contents-type01-box03">
+						<div class="temp-box09">
+							<div class="txt-period">
+								<div class="txt-period-inner">
+									<p class="txt-period-date">등록일자 : 2018-04-26</p>
+									<div class="btn-share-wrap d_toggle_hover">
+										<button type="button" class="btn-share btn-action d_toggle_hover_sel" title="공유하기 버튼 보기">공유하기</button>
+										<div class="btn-share-layer d_toggle_hover_cont">
+											<a href="#" class="btn-share type01" title="face book 공유">새창열림</a>
+											<a href="#" class="btn-share type02" title="카카오 스토리 공유">새창열림</a>
+											<a href="#" class="btn-share type03" title="url 공유">새창열림</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btn-wrap">
+								<a href="#" class="btn-style02">STYLE 목록보기</a>
+							</div>
+						</div>
+					</div>
+					<div class="contents-type01-box03">
+						<div class="temp-box08">
+							<p class="temp-box08-txt01">최근 STYLE 다른 글 보기</p>
+							<div class="item-list05">
+								<ul>
+									<li>
+										<div class="item-list05-img"><a href="#"><img src="../../images/thumb/@thumb07.png" alt="이미지1"></a></div>
+										<p class="item-list05-txt01"><a href="#">Women Life Style</a></p>
+									</li>
+									<li>
+										<div class="item-list05-img"><a href="#"><img src="../../images/thumb/@thumb07.png" alt="이미지1"></a></div>
+										<p class="item-list05-txt01"><a href="#">Women Life StyleWomen Life StyleWomen Life Style</a></p>
+									</li>
+									<li>
+										<div class="item-list05-img"><a href="#"><img src="../../images/thumb/@thumb07.png" alt="이미지1"></a></div>
+										<p class="item-list05-txt01"><a href="#">Women Life Style</a></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<script>
+						$('.d_style_slide').each(function(){
+							var $this = $(this).find('.swiper-container'),
+								$thisPaing = $(this).find('.item-list-pagination'),
+								$thisPrev = $(this).find('.item-list-prev'),
+								$thisNext = $(this).find('.item-list-next');
+							var itemList06 = new Swiper($this, {
+								slidesPerGroup: 1,
+								slidesPerView: 'auto',
+								spaceBetween: 20,
+								loop: true,
+								pagination: {
+									el: $thisPaing,
+									type: 'fraction'
+								},
+								navigation: {
+									nextEl: $thisNext,
+									prevEl: $thisPrev
+								},
+								on: {
+									init: function() {
+										$this.find('li').eq(this.activeIndex + 2).addClass('on').siblings().removeClass('on'); 
+									},
+									slideChange: function() {
+										$this.find('li').eq(this.activeIndex + 2).addClass('on').siblings().removeClass('on');
+									}
+								}
+							});
+						});
+					</script>
+				</section>
+			</acrticle>
+			<footer>
+				<div class="footer-sort">
+					<a href="#">ABOUT DISCOVERY</a><a href="#">I AM A DISCOVERER</a>
+					<div>
+						<a href="#" class="sns-type01">인스타그램 공유</a><a href="#" class="sns-type02">페이스북 공유</a><a href="#" class="sns-type03">유투브 공유</a><a href="#" class="sns-type04">네이버 블로그 공유</a>
+					</div>
+				</div>
+				<div class="footer-cnt">
+					<ul class="footer-tab">
+						<li><a href="#">공지사항</a></li>
+						<li><a href="#">매장안내</a></li>
+						<li><a href="#">단체구매문의</a></li>
+						<li><a href="#">제휴문의</a></li>
+						<li><a href="#">대리점 개설문의</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">1:1 고객상담</a></li>
+					</ul>
+					<address>
+						서울특별시 강남구 언주로 541 에프앤에프빌딩<br>
+						사업자등록번호 : 214-86-09977 /  통신판매업 신고번호 : 제2011-서울강남-00086호 (주) 에프앤에프 / 대표 : 김창수<br>
+						교환·반품 반송처 : (17384) 경기도 이천시 마장면 프리미엄아울렛로 113-37 F&amp;F 물류센터 디스커버리 물류부<br>
+						A/S : 02 - 3474 - 8914 E - MAIL : <a href="mailto:discovery@fnf.co.kr">discovery@fnf.co.kr</a> FAX : 02 - 520 - 0991
+					</address>
+					<div class="cs-info">
+						<p class="cs-info-as">
+							<strong>CS CENTER</strong> 080-820-8802
+							<span>AM 오전 9시 ~ PM 6시 <br>DAY OFF (SATURDAY, SUNDAY, HOLIDAY)</span>
+						</p>
+						<a href="#" class="btn-footer01">Google Play</a><a href="#" class="btn-footer02">App Store</a>
+					</div>
+				</div>
+				<div class="footer-utile">
+					<ul class="footer-tab">
+						<li><a href="#">개인정보취급방침 </a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">이메일 무단 수집 거부</a></li>
+					</ul>
+					<a href="#" class="btn-kcp">KCP 안전구매서비스 기업 </a>
+					<div class="footer-site">
+						<span>FAMILY SITE</span>
+						<div class="select-style01 d_select">
+							<button type="button" class="d_select_sel" style="width: 150px;"><span>선택</span></button>
+							<ul>
+								<li><a href="#">F&amp;F</a></li>
+								<li><a href="#">F&amp;F</a></li>
+								<li><a href="#">F&amp;F</a></li>
+								<li><a href="#">F&amp;F</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="top">
+					<div class="top-stand d_fix">
+						<div class="top-cont d_fix_obj">
+							<a href="#skipNavi">TOP</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

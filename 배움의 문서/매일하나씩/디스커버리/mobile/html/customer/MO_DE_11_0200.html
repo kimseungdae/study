@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/customer.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/iscroll.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div id="skipNavi" class="skip-navi">
+			<a href="#contents">본문 바로가기</a>
+		</div>
+		<!-- //skip navi -->
+		<header>
+			<div id="gnb" class="d_fixed">
+				<h1 class="logo"><a href="#">Discovery EXPEDITION</a></h1>
+				<div class="all-menu">
+					<button type="button" class="all-menu-open">전체메뉴 열기</button>
+				</div>
+				<div class="prev-link">
+					<a href="#">이전 페이지 이동</a>
+				</div>
+				<div class="search-link">
+					<a href="#">검색 페이지 이동</a>
+				</div>
+				<div class="cart-link">
+					<a href="#">장바구니<span>99</span>개로 이동</a>
+				</div>
+			</div>
+		</header>
+		<article id="container">
+			<section id="contents">
+				<h2 class="title01 d_fixed"><span>1:1 고객상담</span></h2>
+				<div class="cont-box-wrap cs-wrap">
+					<div class="board-write">
+						<p class="required-txt">* 필수 입력항목</p>
+						<table>
+							<caption>정보입력</caption>
+							<colgroup>
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row"><label for="memberEmail">답변 이메일</label> <span class="required">*</span></th><!-- 2018-06-29 -->
+								</tr>
+								<tr>
+									<td>
+										<div class="board-write-email-wrap02">
+											<input type="text" id="memberEmail"><span class="hyphen">@</span><input type="text">
+											<div class="email-group">
+												<select>
+													<option value="">직접입력</option>
+													<option value="">naver.com</option>
+													<option value="">daum.net</option>
+													<option value="">nate.com</option>
+													<option value="">gmail.com</option>
+													<option value="">Hotmail.com</option>
+												</select>
+											</div>
+										</div>
+										<span class="error-msg" style="display:block;">이메일을 입력해주세요.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="memberContact">휴대전화</label> <span class="required">*</span></th><!-- 2018-06-29 -->
+								</tr>
+								<tr>
+									<td>
+										<input type="text" id="memberContact" value="010" style="width:30%;"><span class="hyphen">-</span><input type="text" value="0010" style="width:30%;"><span class="hyphen">-</span><input type="text" value="0100" style="width:30%;">
+										<span class="error-msg" style="display:block;">휴대전화를 입력해주세요.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="memberOrderNumber">주문번호</label></th>
+								</tr>
+								<!-- 2018-06-26 -->
+								<tr>
+									<td>
+										<div class="order-number-input">
+											<input type="text" id="memberOrderNumber">
+											<a href="#webviewLayer01" class="btn-style01 d_webview_open"><span>주문찾기</span></a><!-- 2018-06-29 --><!-- 주문찾기 -->
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="order-number-input">
+											<input type="text" id="memberOrderNumber">
+											<a href="#webviewLayer02" class="btn-style01 d_webview_open"><span>주문찾기</span></a><!-- 2018-06-29 --><!-- 주문찾기 검색했을대 정보가 없을 경우 -->
+										</div>
+									</td>
+								</tr>
+								<!-- //2018-06-26 -->
+								<!-- 회원_주문상품찾기 완료 -->
+								<tr>
+									<td>
+										<div class="order-number-input">
+											<input type="text" id="memberOrderNumber" value="OD1234567890102" disabled="disabled">
+											<a href="#" class="btn-style01"><span>주문찾기</span></a><!-- 2018-06-29 -->
+										</div>
+									</td>
+								</tr>
+								<!-- //회원_주문상품찾기 완료 -->
+								<tr>
+									<th scope="row"><label for="memberSort">상담분류</label> <span class="required">*</span></th><!-- 2018-06-29 -->
+								</tr>
+								<tr>
+									<td>
+										<select id="memberSort">
+											<option value="">상담분류선택</option>
+											<option value="">배송지연/불만</option>
+											<option value="">반품문의</option>
+											<option value="">A/S문의</option>
+											<option value="">환불문의</option>
+											<option value="">주문결제문의</option>
+											<option value="">회원정보문의</option>
+											<option value="">취소문의</option>
+											<option value="">교환문의</option>
+											<option value="">상품정보문의</option>
+											<option value="">기타문의</option>
+											<option value="">이벤트문의</option>
+											<option value="">사은품문의</option>
+											<option value="">제휴문의</option>
+										</select>
+										<span class="error-msg" style="display:block;">상담분류를 입력해주세요.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="memberTitle">제목</label> <span class="required">*</span></th><!-- 2018-06-29 -->
+								</tr>
+								<tr>
+									<td>
+										<input type="text" id="memberTitle" placeholder="제목을 입력해 주세요.(30자미만)">
+										<span class="error-msg" style="display:block;">문의제목을 입력해주세요.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><label for="memberContent">내용</label> <span class="required">*</span></th><!-- 2018-06-29 -->
+								</tr>
+								<tr>
+									<td>
+										<textarea cols="30" rows="10" id="memberContent" placeholder="내용입력은 1000자 미만입니다.&#10;(특수문자 \ / : &lt; &gt; 는 사용할 수 없습니다.)"></textarea>
+										<div class="tbl-msg-wrap">
+											<span class="error-msg" style="display:block;">문의내용을 입력해주세요.</span>
+											<strong class="total"><em>100</em>/1,000자</strong>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="file-search">
+											<input type="file" id="fileSearch">
+											<label for="fileSearch">파일찾기</label>
+										</span>
+										<!-- 2018-06-29 -->
+										<!-- <ul class="text-list01">
+											<li>첨부 파일은 1개만 가능하며, 10Mb 이하의 이미지 파일만 업로드 가능합니다.</li>
+										</ul> -->
+										<p class="txt-sub-info05">첨부 파일은 1개만 가능하며, 10Mb 이하의 파일만 업로드 가능합니다.</p>
+										<!-- //2018-06-29 -->
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="agree-check-wrap">
+						<span class="check-skin">
+							<input type="checkbox" id="chkAgree" checked="checked">
+							<span>선택</span>
+						</span>
+						<label for="chkAgree">답변등록여부 수신</label>
+						<p>체크하시면 카카오톡 또는 SMS로 답변등록여부를 알려드립니다.</p>
+					</div>
+					<p class="txt-sub-info06">문의하신 내용에 대한 답변은 <strong>마이페이지 > 참여정보 > 1:1 고객상담</strong>에서 확인하실 수 있습니다.</p><!-- 2018-06-29 -->
+					<div class="btn-wrap01">
+						<span>
+							<a href="#" class="btn-style08"><span>취소</span></a><!-- 2018-06-29 -->
+							<a href="#" class="btn-style07"><span>저장</span></a><!-- 2018-06-29 -->
+						</span>
+					</div>
+					<!-- 2018-06-29 <ul class="text-list01 text-list-type02">
+						<li>문의하신 내용에 대한 답변은 마이페이지 &gt; 참여정보 &gt; 1:1 고객상담 에서 확인하실 수 있습니다.</li>
+					</ul> -->
+				</div>
+			</section>
+		</article>
+		<!-- 2018-06-26 -->
+		<div id="webviewLayer01" class="webview-layer-wrap">
+			<div class="webview-layer-cont" tabindex="0">
+				<h1 class="webview-layer-title01"><span>주문 찾기</span></h1>
+				<div class="webview-layer-scroll-box d_layer_scroll">
+					<div class="webview-layer-scroll-box-cnt">
+						<div class="cont-box-wrap">
+							<div class="search-order-wrap d_tab02">
+								<ul class="tab01">
+									<li class="d_tab02_select on"><a href="#">기간선택 찾기</a></li>
+									<li class="d_tab02_select"><a href="#">직접입력 찾기</a></li>
+								</ul>
+								<!-- 기간선택 찾기 -->
+								<div class="search-order-cont d_tab02_cont" style="display:block;">
+									<ul class="tab02 tab-type01 d_tab">
+										<li class="d_radio_select on"><a href="#">3개월</a></li>
+										<li class="d_radio_select"><a href="#">6개월</a></li>
+									</ul>
+									<div class="date-calendar-wrap">
+										<!-- 2018-06-28 -->
+
+										<div class="date-calendar-cnt">
+											<div class="calendar-input"><input type="text" class="calendar" id="calendarFrom" disabled="disabled"></div><div class="calendar-input"><input type="text" class="calendar" id="calendarTo" disabled="disabled"></div>
+											<!-- <div class="calendar-input"><input type="date" class="calendar02"></div><div class="calendar-input"><input type="date" class="calendar02"></div> -->
+										</div>
+										<script>
+											$(document).ready(function() {
+												var dateFormat = "yy-mm-dd",
+												from = $( "#calendarFrom" ).datepicker().on( "change", function() {
+													to.datepicker( "option", "minDate", getDate( this ) );
+												}),
+												to = $( "#calendarTo" ).datepicker().on( "change", function() {
+													from.datepicker( "option", "maxDate", getDate( this ) );
+												});
+
+												function getDate( element ) {
+													var date;
+													try {
+														date = $.datepicker.parseDate( dateFormat, element.value );
+													} catch( error ) {
+														date = null;
+													}
+
+													return date;
+												}
+											});
+										</script>
+										<!-- //2018-06-28 -->
+										<!-- 2018-06-29 -->
+										<p class="date-calendar-txt01"><strong>시작일</strong>로부터 <strong>최대 1년 단위로 조회</strong>가 가능합니다.</p>
+										<div class="btn-wrap01 btn-wrap-type01">
+											<button type="button" class="btn-style01"><span>조회</span></button>
+										</div>
+										<ul class="date-calendar-text-list">
+											<li class="btn-none"><strong>2018년 8월 20일 이전 주문</strong>은 PC에서 보다 정확하게 확인 가능합니다.</li><!-- 2018-08-17 -->
+											<li>고객센터로 문의해 주시면 답변해<br>드리겠습니다.<a href="#" class="btn-style04"><span>080-820-8802</span></a></li>
+										</ul>
+										<!-- //2018-06-29 -->
+									</div>
+								</div>
+								<!-- //기간선택 찾기 -->
+
+								<!-- 직접입력 찾기 -->
+								<div class="search-order-cont d_tab02_cont">
+									<div class="order-number-input">
+										<input type="text" placeholder="주문번호를 입력해주세요">
+										<a href="#" class="btn-style01"><span>조회</span></a>
+									</div>
+								</div>
+								<!-- //직접입력 찾기 -->
+							</div>
+							<div class="order-number-list">
+								<div class="item-list-wrap">
+									<div class="order-number-info-wrap">
+										<span class="rdo-skin">
+											<input type="radio" id="lbOrderNumber01" name="lbOrderNumber" checked="checked">
+											<span>선택</span>
+										</span>
+										<label for="lbOrderNumber01">
+											<span class="order-number-info-txt"><em>주문일자 :</em> 2108-03-19 09:53</span><!-- 2018-06-29 -->
+											<span class="order-number-info-txt"><em>주문번호 :</em> <strong>OD1521191087718</strong></span><!-- 2018-06-29 -->
+										</label>
+									</div>
+									<ul class="item-list01">
+										<li>
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+												<div class="product-info-text">
+													<p class="txt02"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션 반팔 티셔츠</a></p>
+													<div class="item-info-option item-option-type01">
+														<p class="txt03">NY / 240</p>
+														<p class="txt03">1개</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+												<div class="product-info-text">
+													<p class="txt02"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션 반팔 티셔츠</a></p>
+													<div class="item-info-option item-option-type01">
+														<p class="txt03">NY / 240</p>
+														<p class="txt03">1개</p>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="item-list-wrap">
+									<div class="order-number-info-wrap">
+										<span class="rdo-skin">
+											<input type="radio" id="lbOrderNumber02" name="lbOrderNumber">
+											<span>선택</span>
+										</span>
+										<label for="lbOrderNumber02">
+											<span class="order-number-info-txt"><em>주문일자 :</em> 2108-03-19 09:53</span><!-- 2018-06-29 -->
+											<span class="order-number-info-txt"><em>주문번호 :</em> <strong>OD1521191087718</strong></span><!-- 2018-06-29 -->
+										</label>
+									</div>
+									<ul class="item-list01">
+										<li>
+											<div class="product-info">
+												<div class="product-info-img"><a href="#"><img src="../../images/thumb/@img_450x600_01.png" alt=""></a></div>
+												<div class="product-info-text">
+													<p class="txt02"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션 반팔 티셔츠</a></p>
+													<div class="item-info-option item-option-type01">
+														<p class="txt03">NY / 240</p>
+														<p class="txt03">1개</p>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="btn-wrap01">
+								<span>
+									<a href="#" class="btn-style02"><span>취소</span></a>
+									<a href="#" class="btn-style01"><span>저장</span></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="webview-layer-close">
+				<button type="button" class="d_webview_close">닫기</button>
+			</div>
+		</div>
+
+		<div id="webviewLayer02" class="webview-layer-wrap">
+			<div class="webview-layer-cont" tabindex="0">
+				<h1 class="webview-layer-title01"><span>주문 찾기</span></h1>
+				<div class="webview-layer-scroll-box d_layer_scroll">
+					<div class="webview-layer-scroll-box-cnt">
+						<div class="cont-box-wrap">
+							<div class="search-order-wrap d_tab02">
+								<ul class="tab01">
+									<li class="d_tab02_select on"><a href="#">기간선택 찾기</a></li>
+									<li class="d_tab02_select"><a href="#">직접입력 찾기</a></li>
+								</ul>
+								<!-- 기간선택 찾기 -->
+								<div class="search-order-cont d_tab02_cont" style="display:block;">
+									<ul class="tab02 tab-type01 d_tab">
+										<li class="d_radio_select on"><a href="#">3개월</a></li>
+										<li class="d_radio_select"><a href="#">6개월</a></li>
+									</ul>
+									<div class="date-calendar-wrap">
+										<!-- 2018-06-28 -->
+										<div class="date-calendar-cnt">
+											<div class="calendar-input"><input type="text" class="calendar" id="calendarFrom2" disabled="disabled"></div><div class="calendar-input"><input type="text" class="calendar" id="calendarTo2" disabled="disabled"></div>
+										</div>
+										<script>
+											$(document).ready(function() {
+												var dateFormat = "yy-mm-dd",
+												from2 = $( "#calendarFrom2" ).datepicker().on( "change", function() {
+													to2.datepicker( "option", "minDate", getDate( this ) );
+												}),
+												to2 = $( "#calendarTo2" ).datepicker().on( "change", function() {
+													from2.datepicker( "option", "maxDate", getDate( this ) );
+												});
+
+												function getDate( element ) {
+													var date;
+													try {
+														date = $.datepicker.parseDate( dateFormat, element.value );
+													} catch( error ) {
+														date = null;
+													}
+
+													return date;
+												}
+											});
+										</script>
+										<!-- //2018-06-28 -->
+										<!-- 2018-06-29 <p class="date-calendar-txt01">시작일로부터 최대 1년 단위로 조회가 가능합니다.</p> -->
+										<!-- 2018-06-29 -->
+										<p class="date-calendar-txt01"><strong>시작일</strong>로부터 <strong>최대 1년 단위로 조회</strong>가 가능합니다.</p>
+										<div class="btn-wrap01 btn-wrap-type01">
+											<button type="button" class="btn-style01"><span>조회</span></button>
+										</div>
+										<ul class="date-calendar-text-list">
+											<li class="btn-none"><strong>2018년 8월 20일 이전 주문</strong>은 PC에서 보다 정확하게 확인 가능합니다.</li><!-- 2018-08-17 -->
+											<li>고객센터로 문의해 주시면 답변해<br>드리겠습니다.<a href="#" class="btn-style04"><span>080-820-8802</span></a></li>
+										</ul>
+										<!-- //2018-06-29 -->
+									</div>
+								</div>
+								<!-- //기간선택 찾기 -->
+
+								<!-- 직접입력 찾기 -->
+								<div class="search-order-cont d_tab02_cont">
+									<div class="order-number-input">
+										<input type="text" placeholder="주문번호를 입력해주세요">
+										<a href="#" class="btn-style01"><span>조회</span></a>
+									</div>
+								</div>
+								<!-- //직접입력 찾기 -->
+							</div>
+							<div class="order-number-list">
+								<div class="item-list-wrap">
+									<ul class="item-list01">
+										<li class="no-result">8월 20일 이전 주문내역이 존재합니다.<!-- 2018-06-29 <br>이전 주문은 PC에서 확인 가능합니다.<br>고객센터로 문의해 주시면 답변 드리겠습니다. --></li> <!-- 이전 주문 존재시 -->
+										<li class="no-result">주문내역이 존재하지 않습니다.<!-- 2018-06-29 <br>주문내역이 있으시다면 고객센터로 연락해주세요. --></li> <!-- 검색결과 없을 시 -->
+									</ul>
+								</div>
+							</div>
+							<!-- 2018-06-29 <div class="cs-info-box">
+								<p class="text-cs-info mg-type01"><strong>고객센터</strong><strong><a href="tel:080.820.8802">080.820.8802</a></strong>평일 오전 9시 ~ 오후 6시 (토/일/공휴일 휴무)</p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="webview-layer-close">
+				<button type="button" class="d_webview_close">닫기</button>
+			</div>
+		</div>
+		<!-- //2018-06-26 -->
+
+		<!-- 2018-06-29 -->
+		<div id="layerPop01" class="layer-popup">
+			<div class="layer-popup-cont" tabindex="0">
+				<div class="layer-popup-title"><span>이전주문보기 안내 팝업</span></div>
+				<div class="layer-popup-box d_layer_scroll">
+					<div class="layer-popup-box-scroll">
+						<div class="layer-popup-box-cnt02">
+							<ul class="text-list01 text-list-type01">
+								<li>2018년 8월 20일 이전 주문은 ‘이전 주문보기’ 버튼 클릭 시 주문내역을 확인 하실 수 있습니다. </li>
+								<li>2018년 8월 20일 이전 주문은 PC에서 보다 정확하게 확인 가능합니다.</li>
+							</ul>
+							<div class="btn-wrap01">
+								<a href="#" class="btn-style01"><span>이전 주문보기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layer-popup-close">
+					<button type="button" class="d_layer_close">닫기</button>
+				</div>
+			</div>
+		</div>
+		<!-- //2018-06-29 -->
+	</body>
+</html>

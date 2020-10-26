@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/mypage.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div id="skipNavi" class="skip-navi">
+			<a href="#contents">본문 바로가기</a>
+		</div>
+		<!-- //skip navi -->
+		<header>
+			<div id="gnb" class="d_fixed">
+				<h1 class="logo"><a href="#">Discovery EXPEDITION</a></h1>
+				<div class="all-menu">
+					<button type="button" class="all-menu-open">전체메뉴 열기</button>
+				</div>
+				<div class="prev-link">
+					<a href="#">이전 페이지 이동</a>
+				</div>
+				<div class="search-link">
+					<a href="#">검색 페이지 이동</a>
+				</div>
+				<div class="cart-link">
+					<a href="#">장바구니<span>99</span>개로 이동</a>
+				</div>
+			</div>
+		</header>
+		<acrticle id="container">
+			<section id="contents">
+				<h2 class="title01 d_fixed"><span>포인트</span></h2>
+				<div class="cont-box-wrap">
+					<div class="mypage-benefit-info-wrap01">
+						<!-- 2018-07-03 -->
+						<ul class="my-benefit-info">
+							<li>
+								<p>사용가능 포인트</p>
+								<strong><em>10,000</em> P</strong>
+							</li>
+							<li>
+								<p>당월 소멸예정 포인트</p>
+								<strong><em>100</em> P</strong>
+							</li>
+						</ul>
+						<!-- //2018-07-03 -->
+						<ul class="tab02 tab-type01 d_tab">
+							<li class="on"><a href="#">3개월</a></li>
+							<li><a href="#">6개월</a></li>
+						</ul>
+						<div class="date-calendar-wrap">
+							<!-- 2018-06-28 -->
+							<div class="date-calendar-cnt">
+								<div class="calendar-input"><input type="text" class="calendar" id="calendarFrom" disabled="disabled"></div><div class="calendar-input"><input type="text" class="calendar" id="calendarTo" disabled="disabled"></div>
+							</div>
+							<script>
+								$(document).ready(function() {
+									var dateFormat = "yy-mm-dd",
+									from = $( "#calendarFrom" ).datepicker().on( "change", function() {
+										to.datepicker( "option", "minDate", getDate( this ) );
+									}),
+									to = $( "#calendarTo" ).datepicker().on( "change", function() {
+										from.datepicker( "option", "maxDate", getDate( this ) );
+									});
+
+									function getDate( element ) {
+										var date;
+										try {
+											date = $.datepicker.parseDate( dateFormat, element.value );
+										} catch( error ) {
+											date = null;
+										}
+
+										return date;
+									}
+								});
+							</script>
+							<!-- //2018-06-28 -->
+							<!-- 2018-07-02 -->
+							<p class="date-calendar-txt01"><em>시작일</em>로부터 <strong>최대 1년 단위로 조회</strong>가 가능합니다.</p>
+							<div class="btn-wrap01 btn-wrap-type01">
+								<button type="button" class="btn-style01"><span>조회</span></button>
+							</div>
+							<!-- //2018-07-02 -->
+							<!-- 2018-07-04 삭제<ul class="date-calendar-text-list">
+								<li><strong>2018년 8월 20일 이전 주문</strong>은<br>PC에서 보다 정확하게 확인 가능합니다. <a href="#" class="btn-style04"><span>이전주문보기</span></a></li>
+								<li>고객센터로 문의해 주시면 답변해<br>드리겠습니다.<a href="#" class="btn-style04"><span>080-820-8802</span></a></li>
+							</ul> -->
+						</div>
+						<ul class="item-list01">
+							<li class="no-result">조회된 포인트가 없습니다.</li>
+							<li>
+								<div class="my-benefit-info-list">
+									<p class="my-benefit-info-list-txt04">유효기간 : 2018-05-01~2019-04-19</p>
+									<p class="my-benefit-info-list-txt01">[프로모션] 땡큐 고객 적립금 부여</p>
+									<p class="my-benefit-info-list-txt01">(이벤트참여일자)</p>
+									<p class="my-benefit-info-list-txt02">2018-05-01</p>
+									<div class="my-benefit-info-list-txt03">
+										<p class="col-type01">사용 : 10,000M</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="my-benefit-info-list">
+									<p class="my-benefit-info-list-txt01">[프로모션] 땡큐 고객 적립금 부여</p>
+									<p class="my-benefit-info-list-txt01">(이벤트참여일자)</p>
+									<p class="my-benefit-info-list-txt02">2018-05-01</p>
+									<div class="my-benefit-info-list-txt03">
+										<p>적립 : 200,500M</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="my-benefit-info-list">
+									<p class="my-benefit-info-list-txt04">유효기간 : 2018-05-01~2019-04-19</p>
+									<p class="my-benefit-info-list-txt01">[프로모션] 땡큐 고객 적립금 부여</p>
+									<p class="my-benefit-info-list-txt01">(이벤트참여일자)</p>
+									<p class="my-benefit-info-list-txt02">2018-05-01</p>
+									<div class="my-benefit-info-list-txt03">
+										<p>기간만료 소멸</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="toggle-box-wrap d_toggle">
+						<h2 class="title03">포인트 적립안내</h2>
+						<button type="button" class="btn-open d_toggle_select"><span>Open</span></button>
+						<div class="toggle-box-cnt">
+							<h3 class="title04">정기적 제공포인트</h3>
+							<div class="data-table03 data-table03-type01"><!-- 2018-07-03 -->
+								<table>
+									<caption>정기적 제공포인트표</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">로그인 시</th>
+											<td>일 1회</td>
+											<td>5</td><!-- 2018-07-03 -->
+										</tr>
+										<tr>
+											<th scope="row">상품 포토 리뷰</th>
+											<td>구매 제품 1회</td>
+											<td>500</td><!-- 2018-07-03 -->
+										</tr>
+										<tr>
+											<th scope="row">상품 TEXT 리뷰</th>
+											<td>구매 제품 1회</td>
+											<td>100</td><!-- 2018-07-03 -->
+										</tr>
+										<tr>
+											<th scope="row">Like 참여</th>
+											<td>일 최대 10회</td>
+											<td>5</td><!-- 2018-07-03 -->
+										</tr>
+										<tr>
+											<th scope="row">Share 참여</th>
+											<td>일 최대 10회</td>
+											<td>5</td><!-- 2018-07-03 -->
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="txt-sub-info01">상품리뷰는 구매확정 후 지급됩니다.</p>
+							<h3 class="title08">비정기적 제공포인트</h3>
+							<div class="data-table03 data-table03-type01"><!-- 2018-07-03 -->
+								<table>
+									<caption>비정기적 제공포인트표</caption>
+									<colgroup>
+										<col>
+										<col>
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">회원승급</th>
+											<td>승급시 1회</td>
+											<td class="tcenter">차등지급</td>
+										</tr>
+										<tr>
+											<th scope="row">기타이벤트</th>
+											<td>이벤트 참여시</td>
+											<td class="tcenter">별도책정</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="txt-sub-info01">회원승급시 등급별 차등 지급됩니다. <a href="#" class="btn-txt-link">[자세히 보기]</a></p>
+							<ul class="text-list01">
+								<li>적립된 포인트는 2년 간 유효하며, 2년이 경과된 포인트는 익월 1일에 소멸됩니다.</li>
+								<li>포인트는 온라인 쇼핑몰에서만 사용 가능합니다.</li>
+								<li>포인트는 비 현금성으로, 현금으로 환원이 안됩니다.</li>
+								<li>구매확정 후 90일이내 리뷰를 쓰셔야 포인트가 지급됩니다.</li>
+							</ul>
+						</div>
+						<button type="button" class="btn-close d_toggle_select"><span>Close</span></button>
+					</div>
+				</div>
+			</section>
+		</acrticle>
+	</body>
+</html>

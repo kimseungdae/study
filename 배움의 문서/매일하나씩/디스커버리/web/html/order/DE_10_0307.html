@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" >
+		<title>Discovery</title>
+		<link rel="stylesheet" href="../../css/base.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/order.css">
+		<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/common.js"></script>
+	</head>
+	<body>
+		<!-- skip navi -->
+		<div class="skip-navi">
+			<a href="#gnb">왼쪽 메뉴</a>
+			<a href="#contents">컨텐츠</a>
+			<a href="#rightSide">상품 주문 영역</a>
+		</div>
+		<!-- //skip navi -->
+		<div id="wrap"><!-- 2018-05-23 -->
+			<header id="gnb">
+				<aside id="rightSide">
+					<img src="../../images/common/@right_side.png" alt="">
+				</aside>
+				<nav class="gnb-style01">
+					<img src="../../images/common/@gnb.png" alt="">
+				</nav>
+				<nav class="gnb-style02">
+					<img src="../../images/common/@gnb02.png" alt="">
+				</nav>
+			</header>
+			<!-- 2018-05-23 -->
+			<div class="location-container">
+				<div class="location-contents">
+					<h2 class="title01">장바구니</h2>
+					<p class="location">
+						<span>Home</span><strong title="현재 위치">장바구니</strong>
+					</p>
+				</div>
+			</div>
+			<!-- //2018-05-23 -->
+			<acrticle id="container">
+				<section id="contents">
+					<!-- 2018-05-23 삭제
+					<h2 class="title01">장바구니</h2>
+					<p class="location">
+						<span>Home</span><strong title="현재 위치">장바구니</strong>
+					</p> //2018-05-23 삭제 -->
+					<ul class="step-section">
+						<li class="on">장바구니</li>
+						<li class="on">주문/결제</li>
+						<li>주문완료</li>
+					</ul>
+					<div class="order-wrap margin-t0">
+						<div class="order-left">
+							<h3 class="title06">주문상품정보</h3>
+							<div class="order-detail-wrap d_toggle on">
+								<button type="button" class="btn-open d_toggle_select"><span>Open</span></button>
+								<div class="order-detail-content">
+									<div class="board-list02">
+										<table>
+											<caption>상품정보, 수량, 할인/혜택, 배송정보, 주문금액.</caption>
+											<colgroup>
+												<col>
+												<col style="width:120px;">
+												<col style="width:120px;">
+												<col style="width:120px;">
+												<col style="width:120px;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">상품정보</th>
+													<th scope="col">수량</th>
+													<th scope="col">할인/혜택</th>
+													<th scope="col">매장수령정보</th> <!-- 2018-05-09 -->
+													<th scope="col">주문금액</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="tleft02">
+														<div class="product-info">
+															<div class="product-info-img"><a href="#"><img src="http://img.fnf.co.kr/PARTS/X/18S/thumbnail/DWRT6N831-MG-l-16623200-m.png" alt="상품이미지"></a></div>
+															<div class="product-info-text">
+																<div class="product-info-box">
+																	<p class="product-name"><a href="#">[남성] 엠보 그라데이션 반팔 티셔츠 그라데이션  반팔 티셔츠</a></p>
+																	<div class="product-price">
+																		<span>199,000원</span>
+																	</div>
+																</div>
+																<div class="product-option">
+																	<span>BL / 90</span>
+																</div>
+															</div>
+														</div>
+													</td>
+													<td>1</td>
+													<td>
+														사은품제공<!-- 2018-05-24 -->
+														<div class="tooltip-wrap d_dropdown">
+															<button type="button" class="tooltip-detail02 d_dropdown_sel" title="사은품제공 상세보기">툴팁 열기, 닫기</button>
+															<!-- 툴팁 레이어  -->
+															<div class="tooltip-layer d_dropdown_cont">
+																<div class="tooltip-cnt noline">
+																	<div class="product-info free-gift">
+																		<div class="product-info-img"><img src="http://img.fnf.co.kr/PARTS/X/18S/thumbnail/DWRT6N831-MG-l-16623200-m.png" alt="사은품이미지"></div>
+																		<div class="product-info-text">
+																			<p class="product-name">하이넥 베스트다운 사은품 Best Seller 1st </p>
+																		</div>
+																	</div>
+																</div>
+																<button type="button" class="tooltip-close d_dropdown_close">닫기</button>
+															</div>
+															<!-- //툴팁 레이어  -->
+														</div>
+													</td>
+													<td>1~2일 후<br />수령가능</td> <!-- 2018-05-09 -->
+													<td>
+														<div class="item-price"><strong>139,700</strong>원</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="board-case-area line">
+										<!-- 2018-07-31 -->
+										<ul class="text-list02 col-type01">
+											<li>매장주문인 경우 사은품이 제공되지 않습니다.</li>
+											<li>매장 배송상품은 일반배송상품과 다른 송장번호로 발송됩니다.</li>
+											<li>사은품은 주문 상품과 별도로 배송될 수 있습니다.</li>
+											<li>매장배송/매장주문 상품인 경우 주말에 취소/반품/교환에 대한 클레임 처리가 불가능합니다.<br> CS 영업시간(월~금 : am 9 ~ pm6)에 클레임 처리가 가능합니다.</li>
+										</ul>
+										<!-- //2018-07-31 -->
+									</div>
+								</div>
+								<button type="button" class="btn-close d_toggle_select"><span>Close</span></button>
+							</div>
+
+							<h3 class="title06">할인정보</h3>
+							<div class="order-detail-wrap d_toggle on">
+								<button type="button" class="btn-open d_toggle_select"><span>Open</span></button>
+								<div class="order-detail-content">
+									<div class="board-write type02">
+										<table>
+											<caption>할인정보 쿠폰, 마일리지, 포인트.</caption>
+											<colgroup>
+												<col style="width:200px;">
+												<col>
+											</colgroup>
+											<tr>
+												<th scope="row"><label for="labelCoupon">쿠폰</label></th>
+												<td>
+													<input type="text" id="labelCoupon" class="input-style01 align-right" value="0" style="width:255px;" />
+													<a href="#layerPopupCoupon" class="btn-style04 d_layer_open">쿠폰조회</a>
+													<span class="text-info">적용된 쿠폰 0건 (적용 가능한 쿠폰 <em class="text-color01">2</em>건)</span>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="labelMile">마일리지</label></th>
+												<td>
+													<input type="text" id="labelMile" class="input-style01 align-right" value="0" style="width:255px;" />
+													<button type="button" class="btn-style04"><span>전체적용</span></button>
+													<button type="button" class="btn-style08"><span>적용</span></button><!-- 2018-07-16 -->
+													<span class="text-info">잔액 <em class="text-color01">2,000,000M</em></span>
+													<p class="comment">보유 마일리지가 5,000M이상일 경우, 1,000M단위로 사용하실 수 있습니다.</p><!-- 2018-05-24 -->
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="labelPoint">포인트</label></th>
+												<td>
+													<input type="text" id="labelPoint" class="input-style01 align-right" value="0" style="width:255px;" />
+													<button type="button" class="btn-style04"><span>전체적용</span></button>
+													<button type="button" class="btn-style08"><span>적용</span></button><!-- 2018-07-16 -->
+													<span class="text-info">잔액 <em class="text-color01">4,500P</em></span>
+													<p class="comment">온라인 쇼핑몰에서만 1,000P 이상 일 경우 1,000P 단위로 사용하실 수 있습니다.</p>
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<button type="button" class="btn-close d_toggle_select"><span>Close</span></button>
+							</div>
+
+							<h3 class="title06">주문자정보</h3>
+							<div class="order-detail-wrap d_toggle on">
+								<button type="button" class="btn-open d_toggle_select"><span>Open</span></button>
+								<div class="order-detail-content">
+									<div class="board-write type02">
+										<!-- 2018-05-24 -->
+										<table>
+											<caption>주문자정보</caption>
+											<colgroup>
+												<col style="width:200px;">
+												<col>
+											</colgroup>
+											<tr>
+												<th scope="row"><label for="noMemName">주문하시는분</label></th>
+												<td>
+													<input type="text" id="noMemName" class="input-style01" style="width:255px;">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="noMemContact">휴대전화</label></th><!-- 2018-05-24 -->
+												<td>
+													<input type="text" id="noMemContact" class="input-style01" style="width:65px;" />
+													<span class="hyphen">-</span>
+													<input type="text" class="input-style01" style="width:75px;" />
+													<span class="hyphen">-</span>
+													<input type="text" class="input-style01" style="width:75px;" />
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="noMemContact02">전화번호</label></th>
+												<td>
+													<input type="text" id="noMemContact02" class="input-style01" style="width:65px;" />
+													<span class="hyphen">-</span>
+													<input type="text" class="input-style01" style="width:75px;" />
+													<span class="hyphen">-</span>
+													<input type="text" class="input-style01" style="width:75px;" />
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="boardWriteEmail">이메일 주소</label></th>
+												<td>
+													<input type="text" id="boardWriteEmail" class="input-style01" style="width:152px;">
+													<span class="at">@</span>
+													<input type="text" class="input-style01" style="width:152px;">
+													<!-- select -->
+													<div class="select-style01 d_select">
+														<button type="button" class="d_select_sel" style="width:152px;"><span>직접입력</span></button>
+														<ul>
+															<li><a href="#">직접입력</a></li>
+															<li><a href="#">naver.com</a></li>
+															<li><a href="#">daum.net</a></li>
+															<li><a href="#">nate.com</a></li>
+															<li><a href="#">gmail.com</a></li>
+															<li><a href="#">Hotmail.com</a></li>
+														</ul>
+													</div>
+													<!-- //select -->
+												</td>
+											</tr>
+										</table>
+										<!-- //2018-05-24 -->
+									</div>
+									<!-- <p class="txt-sub-info02">알림톡 및 이메일로 주문 진행상황을 안내해드립니다.</p> 2018-05-24 삭제 -->
+								</div>
+								<button type="button" class="btn-close d_toggle_select"><span>Close</span></button>
+							</div>
+
+							<h3 class="title06">
+								수령자 정보 및 매장정보
+								<p class="text-required02">( <span class="required">*</span> 필수입력 항목 )</p><!-- 2018-05-25 text -->
+							</h3>
+							<div class="order-detail-wrap d_toggle on">
+								<button type="button" class="btn-open d_toggle_select"><span>Open</span></button>
+								<div class="order-detail-content">
+									<div class="board-write type02">
+										<table>
+											<caption>배송지정보 입력</caption>
+											<colgroup>
+												<col style="width:200px;">
+												<col>
+											</colgroup>
+											<tr>
+												<th scope="row"><label for="labelName">받는 분</label> <span class="required">*</span></th><!-- 2018-07-03 -->
+												<td>
+													<input type="text" id="labelName" class="input-style01" value="홍길동" style="width:255px;">
+													<span class="check-skin">
+														<input type="checkbox" id="checkCopy" checked="checked">
+														<span>선택</span>
+													</span>
+													<label for="checkCopy">회원 정보와 동일</label>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="labelContact">휴대전화</label> <span class="required">*</span></th><!-- 2018-05-24 -->
+												<td>
+													<input type="text" id="labelContact" class="input-style01" value="" style="width:65px;" />
+													<span class="hyphen">-</span>
+													<input type="text" class="input-style01" value="000" style="width:75px;" />
+													<span class="hyphen">-</span>
+													<input type="text" class="input-style01" value="1234" style="width:75px;" />
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="labelContact02">전화번호</label></th><!-- 2018-05-24 -->
+												<td>
+													<input type="text" id="labelContact02" class="input-style01" value="" style="width:65px;" />
+													<span class="hyphen">-</span>
+													<input type="text" class="input-style01" value="0000" style="width:75px;" />
+													<span class="hyphen">-</span>
+													<input type="text" class="input-style01" value="0000" style="width:75px;" />
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">수령매장정보</th>
+												<td>
+													<div class="text-store-info">
+														역삼(직영) <a href="#layerPopupMap" class="btn-map d_layer_open">약도 보기</a><br />
+														서울 강남구 언주로 541 1층 <span class="slash">/</span> 02-553-3773<br />
+														영업시간 | (평일) 10:30 ~ 22:00
+													</div>
+													<!-- 2018-05-24 -->
+													<dl class="text-store-info02">
+														<dt>매장수령 예정일자</dt>
+														<dd>
+															<p class="text-color01">매장수령 상품준비완료 SMS 수신 후, (영업시간기준) 당일~ 1일 이내</p>
+															<ul class="text-list02 col-type01">
+																<li>매장수령 주문 시간 및 매장의 재고 상황에 따라 당일 또는 1~2일 이내 매장수령이 가능합니다. (영업시간기준)</li>
+																<li>매장수령 주문의 경우 사은품을 제공하지 않습니다.</li>
+																<li>주문완료와 동시에 주문이 접수되며, 상품 준비 완료 후 매장에서 [상품준비완료] 안내문자(알림톡)을 발송해드립니다.</li>
+																<li>매장수령 주문 시, [상품준비완료] 안내문자(알림톡)을 수신하신 익일 영업시간 이내로 상품을 수령하지 않을 경우 주문은 자동으로 취소됩니다.</li>
+																<li>반드시 [상품준비완료] 안내문자(알림톡)를 수신하신 후 방문하시거나, 해당 매장과 통화하신 후 방문하시기 바랍니다.</li>
+																<li>상품 수령 시, [상품준비완료]문자 혹은 디스커버리 APP의 바코드를 반드시 지참하시기 바랍니다.</li>
+																<li>16시 이후 결제되는 매장수령 주문은 당일 수령이 불가합니다.</li>
+																<li>접수 완료 문자 수신 전에 매장을 방문하시면 상품수령이 불가할 수 있습니다.</li>
+															</ul>
+														</dd>
+													</dl>
+													<!-- //2018-05-24 -->
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="store-step-wrap">
+													<ol>
+														<li>
+															<dl>
+																<dt><span class="blind">01</span><em>온라인 주문</em></dt>
+																<dd>
+																	<!-- <p>온라인에서 매장수령 가능한 매장으로 상품을 주문합니다.</p> 2018-05-24 삭제 -->
+																	<!-- 2018-05-24 -->
+																	<ul class="text-list02 col-type01">
+																		<li>매장수령 주문 시간 및 매장의 재고 상황에 따라 당일 또는 1~2일 이내 매장수령이 가능합니다. (영업시간기준)</li>
+																		<li>매장수령 주문의 경우 사은품을 제공하지 않습니다.</li>
+																	</ul>
+																	<!-- //2018-05-24 -->
+																</dd>
+															</dl>
+														</li>
+														<li>
+															<dl>
+																<dt><span class="blind">02</span><em>상품준비완료</em></dt>
+																<dd>
+																	<!-- <p>상품준비가 완료되면 매장에서 알림톡 또는 SMS를 발송해 드립니다.</p> 2018-05-24 삭제 -->
+																	<!-- 2018-05-24 -->
+																	<ul class="text-list02 col-type01">
+																		<li>주문완료와 동시에 주문이 접수되며, 상품 준비 완료 후 매장에서 [상품준비완료] 안내문자(알림톡)을 발송해드립니다.</li>
+																		<li>접수 완료 문자 수신 전에 매장을 방문하시면 상품수령이 불가할 수 있습니다.</li>
+																		<li>반드시 [상품준비완료] 안내문자(알림톡)를 수신하신 후 방문하시거나, 해당 매장과 통화하신 후 방문하시기 바랍니다.</li>
+																	</ul>
+																	<!-- //2018-05-24 -->
+																</dd>
+															</dl>
+														</li>
+														<li>
+															<dl>
+																<dt><span class="blind">03</span><em>상품매장수령</em></dt>
+																<dd>
+																	<!-- <p>매장 수령 시, ‘준비완료 메시지’에 기재된 매장수령번호(또는 바코드)와 상품번호를 매장에 보여주고 상품을 수령합니다.</p> 2018-05-24 삭제 -->
+																	<!-- 2018-05-24 -->
+																	<ul class="text-list02 col-type01">
+																		<li>상품 수령 시, [상품준비완료]문자 혹은 디스커버리 APP의 바코드를 반드시 지참하시기 바랍니다.</li>
+																		<li>16시 이후 결제되는 매장수령 주문은 당일 수령이 불가합니다.</li>
+																		<li>매장수령 주문 시, [상품준비완료] 안내문자(알림톡)을 수신하신 익일 영업시간 이내로 상품을 수령하지 않을 경우 주문은 자동으로 취소됩니다.</li>
+																	</ul>
+																	<!-- //2018-05-24 -->
+																</dd>
+															</dl>
+														</li>
+													</ol>
+												</td>
+											</tr>
+										</table>
+									</div>
+									<p class="txt-sub-info02">매장수령의 경우만 해당 매장에서 반품이 가능합니다. <a href="#" class="d_layer_open">[반품 가능매장 보기]</a></p>
+								</div>
+								<button type="button" class="btn-close d_toggle_select"><span>Close</span></button>
+							</div>
+
+							<h3 class="title06">결제수단</h3>
+							<div class="order-detail-wrap d_toggle on">
+								<button type="button" class="btn-open d_toggle_select"><span>Open</span></button>
+								<div class="order-detail-content">
+									<div class="order-payment-list">
+										<ul class="radio-list">
+											<li>
+												<span class="rdo-skin">
+													<input type="radio" id="rdoPayment01" name="rdoPayment" checked="checked">
+													<span>선택</span>
+												</span>
+												<label for="rdoPayment01">신용/체크카드</label>
+											</li>
+											<li>
+												<span class="rdo-skin">
+													<input type="radio" id="rdoPayment02" name="rdoPayment">
+													<span>선택</span>
+												</span>
+												<label for="rdoPayment02">네이버페이</label>
+											</li>
+											<li>
+												<span class="rdo-skin">
+													<input type="radio" id="rdoPayment03" name="rdoPayment">
+													<span>선택</span>
+												</span>
+												<label for="rdoPayment03">실시간 계좌이체</label>
+											</li>
+											<li>
+												<span class="rdo-skin">
+													<input type="radio" id="rdoPayment04" name="rdoPayment">
+													<span>선택</span>
+												</span>
+												<label for="rdoPayment04">무통장입금(가상계좌)</label>
+											</li>
+											<li>
+												<span class="rdo-skin">
+													<input type="radio" id="rdoPayment05" name="rdoPayment">
+													<span>선택</span>
+												</span>
+												<label for="rdoPayment05">휴대폰결제</label>
+											</li>
+										</ul>
+									</div>
+
+									<!-- 결제수단 - 신용/체크카드 : str -->
+									<div class="order-payment-content">
+										<h4 class="title09">신용카드결제 시 유의사항</h4>
+										<ul class="card-info-list">
+											<li><a href="#" class="btn-style01 on"><span>공인인증안내</span></a></li>
+											<li><a href="#" class="btn-style01"><span>안전결제안내</span></a></li>
+											<li><a href="#" class="btn-style01"><span>안심클릭안내</span></a></li>
+										</ul>
+
+										<!-- 공인인증안내 : str -->
+										<div class="card-info-box">
+											<dl>
+												<dt>2005년 11월 1일부터 공인인증서 사용이 의무화 되었습니다.</dt>
+												<dd>
+													<p>금감원의 전자상거래 안정성 강화정책에 따라 30만원 이상의 모든 신용카드 결제에 공인인증 사용이 의무화됩니다.<br />(단, 30만원 이하 결제시에는 공인인증서 없어도 결제 가능)</p>
+													<div class="data-tbl02">
+														<table>
+															<caption>공인인증안내.</caption>
+															<colgroup>
+																<col style="width:120px;">
+																<col>
+																<col style="width:120px;">
+															</colgroup>
+															<thead>
+																<tr>
+																	<th scope="col">30만원 미만</th>
+																	<th scope="col"></th>
+																	<th scope="col">30만원 이상</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>BC,국민, 우리</td>
+																	<td>안전결제</td>
+																	<td>안전결제+공인인증</td>
+																</tr>
+																<tr>
+																	<td>그 외 모든 카드</td>
+																	<td>안전결제</td>
+																	<td>공인인증</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<p class="txt-sub-info02">그 외 모든 카드 : LG, 삼성, 외환, 신한, 조흥, 롯데, 하나, 한미, 전북, 수협, 제주, 광주은행 카드 등</p>
+												</dd>
+												<dt>공인인증 발급</dt>
+												<dd>
+													<p>공인인증서는 인터넷 뱅킹 도는 카드결제 시에 본인임을 확인하는 보안장치로, 다음과 같이 발급 받으 실수 있습니다.</p>
+													<div class="img-payment"><img src="../../images/order/img_payment.png" alt="01. 거래은행방문 02. 인터넷뱅킹신청 03. 거래은행홈페이지 접속 04. 공인인증서 다운로드 및 설치"></div>
+													<ul class="text-list02 col-type01">
+														<li>신용카드 결제 시 공인인증서는 범용공인인증서(유료발급) 또는 신용카드용 공인인증서만 사용 가능합니다.</li>
+														<li>추가적으로 더 궁금한 사항은 1:1 고객상담으로 문의 주시기 바랍니다.<br /><!-- 2018-07-16 -->
+															<a href="#" class="btn-style01"><span>1:1 고객상담</span></a>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+										</div>
+										<!-- //공인인증안내 : end -->
+
+										<!-- 안전결제안내 : str -->
+										<div class="card-info-box">
+											<dl>
+												<dt>안전결제(ISP)란?</dt>
+												<dd>
+													<p>쇼핑몰 이용 시 고객님의 카드번호/비밀번호 등을 입력함으로써 발생될 수 있는 개인정보 유출 및 카드도용 등의 문제점을<br />
+														차단해 주는 지불수단으로, 인터넷 안전결제 (ISP)비밀번호만으로 안전한 전자상거래를 할 수 있는 서비스입니다.</p>
+													<p>BC/국민카드/우리카드사는 모든 전자상거래에 인터넷 안전결제를 의무화 시켰습니다.</p>
+													<p>30만원 이상 결제시는 공인인증서가 필요합니다. 공인인증서가 없으신 고객님 공인인증서를 발급 받아주시기 바랍니다.</p>
+													<ul class="text-list01">
+														<li>인터넷 안전결제(ISP) 이런 점이 좋습니다.
+															<ul class="text-list02 col-type01">
+																<li>신용카드번호,비밀번호 등 개인정보 유출 및 카드 도용 방지</li>
+																<li>인터넷 안전결제(ISP) 인증번호만으로 간단하고 편리한 신용결제</li>
+																<li>인터넷 안전결제(ISP) 및 공인인증 확인으로 2중 보호가 되는 안전한 거래</li>
+															</ul>
+														</li>
+														<!-- 2018-07-12 -->
+														<li>BC카드/국민카드/우리카드 고객님을 위한 인터넷 안전결제(ISP)
+															<div class="img-payment"><img src="../../images/order/img_payment2.png" alt="01. 주문/결제 시 결제수단 선택 BC카드/국민카드/우리카드 안전결제(ISP)선택 시 02. ISP인증 비밀번호 신청/ 변경 비밀번호 입력/ 결제 30만원 이상 결제 시 공유인증 비밀번호 입력 03. 확인하기 04. 주문완료"></div> <!-- 2018-05-09 class 수정 -->
+														</li>
+														<li>BC카드/국민카드/우리카드 홈페이지에서 인터넷 안전결제(ISP)서비스 등록
+															<div class="btn-isp">
+																<a href="#" class="btn-style01"><span><img src="../../images/order/img_isp_bc.png" alt="BC카드 ISP">BC카드 ISP 신청하기</span></a>
+																<a href="#" class="btn-style01"><span><img src="../../images/order/img_isp_kb.png" alt="국민카드 ISP">국민카드 ISP 신청하기</span></a>
+																<a href="#" class="btn-style01"><span><img src="../../images/order/img_isp_woori.png" alt="우리카드 ISP">우리카드 ISP 신청하기</span></a>
+															</div>
+														</li>
+														<!-- //2018-07-12 -->
+													</ul>
+													<ul class="text-list02 col-type01">
+														<li>웹사이트를 통해 신청과 동시에 바로 사용이 가능합니다.</li>
+														<li class="text-color02">추가적으로 더 궁금한 사항은 1:1 고객상담으로 문의 주시기 바랍니다.<br />
+															<a href="#" class="btn-style01"><span>1:1 고객상담</span></a>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+										</div>
+										<!-- //안전결제안내 : end -->
+
+										<!-- 안심클릭안내 : str -->
+										<div class="card-info-box">
+											<dl>
+												<dt>안심클릭이란?</dt>
+												<dd>
+													<p>인터넷 쇼핑 시 고객님이 소유하신 카드에 미리 설정해둔 전자상거래용의 별도 비밀번호를 입력하여 카드 사용자 본인을 확인함으로써 온라인 상에서의 카드 무단도용을 방지해주는 서비스입니다.</p>
+													<ul class="text-list01">
+														<li>안심클릭 카드 안내
+															<!-- 2018-05-09 -->
+															<div class="data-tbl02">
+																<table>
+																	<caption>안심클릭 카드 안내</caption>
+																	<colgroup>
+																		<col width="130">
+																		<col>
+																		<col width="130">
+																		<col width="158">
+																	</colgroup>
+																	<tbody>
+																		<tr>
+																			<th scope="row">삼성카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_samsung.png" alt="삼성카드"></td>
+																			<th scope="row">한미카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_city.png" alt="한미카드"></td>
+																		</tr>
+																		<tr>
+																			<th scope="row">외환카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_keb.png" alt="외환카드"></td>
+																			<th scope="row">수협카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_suhyup.png" alt="수협카드"></td>
+																		</tr>
+																		<tr>
+																			<th scope="row">롯데카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_lotte.png" alt="롯데카드"></td>
+																			<th scope="row">전북카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_jb.png" alt="전북카드"></td>
+																		</tr>
+																		<tr>
+																			<th scope="row">현대카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_hyundai.png" alt="현대카드"></td>
+																			<th scope="row">광주카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_kj.png" alt="광주카드"></td>
+																		</tr>
+																		<tr>
+																			<th scope="row">신한카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_shinhan.png" alt="신한카드"></td>
+																			<th scope="row">제주카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_jj.png" alt="제주카드"></td>
+																		</tr>
+																		<tr>
+																			<th scope="row">시티카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_city.png" alt="시티카드"></td>
+																			<th scope="row">조흥카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_shinhan.png" alt="조흥카드"></td>
+																		</tr>
+																		<tr>
+																			<th scope="row">신세계한미카드</th>
+																			<td class="tleft"><img src="../../images/order/img_card_ssg.png" alt="신세계한미카드"></td>
+																			<th scope="row">신한(구LG)</th>
+																			<td class="tleft"><img src="../../images/order/img_card_shinhan2.png" alt="신한(구LG)"></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+															<!-- //2018-05-09 -->
+														</li>
+														<li>안심클릭 대상카드
+															<ul class="text-list02 col-type01">
+																<li>국민카드/ BC카드/ 우리카드를 제외한 모든 신용카드</li>
+																<li>삼성/ 외환/ 롯데/ 현대/ 신한/ 시티/ 신세계한미/ 한미/ 수협/ 전북/ 광주/ 제주/ 조흥/ 신한(구 LG)</li>
+																<li>국내전용카드/마스터/JCB 모두 포함</li>
+															</ul>
+														</li>
+														<li>안심클릭 인증방식
+															<p><span class="text-color02">카드사가 제공하는 팝업창</span>에서 선택가능<br />
+															안심클릭, 공인인증 중 1개 선택 (안심클릭만으로 결제 가능)</p>
+														</li>
+														<li>결제페이지 입력정보
+															<p>기존:카드번호, 유효기간, 주민번호, 카드비밀번호, 할부기간 입력<br />
+															안심클릭 시행 후 : 카드번호, 할부기간만 입력</p>
+														</li>
+														<li>등록방법
+															<p>주문/결제 페이지에서 카드사에서 제공하는 팝업화면 통해 바로 등록 및 사용 가능<br />
+															고객님이 소유한 신용카드의 카드사 홈페이지 통해 등록 가능<br />
+															VISA카드를 가지고 계신 고객님들 중, 이미 VISA안심클릭을 등록해 사용하시고 계신 분은 별도의 안심 클릭 등록절차 없이 기존대로 결제가 가능하십니다.</p>
+														</li>
+													</ul>
+													<ul class="text-list02 col-type01">
+														<li class="text-color02">추가적으로 더 궁금한 사항은 1:1 고객상담으로 문의 주시기 바랍니다.<br />
+															<a href="#" class="btn-style01"><span>1:1 고객상담</span></a>
+														</li>
+													</ul>
+												</dd>
+											</dl>
+										</div>
+										<!-- //안심클릭안내 : end -->
+									</div>
+									<!-- //결제수단 - 신용/체크카드 : end -->
+
+									<!-- 결제수단 - 네이버페이 : str -->
+									<div class="order-payment-content">
+										<h4 class="title09">네이버페이 이용 안내</h4>
+										<ul class="text-list01">
+											<li>네이버페이는 네이버ID로 별도 앱 설치 없이 신용카드 또는 은행계좌 정보를 등록하여 네이버페이 비밀번호로    결제할 수 있는 간편결제 서비스입니다.</li>
+											<li>주문 변경 시 카드사 혜택 및 할부 적용 여부는 해당 카드사 정책에 따라 변경될 수 있습니다.
+												<ul class="text-list02 col-type01">
+													<li>결제 가능한 신용카드 : 신한, 삼성, 현대, BC, 국민, 하나, 롯데, NH농협, 씨티</li>
+													<li>결제 가능한 은행 : NH농협, 국민, 신한, 우리, 기업, SC제일, 부산, 경남, 수협, 우체국</li>
+												</ul>
+											</li>
+											<li>네이버페이 카드 간편결제는 네이버페이에서 제공하는 카드사 별 무이자, 청구할인 혜택을 받을 수 있습니다.</li>
+										</ul>
+									</div>
+									<!-- //결제수단 - 네이버페이 : end -->
+
+									<!-- 결제수단 - 실시간 계좌이체 : str -->
+									<div class="order-payment-content">
+										<h4 class="title09">구매안전 에스크로 서비스 사용</h4>
+										<ul class="radio-list">
+											<li>
+												<span class="rdo-skin">
+													<input type="radio" id="rdoEscrow01" name="rdoEscrow">
+													<span>선택</span>
+												</span>
+												<label for="rdoEscrow01">구매안전 에스크로 사용</label>
+											</li>
+											<li>
+												<span class="rdo-skin">
+													<input type="radio" id="rdoEscrow02" name="rdoEscrow" checked="checked">
+													<span>선택</span>
+												</span>
+												<label for="rdoEscrow02">구매안전 에스크로 사용 안함</label>
+											</li>
+										</ul>
+										<ul class="text-list01">
+											<li>실시간 계좌이체는 결제와 동시에 입출금이 처리됩니다.</li>
+											<li>이체 수수료는 부과되지 않습니다.</li>
+										</ul>
+										<h4 class="title09">은행별 실시간 계좌이체 이용 가능 시간</h4>
+										<!-- 2018-05-24 -->
+										<div class="bank-info-wrap d_toggle">
+											<button type="button" class="btn-open d_toggle_select"><span>Open</span></button>
+											<div class="bank-info-cont data-tbl02">
+												<table>
+													<caption>은행별 실시간 계좌이체 이용 가능 시간</caption>
+													<colgroup>
+														<col width="105px">
+														<col width="235px">
+														<col width="235px">
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">은행명</th>
+															<th scope="col">이용시간</th>
+															<th scope="col">사이트주소</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>경남은행 </td>
+															<td>평일 및 공휴일 08:00 - 23:00</td>
+															<td class="tleft"><a href="www.kyongnambank.co.kr" target="_blank" title="새창으로 이동">www.kyongnambank.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>국민은행 </td>
+															<td>평일 및 공휴일 00:30 - 23:30</td>
+															<td class="tleft"><a href="www.kbstar.com" target="_blank" title="새창으로 이동">www.kbstar.com</a></td>
+														</tr>
+														<tr>
+															<td>광주은행</td>
+															<td>평일 및 공휴일 05:00 - 24:00</td>
+															<td class="tleft"><a href="www.kjbank.co.kr" target="_blank" title="새창으로 이동">www.kjbank.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>기업은행</td>
+															<td>평일 및 공휴일 01:00 - 23:30</td>
+															<td class="tleft"><a href="www.ibk.co.kr" target="_blank" title="새창으로 이동">www.ibk.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>농협</td>
+															<td>평일 및 공휴일 04:00 - 23:30</td>
+															<td class="tleft"><a href="www.nonghyup.co.kr" target="_blank" title="새창으로 이동">www.nonghyup.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>대구은행</td>
+															<td>평일 및 공휴일 01:00 - 23:30</td>
+															<td class="tleft"><a href="www.dgb.co.kr" target="_blank" title="새창으로 이동">www.dgb.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>부산은행</td>
+															<td>평일 및 공휴일 07:00 - 23:00</td>
+															<td class="tleft"><a href="www.pusanbank.co.kr" target="_blank" title="새창으로 이동">www.pusanbank.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>새마을금고</td>
+															<td>평일 및 공휴일 01:00 - 23:30</td>
+															<td class="tleft"><a href="www.kfcc.co.kr" target="_blank" title="새창으로 이동">www.kfcc.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>수협</td>
+															<td>평일 및 공휴일 01:00 - 23:30</td>
+															<td class="tleft"><a href="www.suhyup.co.kr" target="_blank" title="새창으로 이동">www.suhyup.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>신한은행</td>
+															<td>평일 및 공휴일 00:30 - 24:00</td>
+															<td class="tleft"><a href="www.shinhan.com" target="_blank" title="새창으로 이동">www.shinhan.com</a></td>
+														</tr>
+														<tr>
+															<td>우리은행</td>
+															<td>평일 및 공휴일 01:00 - 23:30</td>
+															<td class="tleft"><a href="www.wooribank.com" target="_blank" title="새창으로 이동">www.wooribank.com</a></td>
+														</tr>
+														<tr>
+															<td>우체국</td>
+															<td>평일 및 공휴일 00:30 - 23:40</td>
+															<td class="tleft"><a href="www.epostbank.go.kr" target="_blank" title="새창으로 이동">www.epostbank.go.kr</a></td>
+														</tr>
+														<tr>
+															<td>외환은행</td>
+															<td>평일 및 공휴일 01:00 - 24:00</td>
+															<td class="tleft"><a href="www.koexbank.co.kr" target="_blank" title="새창으로 이동">www.koexbank.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>전북은행</td>
+															<td>평일 및 공유일 04:00 - 24:00</td>
+															<td class="tleft"><a href="www.jbbank.co.kr" target="_blank" title="새창으로 이동">www.jbbank.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>조흥은행</td>
+															<td>평일 및 공휴일 06:00 - 24:00</td>
+															<td class="tleft"><a href="www.chb.co.kr" target="_blank" title="새창으로 이동">www.chb.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>제일은행</td>
+															<td>평일 및 공휴일 07:00 - 23:30</td>
+															<td class="tleft"><a href="www.kfb.co.kr" target="_blank" title="새창으로 이동">www.kfb.co.kr</a></td>
+														</tr>
+														<tr>
+															<td>제주은행</td>
+															<td>평일 및 공휴일 06:00 - 24:00</td>
+															<td class="tleft"><a href="www.e-jejubank.com" target="_blank" title="새창으로 이동">www.e-jejubank.com</a></td>
+														</tr>
+														<tr>
+															<td>하나은행</td>
+															<td>평일 및 공휴일 01:00 - 23:30</td>
+															<td class="tleft"><a href="www.hanaib.com" target="_blank" title="새창으로 이동">www.hanaib.com</a></td>
+														</tr>
+														<tr>
+															<td>한미은행</td>
+															<td>평일 및 공휴일 08:00 - 23:00</td>
+															<td class="tleft"><a href="www.goodbank.com" target="_blank" title="새창으로 이동">www.goodbank.com</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<button type="button" class="btn-close d_toggle_select"><span>Close</span></button>
+										</div>
+										<!-- //2018-05-24 -->
+									</div>
+									<!-- //결제수단 - 실시간 계좌이체 : end -->
+
+									<!-- 결제수단 - 무통장입금(가상계좌) : str -->
+									<div class="order-payment-content">
+										<h4 class="title09">구매안전 에스크로 서비스 사용</h4>
+										<ul class="radio-list">
+											<li>
+												<span class="rdo-skin">
+													<input type="radio" id="rdo2Escrow01" name="rdo2Escrow">
+													<span>선택</span>
+												</span>
+												<label for="rdo2Escrow01">구매안전 에스크로 사용</label>
+											</li>
+											<li>
+												<span class="rdo-skin">
+													<input type="radio" id="rdo2Escrow02" name="rdo2Escrow" checked="checked">
+													<span>선택</span>
+												</span>
+												<label for="rdo2Escrow02">구매안전 에스크로 사용 안함</label>
+											</li>
+										</ul>
+										<ul class="text-list01">
+											<li><span class="text-color01">배송은 입금완료를 기준으로 처리되며, 미입금 상태에서 주문한 상품이 품절될 경우 입금하셔도 배송이 불가합니다.</span></li>
+											<li>입금완료 후 배송이 시작되오니, 주문접수에서 재고 확보가 어렵습니다. 입금 전 품절될 수 있사오니 빠른 입금바랍니다.</li>
+											<li>무통장입금(가상계좌) 신청 후 1일(24시간) 이내 입금되지 않으면 주문이 자동 취소됩니다.</li><!-- 2018-05-24 -->
+											<li>무통장입금(가상계좌) 전 MY PAGE 주문내역에서 카드결제로 변경하실 수 있습니다.</li>
+											<li>입금 시 예금주명은 ‘㈜ Discovery’로 확인될 수 있습니다.</li>
+										</ul>
+									</div>
+									<!-- //결제수단 - 무통장입금(가상계좌) : end -->
+
+									<!-- 결제수단 - 휴대폰결제 : str -->
+									<div class="order-payment-content">
+										<ul class="text-list01">
+											<li>결제금액은 사용하시는 이동통신사의 휴대폰 결제등급에 따라 당월 최대 30만원까지만 가능하며 결제한도 및 이용이 제한될 수 있습니다.</li>
+											<li>휴대폰결제금액은 증빙서류 발급에서 제외됩니다. (현금영수증은 휴대폰 요금을 현금 납부하는 경우에만 해당 이동통신사에서 발급합니다.)</li>
+										</ul>
+									</div>
+									<!-- //결제수단 - 휴대폰결제 : end -->
+
+									<!-- 품절 시 빠른 환불서비스 : str -->
+									<dl class="refund-info-section">
+										<dt>품절 시 빠른 환불서비스 <span class="text-color01">*</span></dt>
+										<dd>
+											<p>구매하신 상품의 일부가 품절된 경우, 고객님께 빠른 환불서비스를 제공하고 있습니다.<br /><span class="text-color01">품절 시 고객님이 선택하신 방법으로 환불 처리 해드립니다.</span></p>
+											<ul class="radio-list">
+												<li>
+													<span class="rdo-skin">
+														<input type="radio" id="rdoRefund01" name="rdoRefund" checked="checked">
+														<span>선택</span>
+													</span>
+													<label for="rdoRefund01">고객센터 확인환불</label>
+												</li>
+												<li>
+													<span class="rdo-skin">
+														<input type="radio" id="rdoRefund02" name="rdoRefund">
+														<span>선택</span>
+													</span>
+													<label for="rdoRefund02">주문부분 환불(자동환불)</label><!-- 2018-05-30 text -->
+												</li>
+												<li>
+													<span class="rdo-skin">
+														<input type="radio" id="rdoRefund03" name="rdoRefund">
+														<span>선택</span>
+													</span>
+													<label for="rdoRefund03">주문전체 환불(자동환불)</label><!-- 2018-05-30 text -->
+												</li>
+											</ul>
+											<ul class="text-list02 col-type01">
+												<li>고객센터 확인환불 : 고객센터에서 고객님에게 연락 드린 후 환불을 처리해 드립니다.</li>
+												<li>주문부분 환불(자동환불) : 환불을 선택하시면 품절상품에 대해서만 선택하신 결제 방법으로 환불해드립니다.</li><!-- 2018-05-30 text -->
+												<li>주문전체 환불(자동환불) : 환불을 선택하시면 별도의 연락 없이 선택하신 결제 방법으로 전체 환불해 드립니다.</li><!-- 2018-05-30 text -->
+											</ul>
+
+											<!-- 주문전체 환불(자동환불) 선택시 노출 : str -->
+											<div class="write-list">
+												<div class="gap">
+													<!-- select -->
+													<div class="select-style01 d_select">
+														<button type="button" class="d_select_sel" style="width:586px;">은행명 선택</button>
+														<ul>
+															<li><a href="#">은행명 선택</a></li>
+														</ul>
+													</div>
+													<!-- //select -->
+												</div>
+												<div class="gap">
+													<input type="text" class="input-style01" placeholder="‘-’없이 계좌번호를 입력해주세요." style="width:586px;">
+												</div>
+												<div class="gap">
+													<input type="text" class="input-style01" placeholder="예금주명을 입력해주세요." style="width:440px;">
+													<a href="#" class="btn-style04">계좌인증</a>
+												</div>
+											</div>
+											<!-- //주문전체 환불(자동환불) 선택시 노출 : str -->
+
+											<!-- 휴대폰 결제 주문부분 환불(자동환불) 선택시 노출 : str -->
+											<div class="phone-payment-refund">
+												<ul class="text-list02 col-type01"><!-- 2018-05-16 -->
+													<li>핸드폰 소액결제 전체 취소 시, 당일 내 취소 요청 건은 즉시 취소되나, 전월 결제 건 취소시에는<br />이동통신사의 익월취소 불가 정책에 따라, PG사를 통해 고객님의 계좌로 환불처리 됩니다.</li><!-- 2018-05-24 -->
+													<li>핸드폰 소액결제 부분 취소 시, 잔존 대금에 대한 재승인 후 기존에 결제된 전체금액 승인이 취소 처리됩니다.</li>
+													<li>경우에 따라 한도액 초과, 시스템 오류 등으로 핸드폰 소액결제 취소가 아닌 환불 처리로 진행 될 수 있습니다.</li>
+													<li>고객님의 계좌로 환불이 되는 경우, 환불 금액은 이동통신 청구 대금에 반영됨을 알려 드립니다.</li>
+												</ul>
+												<ul class="radio-list">
+													<li>
+														<span class="rdo-skin">
+															<input type="radio" id="rdoAgree1" name="rdoAgree">
+															<span>선택</span>
+														</span>
+														<label for="rdoAgree1">동의합니다.</label>
+													</li>
+													<li>
+														<span class="rdo-skin">
+															<input type="radio" id="rdoAgree2" name="rdoAgree">
+															<span>선택</span>
+														</span>
+														<label for="rdoAgree2">동의하지 않습니다.</label>
+													</li>
+												</ul>
+											</div>
+											<!-- //휴대폰 결제 주문부분 환불(자동환불) 선택시 노출 : end -->
+										</dd>
+									</dl>
+									<!-- //품절 시 빠른 환불서비스 : end -->
+
+									<div class="check-payment-area">
+										<span class="check-skin">
+											<input type="checkbox" id="chkPayment">
+											<span>선택</span>
+										</span>
+										<label for="chkPayment">다음에도 이 결제수단으로 결제하기</label>
+									</div>
+								</div>
+								<button type="button" class="btn-close d_toggle_select"><span>Close</span></button>
+							</div>
+						</div>
+						<div class="order-right d_fix">
+							<div class="order-step02 d_fix_obj">
+								<div class="checkout-section">
+									<h3>결제정보</h3>
+									<div class="checkout">
+										<ul class="checkout-price">
+											<li>
+												<span class="left">상품금액</span>
+												<span class="right">39,000원</span>
+											</li>
+											<li>
+												<span class="left">할인금액</span>
+												<span class="right saved">-0원</span>
+											</li>
+											<li>
+												<span class="left">배송비</span>
+												<span class="right">+2,500원</span>
+											</li>
+										</ul>
+										<div class="checkout-price checkout-total">
+											<span class="left">총 결제금액</span>
+											<span class="right"><strong>999,999,999</strong>원</span>
+										</div>
+										<div class="checkout-price checkout-mile">
+											<span class="left">총 적립마일리지</span>
+											<span class="right">999,999,999M</span>
+										</div>
+										<div class="order-agree check-skin-box">
+											<span class="check-skin">
+												<input type="checkbox" id="CheckoutAgree">
+												<span>선택</span>
+											</span>
+											<label for="CheckoutAgree">주문하실 상품, 가격, 배송정보, 할인정보 등을 확인하였으며, 구매에 동의하시겠습니까? (전자상거래법 제 8조 제2항)</label>
+										</div>
+										<div class="btn-wrap02">
+											<a href="#" class="btn-style02">결제하기</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</acrticle>
+		</div>
+	</body>
+</html>
